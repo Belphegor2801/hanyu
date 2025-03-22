@@ -1,14 +1,15 @@
 <template>
-  <BaseLayout />
+  <MainLayout />
 </template>
 
 <script>
-import BaseLayout from "./views/BaseLayout.vue";
+import MainLayout from "@/layouts/MainLayout.vue";
+import router from '@/router';
 
 export default {
   name: "App",
   components: {
-    BaseLayout,
+    MainLayout,
   },
 };
 </script>

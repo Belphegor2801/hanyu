@@ -28,8 +28,7 @@
           <h2>{{ activeTab.name }}</h2>
         </header>
         <div class="content">
-          <h2>Main Content</h2>
-          <p>Đây là nội dung chính của trang.</p>
+          <router-view></router-view>
         </div>
       </main>
     </div>
@@ -38,16 +37,18 @@
   
   
   <script>
-import { ref } from "vue";
+import { ref, getCurrentInstance } from "vue";
 import "@fortawesome/fontawesome-free/css/all.css";
+import router from "@/router";
 
 export default {
   name: "App",
   setup() {
+    const {proxy} = getCurrentInstance();
     const isCollapsed = ref(false);
     const menuItems = ref([
-      { id: 1, name: "Phiên âm", icon: "fas fa-folder" },
-      { id: 2, name: "Bộ thủ", icon: "fas fa-align-justify" },
+      { id: 1, name: "Phiên âm", icon: "fas fa-folder", path: "/pinyin" },
+      { id: 2, name: "Bộ thủ", icon: "fas fa-align-justify", path: "/radicals" },
     ]);
 
     const activeTab = ref(menuItems.value[0]); // Khởi động với tab đầu tiên
@@ -58,6 +59,7 @@ export default {
 
     const changeActiveTab = (tab) => {
       activeTab.value = tab;
+      router.push({path: tab.path});
     };
 
     return {

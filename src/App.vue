@@ -1,16 +1,16 @@
 <template>
-  <HanziLookup :boardSize="400" />
+  <BaseLayout />
 </template>
 
 <script>
-import HanziLookup from './components/base/HanziLookup.vue';
+import BaseLayout from "./views/BaseLayout.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HanziLookup
-  }
-}
+    BaseLayout,
+  },
+};
 </script>
 
 <style>
@@ -20,5 +20,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
 }
 </style>

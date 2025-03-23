@@ -26,7 +26,7 @@ export default {
   props: {
     boardSize: {
       type: Number,
-      default: 250,
+      default: 400,
     },
     jsonFilePath: {
       type: String,
@@ -47,7 +47,8 @@ export default {
   },
   mounted() {
     // Init Data
-    this.hanziLookupInit("mmah", mmah, this.fileLoaded);
+    var mmahData= JSON.parse(JSON.stringify(mmah));
+    this.hanziLookupInit("mmah", mmahData, this.fileLoaded);
   },
   methods: {
     /**
@@ -148,7 +149,7 @@ export default {
 }
 
 .charPicker {
-  height: 48px;
+  height: 56px;
   background-color: #fafafa;
   overflow: hidden;
   color: #606060;
@@ -182,6 +183,7 @@ export default {
   justify-content: center;
   align-content: center;
   display: flex;
+  width: 100%;
 }
 .cmd {
   width: 100%;

@@ -10,13 +10,8 @@
           </div>
         </div>
         <ul class="menu-items">
-          <li
-            v-for="item in menuItems"
-            :key="item.id"
-            class="menu-item"
-            :class="{ active: activeTab.id === item.id }"
-            @click="changeActiveTab(item)"
-          >
+          <li v-for="item in menuItems" :key="item.id" class="menu-item" :class="{ active: activeTab.id === item.id }"
+            @click="changeActiveTab(item)">
             <i class="menu-icon fas" :class="item.icon"></i>
             <!-- Thay đổi biểu tượng cho mỗi item nếu cần -->
             <span class="menu-text" v-if="!isCollapsed">{{ item.name }}</span>
@@ -34,9 +29,9 @@
     </div>
   </div>
 </template>
-  
-  
-  <script>
+
+
+<script>
 import { ref, getCurrentInstance } from "vue";
 import "@fortawesome/fontawesome-free/css/all.css";
 import router from "@/router";
@@ -44,7 +39,7 @@ import router from "@/router";
 export default {
   name: "App",
   setup() {
-    const {proxy} = getCurrentInstance();
+    const { proxy } = getCurrentInstance();
     const isCollapsed = ref(false);
     const menuItems = ref([
       { id: 1, name: "Phiên âm", icon: "fas fa-folder", path: "/pinyin" },
@@ -59,7 +54,7 @@ export default {
 
     const changeActiveTab = (tab) => {
       activeTab.value = tab;
-      router.push({path: tab.path});
+      router.push({ path: tab.path });
     };
 
     return {
@@ -72,8 +67,8 @@ export default {
   },
 };
 </script>
-  
-  <style scoped>
+
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -97,11 +92,12 @@ body {
 }
 
 .ml-04 {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 .sidebar {
-  background-color: #050412; /* Màu tối */
+  background-color: #050412;
+  /* Dark color */
   width: 200px;
   height: 100%;
   transition: width 0.3s;
@@ -111,10 +107,6 @@ body {
   width: 24px;
   height: 24px;
   cursor: pointer;
-}
-
-.scale1_3 {
-  transform: scale(1.3);
 }
 
 .sidebar.collapsed {
@@ -139,8 +131,6 @@ body {
   padding: 0;
 }
 
-
-
 .menu-item {
   display: flex;
   align-items: center;
@@ -150,6 +140,7 @@ body {
   position: relative;
   padding: 10px;
 }
+
 .menu-icon {
   width: 24px;
 }
@@ -159,8 +150,8 @@ body {
 }
 
 .menu-text {
-    margin-left: 6px;
-    font-size: 17px;
+  margin-left: 6px;
+  font-size: 17px;
 }
 
 .menu-item:hover {
@@ -168,7 +159,8 @@ body {
 }
 
 .menu-item.active {
-  background-color: rgba(255, 255, 255, 0.3); /* Màu nền cho item đang active */
+  background-color: rgba(255, 255, 255, 0.3);
+  /* Background color for active item */
 }
 
 .menu-item.active::before {
@@ -178,19 +170,23 @@ body {
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: rgba(16, 173, 79, 1); /* Màu xanh lá cho item đang active */
+  background-color: rgba(16, 173, 79, 1);
+  /* Active item color */
 }
 
 .main-content {
   flex: 1;
   background-color: #fff;
-  height: 100%;
+  overflow: hidden;
+  /* Prevent overflow */
 }
 
 .header {
-  background-color: white; /* Màu nền trắng */
+  background-color: white;
+  /* White background */
   color: black;
-  border-bottom: 2px solid #ccc; /* Border dưới header */
+  border-bottom: 2px solid #ccc;
+  /* Bottom border for header */
   padding: 10px 16px;
   text-align: left;
   height: 56px;
@@ -199,8 +195,9 @@ body {
 
 .content {
   flex: 1;
-  padding: 15px;
+  padding: 12px;
   background-color: #fff;
-  height: 100%;
+  overflow-y: auto;
+  /* Enable vertical scrolling if necessary */
 }
 </style>

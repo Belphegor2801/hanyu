@@ -39,7 +39,7 @@
           <div class="radical-char">{{ currentActiveCell["radical"] }}</div>
           <div class="radical-pinyin">{{ currentActiveCell["pinyin"] }}</div>
         </div>
-        <div class="info-view">
+        <div class="info-view" v-if="currentActiveCell">
           <div class="info-title"></div>
           <table>
             <tbody>
@@ -156,7 +156,7 @@ export default {
       }
 
       .table-container {
-        height: calc(42px * 15 + 7px);
+        height: calc(42px * 17 + 7px);
         overflow: auto;
         border: 1px solid #ddd;
       }

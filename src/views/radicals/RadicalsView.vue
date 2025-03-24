@@ -37,12 +37,15 @@
       <div class="tab-view">
         <div class="radical-view" v-if="currentActiveCell">
           <div class="radical-char">{{ currentActiveCell["radical"] }}</div>
-          <div class="radical-pinyin">{{ currentActiveCell["pinyin"] }}</div>
         </div>
         <div class="info-view" v-if="currentActiveCell">
           <div class="info-title"></div>
           <table>
             <tbody>
+              <tr>
+                <td class="info-key">Phiên âm</td>
+                <td class="info-value">{{ currentActiveCell["pinyin"] }}</td>
+              </tr>
               <tr>
                 <td class="info-key">Số nét</td>
                 <td class="info-value">{{ currentActiveCell["strokeCount"] }}</td>

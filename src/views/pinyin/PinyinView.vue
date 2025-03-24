@@ -57,10 +57,7 @@
 
 <script>
 import { ref, computed, onMounted, watch } from "vue";
-
-import peng1 from '@/assets/audio/peng1.mp3';
-
-import data from './data.json';
+import data from '@/data/pinyin.json';
 
 export default {
     setup() {
@@ -106,7 +103,7 @@ export default {
             }
         };
 
-        const isCollapsed = ref(false);
+        const isCollapsed = ref(true);
 
         const toggleCollapse = () => {
             isCollapsed.value = !isCollapsed.value;

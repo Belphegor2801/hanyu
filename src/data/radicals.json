@@ -1,2142 +1,2154 @@
-[
-    {
-        "id": 1,
-        "radical": "一",
-        "other": "",
-        "pinyin": "yī",
-        "english": "one",
-        "vietnamese": "Nhất",
-        "translate": "số một",
-        "strokeCount": 1
-    },
-    {
-        "id": 2,
-        "radical": "丨",
-        "other": "",
-        "pinyin": "shù",
-        "english": "line",
-        "vietnamese": "Cổn",
-        "translate": "nét sổ",
-        "strokeCount": 1
-    },
-    {
-        "id": 3,
-        "radical": "丶",
-        "other": "",
-        "pinyin": "diǎn",
-        "english": "dot",
-        "vietnamese": "Chủ",
-        "translate": "điểm, chấm",
-        "strokeCount": 1
-    },
-    {
-        "id": 4,
-        "radical": "丿",
-        "other": "",
-        "pinyin": "piě",
-        "english": "slash",
-        "vietnamese": "Phiệt",
-        "translate": "nét sổ xiên qua trái",
-        "strokeCount": 1
-    },
-    {
-        "id": 5,
-        "radical": "乙",
-        "other": "",
-        "pinyin": "yǐ",
-        "english": "second",
-        "vietnamese": "Ất",
-        "translate": "vị trí thứ 2 trong thiên can",
-        "strokeCount": 1
-    },
-    {
-        "id": 6,
-        "radical": "亅",
-        "other": "",
-        "pinyin": "gōu",
-        "english": "hook",
-        "vietnamese": "Quyết",
-        "translate": "nét sổ có móc",
-        "strokeCount": 1
-    },
-    {
-        "id": 7,
-        "radical": "二",
-        "other": "",
-        "pinyin": "èr",
-        "english": "two",
-        "vietnamese": "Nhị",
-        "translate": "số hai",
-        "strokeCount": 2
-    },
-    {
-        "id": 8,
-        "radical": "亠",
-        "other": "",
-        "pinyin": "tóu",
-        "english": "lid",
-        "vietnamese": "Đầu",
-        "translate": "(Không có nghĩa)",
-        "strokeCount": 2
-    },
-    {
-        "id": 9,
-        "radical": "人",
-        "other": "",
-        "pinyin": "rén",
-        "english": "person",
-        "vietnamese": "Nhân",
-        "translate": "người",
-        "strokeCount": 2
-    },
-    {
-        "id": 10,
-        "radical": "儿",
-        "other": "",
-        "pinyin": "ér",
-        "english": "legs",
-        "vietnamese": "Nhi",
-        "translate": "Trẻ con",
-        "strokeCount": 2
-    },
-    {
-        "id": 11,
-        "radical": "入",
-        "other": "",
-        "pinyin": "rù",
-        "english": "enter",
-        "vietnamese": "Nhập",
-        "translate": "vào",
-        "strokeCount": 2
-    },
-    {
-        "id": 12,
-        "radical": "八",
-        "other": "",
-        "pinyin": "bā",
-        "english": "eight",
-        "vietnamese": "Bát",
-        "translate": "số tám",
-        "strokeCount": 2
-    },
-    {
-        "id": 13,
-        "radical": "冂",
-        "other": "",
-        "pinyin": "jiǒng",
-        "english": "down box",
-        "vietnamese": "Quynh",
-        "translate": "vùng biên giới xa; hoang địa",
-        "strokeCount": 2
-    },
-    {
-        "id": 14,
-        "radical": "冖",
-        "other": "",
-        "pinyin": "mì",
-        "english": "cover",
-        "vietnamese": "Mịch",
-        "translate": "trùm khăn lên",
-        "strokeCount": 2
-    },
-    {
-        "id": 15,
-        "radical": "冫",
-        "other": "",
-        "pinyin": "bīng",
-        "english": "ice",
-        "vietnamese": "Băng",
-        "translate": "nước đá",
-        "strokeCount": 2
-    },
-    {
-        "id": 16,
-        "radical": "几",
-        "other": "",
-        "pinyin": "jī, jǐ",
-        "english": "table",
-        "vietnamese": "Kỷ",
-        "translate": "ghế dựa",
-        "strokeCount": 2
-    },
-    {
-        "id": 17,
-        "radical": "凵",
-        "other": "",
-        "pinyin": "qǔ",
-        "english": "open box",
-        "vietnamese": "Khảm",
-        "translate": "há miệng",
-        "strokeCount": 2
-    },
-    {
-        "id": 18,
-        "radical": "刀",
-        "other": "",
-        "pinyin": "dāo",
-        "english": "knife",
-        "vietnamese": "Đao",
-        "translate": "con dao, cây đao (vũ khí)",
-        "strokeCount": 2
-    },
-    {
-        "id": 19,
-        "radical": "力",
-        "other": "",
-        "pinyin": "lì",
-        "english": "power",
-        "vietnamese": "Lực",
-        "translate": "sức mạnh",
-        "strokeCount": 2
-    },
-    {
-        "id": 20,
-        "radical": "勹",
-        "other": "",
-        "pinyin": "bāo",
-        "english": "wrap",
-        "vietnamese": "Bao",
-        "translate": "bao bọc",
-        "strokeCount": 2
-    },
-    {
-        "id": 21,
-        "radical": "匕",
-        "other": "",
-        "pinyin": "bǐ",
-        "english": "ladle",
-        "vietnamese": "Chủy",
-        "translate": "cái thìa (cái muỗng)",
-        "strokeCount": 2
-    },
-    {
-        "id": 22,
-        "radical": "匚",
-        "other": "",
-        "pinyin": "fāng",
-        "english": "right open box",
-        "vietnamese": "Phương",
-        "translate": "tủ đựng",
-        "strokeCount": 2
-    },
-    {
-        "id": 23,
-        "radical": "匸",
-        "other": "",
-        "pinyin": "xǐ",
-        "english": "hiding enclosure",
-        "vietnamese": "Hệ",
-        "translate": "che đậy, giấu giếm",
-        "strokeCount": 2
-    },
-    {
-        "id": 24,
-        "radical": "十",
-        "other": "",
-        "pinyin": "shí",
-        "english": "ten",
-        "vietnamese": "Thập",
-        "translate": "số mười",
-        "strokeCount": 2
-    },
-    {
-        "id": 25,
-        "radical": "卜",
-        "other": "",
-        "pinyin": "bǔ",
-        "english": "divination",
-        "vietnamese": "Bốc",
-        "translate": "xem bói",
-        "strokeCount": 2
-    },
-    {
-        "id": 26,
-        "radical": "卩",
-        "other": "",
-        "pinyin": "jié",
-        "english": "seal",
-        "vietnamese": "Tiết",
-        "translate": "đốt tre",
-        "strokeCount": 2
-    },
-    {
-        "id": 27,
-        "radical": "厂",
-        "other": "",
-        "pinyin": "hàn",
-        "english": "cliff",
-        "vietnamese": "Hán",
-        "translate": "sườn núi, vách đá",
-        "strokeCount": 2
-    },
-    {
-        "id": 28,
-        "radical": "厶",
-        "other": "",
-        "pinyin": "sī",
-        "english": "private",
-        "vietnamese": "Khư",
-        "translate": "riêng tư",
-        "strokeCount": 2
-    },
-    {
-        "id": 29,
-        "radical": "又",
-        "other": "",
-        "pinyin": "yòu",
-        "english": "again",
-        "vietnamese": "Hựu",
-        "translate": "lại nữa, một lần nữa",
-        "strokeCount": 2
-    },
-    {
-        "id": 30,
-        "radical": "口",
-        "other": "",
-        "pinyin": "kǒu",
-        "english": "mouth",
-        "vietnamese": "Khẩu",
-        "translate": "cái miệng",
-        "strokeCount": 3
-    },
-    {
-        "id": 31,
-        "radical": "囗",
-        "other": "",
-        "pinyin": "wéi",
-        "english": "enclosure",
-        "vietnamese": "Vi",
-        "translate": "vây quanh",
-        "strokeCount": 3
-    },
-    {
-        "id": 32,
-        "radical": "土",
-        "other": "",
-        "pinyin": "tǔ",
-        "english": "earth",
-        "vietnamese": "Thổ",
-        "translate": "đất",
-        "strokeCount": 3
-    },
-    {
-        "id": 33,
-        "radical": "士",
-        "other": "",
-        "pinyin": "shì",
-        "english": "scholar",
-        "vietnamese": "Sĩ",
-        "translate": "kẻ sĩ",
-        "strokeCount": 3
-    },
-    {
-        "id": 34,
-        "radical": "夂",
-        "other": "",
-        "pinyin": "zhī",
-        "english": "go",
-        "vietnamese": "Trĩ",
-        "translate": "đến ở phía sau",
-        "strokeCount": 3
-    },
-    {
-        "id": 35,
-        "radical": "夊",
-        "other": "",
-        "pinyin": "suī",
-        "english": "go slowly",
-        "vietnamese": "Tuy",
-        "translate": "đi chậm",
-        "strokeCount": 3
-    },
-    {
-        "id": 36,
-        "radical": "夕",
-        "other": "",
-        "pinyin": "xī",
-        "english": "night",
-        "vietnamese": "Tịch",
-        "translate": "đêm tối",
-        "strokeCount": 3
-    },
-    {
-        "id": 37,
-        "radical": "大",
-        "other": "",
-        "pinyin": "dà",
-        "english": "big",
-        "vietnamese": "Đại",
-        "translate": "to lớn",
-        "strokeCount": 3
-    },
-    {
-        "id": 38,
-        "radical": "女",
-        "other": "",
-        "pinyin": "nǚ",
-        "english": "woman",
-        "vietnamese": "Nữ",
-        "translate": "nữ giới, con gái, đàn bà",
-        "strokeCount": 3
-    },
-    {
-        "id": 39,
-        "radical": "子",
-        "other": "",
-        "pinyin": "zǐ",
-        "english": "child",
-        "vietnamese": "Tử",
-        "translate": "con",
-        "strokeCount": 3
-    },
-    {
-        "id": 40,
-        "radical": "宀",
-        "other": "",
-        "pinyin": "gài",
-        "english": "roof",
-        "vietnamese": "Miên",
-        "translate": "mái nhà, mái che",
-        "strokeCount": 3
-    },
-    {
-        "id": 41,
-        "radical": "寸",
-        "other": "",
-        "pinyin": "cùn",
-        "english": "inch",
-        "vietnamese": "Thốn",
-        "translate": "đơn vị «tấc» (đo chiều dài)",
-        "strokeCount": 3
-    },
-    {
-        "id": 42,
-        "radical": "小",
-        "other": "",
-        "pinyin": "xiǎo",
-        "english": "small",
-        "vietnamese": "Tiểu",
-        "translate": "nhỏ bé",
-        "strokeCount": 3
-    },
-    {
-        "id": 43,
-        "radical": "尢",
-        "other": "",
-        "pinyin": "yóu",
-        "english": "lame",
-        "vietnamese": "Uông",
-        "translate": "yếu đuối",
-        "strokeCount": 3
-    },
-    {
-        "id": 44,
-        "radical": "尸",
-        "other": "",
-        "pinyin": "shī",
-        "english": "corpse",
-        "vietnamese": "Thi",
-        "translate": "xác chết, thây ma",
-        "strokeCount": 3
-    },
-    {
-        "id": 45,
-        "radical": "屮",
-        "other": "",
-        "pinyin": "chè",
-        "english": "sprout",
-        "vietnamese": "Triệt",
-        "translate": "mầm non, cỏ non mới mọc",
-        "strokeCount": 3
-    },
-    {
-        "id": 46,
-        "radical": "山",
-        "other": "",
-        "pinyin": "shān",
-        "english": "mountain",
-        "vietnamese": "Sơn",
-        "translate": "núi non",
-        "strokeCount": 3
-    },
-    {
-        "id": 47,
-        "radical": "川",
-        "other": "巛",
-        "pinyin": "chuān",
-        "english": "river",
-        "vietnamese": "Xuyên",
-        "translate": "sông ngòi",
-        "strokeCount": 3
-    },
-    {
-        "id": 48,
-        "radical": "工",
-        "other": "",
-        "pinyin": "gōng",
-        "english": "work",
-        "vietnamese": "Công",
-        "translate": "người thợ, công việc",
-        "strokeCount": 3
-    },
-    {
-        "id": 49,
-        "radical": "己",
-        "other": "",
-        "pinyin": "jǐ",
-        "english": "oneself",
-        "vietnamese": "Kỷ",
-        "translate": "bản thân mình",
-        "strokeCount": 3
-    },
-    {
-        "id": 50,
-        "radical": "巾",
-        "other": "",
-        "pinyin": "jīn",
-        "english": "towel",
-        "vietnamese": "Cân",
-        "translate": "cái khăn",
-        "strokeCount": 3
-    },
-    {
-        "id": 51,
-        "radical": "干",
-        "other": "",
-        "pinyin": "gān",
-        "english": "dry",
-        "vietnamese": "Can",
-        "translate": "thiên can, can dự",
-        "strokeCount": 3
-    },
-    {
-        "id": 52,
-        "radical": "幺",
-        "other": "",
-        "pinyin": "yāo",
-        "english": "thread",
-        "vietnamese": "Yêu",
-        "translate": "nhỏ nhắn",
-        "strokeCount": 3
-    },
-    {
-        "id": 53,
-        "radical": "广",
-        "other": "",
-        "pinyin": "guǎng",
-        "english": "shelter",
-        "vietnamese": "Nghiễm",
-        "translate": "mái nhà",
-        "strokeCount": 3
-    },
-    {
-        "id": 54,
-        "radical": "廴",
-        "other": "",
-        "pinyin": "yǐn",
-        "english": "stride",
-        "vietnamese": "Dẫn",
-        "translate": "bước dài",
-        "strokeCount": 3
-    },
-    {
-        "id": 55,
-        "radical": "廾",
-        "other": "",
-        "pinyin": "gǒng",
-        "english": "hands joined",
-        "vietnamese": "Củng",
-        "translate": "chắp tay",
-        "strokeCount": 3
-    },
-    {
-        "id": 56,
-        "radical": "弋",
-        "other": "",
-        "pinyin": "yì",
-        "english": "shoot with a bow",
-        "vietnamese": "Dặc",
-        "translate": "bắn, chiếm lấy",
-        "strokeCount": 3
-    },
-    {
-        "id": 57,
-        "radical": "弓",
-        "other": "",
-        "pinyin": "gōng",
-        "english": "bow",
-        "vietnamese": "Cung",
-        "translate": "cái cung (để bắn tên)",
-        "strokeCount": 3
-    },
-    {
-        "id": 58,
-        "radical": "彐",
-        "other": "",
-        "pinyin": "jì",
-        "english": "snout",
-        "vietnamese": "Kệ",
-        "translate": "đầu con nhím",
-        "strokeCount": 3
-    },
-    {
-        "id": 59,
-        "radical": "彡",
-        "other": "",
-        "pinyin": "shān",
-        "english": "hair",
-        "vietnamese": "Sam",
-        "translate": "lông, tóc dài",
-        "strokeCount": 3
-    },
-    {
-        "id": 60,
-        "radical": "彳",
-        "other": "",
-        "pinyin": "chì",
-        "english": "step",
-        "vietnamese": "Xích",
-        "translate": "bước chân trái",
-        "strokeCount": 3
-    },
-    {
-        "id": 61,
-        "radical": "心",
-        "other": "",
-        "pinyin": "xīn",
-        "english": "heart",
-        "vietnamese": "Tâm",
-        "translate": "quả tim, tâm trí, tấm lòng",
-        "strokeCount": 4
-    },
-    {
-        "id": 62,
-        "radical": "戈",
-        "other": "",
-        "pinyin": "gē",
-        "english": "spear",
-        "vietnamese": "Qua",
-        "translate": "cây qua (một thứ binh khí dài)",
-        "strokeCount": 4
-    },
-    {
-        "id": 63,
-        "radical": "户",
-        "other": "戶",
-        "pinyin": "hù",
-        "english": "door",
-        "vietnamese": "Hộ",
-        "translate": "cửa một cánh",
-        "strokeCount": 4
-    },
-    {
-        "id": 64,
-        "radical": "手",
-        "other": "",
-        "pinyin": "shǒu",
-        "english": "hand",
-        "vietnamese": "Thủ",
-        "translate": "tay",
-        "strokeCount": 4
-    },
-    {
-        "id": 65,
-        "radical": "支",
-        "other": "",
-        "pinyin": "zhī",
-        "english": "branch",
-        "vietnamese": "Chi",
-        "translate": "cành nhánh",
-        "strokeCount": 4
-    },
-    {
-        "id": 66,
-        "radical": "攴",
-        "other": "",
-        "pinyin": "pū",
-        "english": "rap",
-        "vietnamese": "Phộc",
-        "translate": "đánh khẽ",
-        "strokeCount": 4
-    },
-    {
-        "id": 67,
-        "radical": "文",
-        "other": "",
-        "pinyin": "wén",
-        "english": "script",
-        "vietnamese": "Văn",
-        "translate": "văn vẻ, văn chương, vẻ sáng",
-        "strokeCount": 4
-    },
-    {
-        "id": 68,
-        "radical": "斗",
-        "other": "",
-        "pinyin": "dǒu",
-        "english": "dipper",
-        "vietnamese": "Đẩu",
-        "translate": "cái đấu để đong",
-        "strokeCount": 4
-    },
-    {
-        "id": 69,
-        "radical": "斤",
-        "other": "",
-        "pinyin": "jīn",
-        "english": "axe",
-        "vietnamese": "Cẩn",
-        "translate": "cái búa, rìu",
-        "strokeCount": 4
-    },
-    {
-        "id": 70,
-        "radical": "方",
-        "other": "",
-        "pinyin": "fāng",
-        "english": "square",
-        "vietnamese": "Phương",
-        "translate": "vuông",
-        "strokeCount": 4
-    },
-    {
-        "id": 71,
-        "radical": "无",
-        "other": "",
-        "pinyin": "wú",
-        "english": "not",
-        "vietnamese": "Vô",
-        "translate": "không",
-        "strokeCount": 4
-    },
-    {
-        "id": 72,
-        "radical": "日",
-        "other": "",
-        "pinyin": "rì",
-        "english": "sun",
-        "vietnamese": "Nhật",
-        "translate": "ngày, mặt trời",
-        "strokeCount": 4
-    },
-    {
-        "id": 73,
-        "radical": "曰",
-        "other": "",
-        "pinyin": "yuē",
-        "english": "say",
-        "vietnamese": "Viết",
-        "translate": "nói rằng",
-        "strokeCount": 4
-    },
-    {
-        "id": 74,
-        "radical": "月",
-        "other": "",
-        "pinyin": "yuè",
-        "english": "moon",
-        "vietnamese": "Nguyệt",
-        "translate": "tháng, mặt trăng",
-        "strokeCount": 4
-    },
-    {
-        "id": 75,
-        "radical": "木",
-        "other": "",
-        "pinyin": "mù",
-        "english": "tree",
-        "vietnamese": "Mộc",
-        "translate": "gỗ, cây cối",
-        "strokeCount": 4
-    },
-    {
-        "id": 76,
-        "radical": "欠",
-        "other": "",
-        "pinyin": "qiàn",
-        "english": "lack",
-        "vietnamese": "Khiếm",
-        "translate": "khiếm khuyết, thiếu vắng",
-        "strokeCount": 4
-    },
-    {
-        "id": 77,
-        "radical": "止",
-        "other": "",
-        "pinyin": "zhǐ",
-        "english": "stop",
-        "vietnamese": "Chỉ",
-        "translate": "dừng lại",
-        "strokeCount": 4
-    },
-    {
-        "id": 78,
-        "radical": "歹",
-        "other": "",
-        "pinyin": "dǎi",
-        "english": "death",
-        "vietnamese": "Đãi",
-        "translate": "xấu xa, tệ hại",
-        "strokeCount": 4
-    },
-    {
-        "id": 79,
-        "radical": "殳",
-        "other": "",
-        "pinyin": "shū",
-        "english": "weapon",
-        "vietnamese": "Thù",
-        "translate": "binh khí dài, cái gậy",
-        "strokeCount": 4
-    },
-    {
-        "id": 80,
-        "radical": "母",
-        "other": "毋",
-        "pinyin": "mǔ",
-        "english": "mother",
-        "vietnamese": "Vô",
-        "translate": "chớ, đừng",
-        "strokeCount": 4
-    },
-    {
-        "id": 81,
-        "radical": "比",
-        "other": "",
-        "pinyin": "bǐ",
-        "english": "compare",
-        "vietnamese": "Tỷ",
-        "translate": "so sánh",
-        "strokeCount": 4
-    },
-    {
-        "id": 82,
-        "radical": "毛",
-        "other": "",
-        "pinyin": "máo",
-        "english": "fur",
-        "vietnamese": "Mao",
-        "translate": "lông",
-        "strokeCount": 4
-    },
-    {
-        "id": 83,
-        "radical": "氏",
-        "other": "",
-        "pinyin": "shì",
-        "english": "clan",
-        "vietnamese": "Thị",
-        "translate": "họ",
-        "strokeCount": 4
-    },
-    {
-        "id": 84,
-        "radical": "气",
-        "other": "",
-        "pinyin": "qì",
-        "english": "steam",
-        "vietnamese": "Khí",
-        "translate": "hơi nước",
-        "strokeCount": 4
-    },
-    {
-        "id": 85,
-        "radical": "水",
-        "other": "",
-        "pinyin": "shuǐ",
-        "english": "water",
-        "vietnamese": "Thủy",
-        "translate": "nước",
-        "strokeCount": 4
-    },
-    {
-        "id": 86,
-        "radical": "火",
-        "other": "",
-        "pinyin": "huǒ",
-        "english": "fire",
-        "vietnamese": "Hỏa",
-        "translate": "lửa",
-        "strokeCount": 4
-    },
-    {
-        "id": 87,
-        "radical": "爪",
-        "other": "",
-        "pinyin": "zhǎo",
-        "english": "claw",
-        "vietnamese": "Trảo",
-        "translate": "móng vuốt cầm thú",
-        "strokeCount": 4
-    },
-    {
-        "id": 88,
-        "radical": "父",
-        "other": "",
-        "pinyin": "fù",
-        "english": "father",
-        "vietnamese": "Phụ",
-        "translate": "cha",
-        "strokeCount": 4
-    },
-    {
-        "id": 89,
-        "radical": "爻",
-        "other": "",
-        "pinyin": "yáo",
-        "english": "lines on a trigram",
-        "vietnamese": "Hào",
-        "translate": "hào âm, hào dương (Kinh Dịch)",
-        "strokeCount": 4
-    },
-    {
-        "id": 90,
-        "radical": "爿",
-        "other": "",
-        "pinyin": "qiáng",
-        "english": "half of a tree trunk",
-        "vietnamese": "Tường",
-        "translate": "mảnh gỗ, cái giường",
-        "strokeCount": 4
-    },
-    {
-        "id": 91,
-        "radical": "片",
-        "other": "",
-        "pinyin": "piàn",
-        "english": "slice",
-        "vietnamese": "Phiến",
-        "translate": "mảnh, tấm, miếng",
-        "strokeCount": 4
-    },
-    {
-        "id": 92,
-        "radical": "牙",
-        "other": "",
-        "pinyin": "yá",
-        "english": "tooth",
-        "vietnamese": "Nha",
-        "translate": "răng",
-        "strokeCount": 4
-    },
-    {
-        "id": 93,
-        "radical": "牛",
-        "other": "",
-        "pinyin": "niú",
-        "english": "cow",
-        "vietnamese": "Ngưu",
-        "translate": "trâu",
-        "strokeCount": 4
-    },
-    {
-        "id": 94,
-        "radical": "犭",
-        "other": "犬",
-        "pinyin": "quǎn",
-        "english": "dog",
-        "vietnamese": "Khuyển",
-        "translate": "con chó",
-        "strokeCount": 3
-    },
-    {
-        "id": 95,
-        "radical": "玄",
-        "other": "",
-        "pinyin": "xuán",
-        "english": "profound",
-        "vietnamese": "Huyền",
-        "translate": "đen huyền, huyền bí",
-        "strokeCount": 5
-    },
-    {
-        "id": 96,
-        "radical": "玉",
-        "other": "",
-        "pinyin": "yù",
-        "english": "jade",
-        "vietnamese": "Ngọc",
-        "translate": "đá quý, ngọc",
-        "strokeCount": 5
-    },
-    {
-        "id": 97,
-        "radical": "瓜",
-        "other": "",
-        "pinyin": "guā",
-        "english": "melon",
-        "vietnamese": "Qua",
-        "translate": "quả dưa",
-        "strokeCount": 5
-    },
-    {
-        "id": 98,
-        "radical": "瓦",
-        "other": "",
-        "pinyin": "wǎ",
-        "english": "tile",
-        "vietnamese": "Ngõa",
-        "translate": "ngói",
-        "strokeCount": 5
-    },
-    {
-        "id": 99,
-        "radical": "甘",
-        "other": "",
-        "pinyin": "gān",
-        "english": "sweet",
-        "vietnamese": "Cam",
-        "translate": "ngọt",
-        "strokeCount": 5
-    },
-    {
-        "id": 100,
-        "radical": "生",
-        "other": "",
-        "pinyin": "shēng",
-        "english": "life",
-        "vietnamese": "Sinh",
-        "translate": "sinh đẻ, sinh sống",
-        "strokeCount": 5
-    },
-    {
-        "id": 101,
-        "radical": "用",
-        "other": "",
-        "pinyin": "yòng",
-        "english": "use",
-        "vietnamese": "Dụng",
-        "translate": "dùng",
-        "strokeCount": 5
-    },
-    {
-        "id": 102,
-        "radical": "田",
-        "other": "",
-        "pinyin": "tián",
-        "english": "field",
-        "vietnamese": "Điền",
-        "translate": "ruộng",
-        "strokeCount": 5
-    },
-    {
-        "id": 103,
-        "radical": "疋",
-        "other": "",
-        "pinyin": "pǐ",
-        "english": "cloth",
-        "vietnamese": "Thất",
-        "translate": "đv đo chiều dài, tấm",
-        "strokeCount": 5
-    },
-    {
-        "id": 104,
-        "radical": "疒",
-        "other": "",
-        "pinyin": "bìng",
-        "english": "ill",
-        "vietnamese": "Nạch",
-        "translate": "bệnh tật",
-        "strokeCount": 5
-    },
-    {
-        "id": 105,
-        "radical": "癶",
-        "other": "",
-        "pinyin": "bō",
-        "english": "foot steps",
-        "vietnamese": "Bát",
-        "translate": "gạt ngược lại, trở lại",
-        "strokeCount": 5
-    },
-    {
-        "id": 106,
-        "radical": "白",
-        "other": "",
-        "pinyin": "bái",
-        "english": "white",
-        "vietnamese": "Bạch",
-        "translate": "màu trắng",
-        "strokeCount": 5
-    },
-    {
-        "id": 107,
-        "radical": "皮",
-        "other": "",
-        "pinyin": "pí",
-        "english": "skin",
-        "vietnamese": "Bì",
-        "translate": "da",
-        "strokeCount": 5
-    },
-    {
-        "id": 108,
-        "radical": "皿",
-        "other": "",
-        "pinyin": "mǐn",
-        "english": "dish",
-        "vietnamese": "Mãnh",
-        "translate": "bát dĩa",
-        "strokeCount": 5
-    },
-    {
-        "id": 109,
-        "radical": "目",
-        "other": "",
-        "pinyin": "mù",
-        "english": "eye",
-        "vietnamese": "Mục",
-        "translate": "mắt",
-        "strokeCount": 5
-    },
-    {
-        "id": 110,
-        "radical": "矛",
-        "other": "",
-        "pinyin": "máo",
-        "english": "spear",
-        "vietnamese": "Mâu",
-        "translate": "cây giáo để đâm",
-        "strokeCount": 5
-    },
-    {
-        "id": 111,
-        "radical": "矢",
-        "other": "",
-        "pinyin": "shǐ",
-        "english": "arrow",
-        "vietnamese": "Thỉ",
-        "translate": "cây tên, mũi tên",
-        "strokeCount": 5
-    },
-    {
-        "id": 112,
-        "radical": "石",
-        "other": "",
-        "pinyin": "shí",
-        "english": "stone",
-        "vietnamese": "Thạch",
-        "translate": "đá",
-        "strokeCount": 5
-    },
-    {
-        "id": 113,
-        "radical": "示",
-        "other": "",
-        "pinyin": "shì",
-        "english": "spirit",
-        "vietnamese": "Thị",
-        "translate": "chỉ thị; thần đất",
-        "strokeCount": 5
-    },
-    {
-        "id": 114,
-        "radical": "禸",
-        "other": "",
-        "pinyin": "róu",
-        "english": "track",
-        "vietnamese": "Nhựu",
-        "translate": "vết chân, lốt chân",
-        "strokeCount": 4
-    },
-    {
-        "id": 115,
-        "radical": "禾",
-        "other": "",
-        "pinyin": "hé",
-        "english": "grain",
-        "vietnamese": "Hòa",
-        "translate": "lúa",
-        "strokeCount": 5
-    },
-    {
-        "id": 116,
-        "radical": "穴",
-        "other": "",
-        "pinyin": "xuè",
-        "english": "cave",
-        "vietnamese": "Huyệt",
-        "translate": "hang lỗ",
-        "strokeCount": 5
-    },
-    {
-        "id": 117,
-        "radical": "立",
-        "other": "",
-        "pinyin": "lì",
-        "english": "stand",
-        "vietnamese": "Lập",
-        "translate": "đứng, thành lập",
-        "strokeCount": 5
-    },
-    {
-        "id": 118,
-        "radical": "竹",
-        "other": "",
-        "pinyin": "zhú",
-        "english": "bamboo",
-        "vietnamese": "Trúc",
-        "translate": "tre trúc",
-        "strokeCount": 6
-    },
-    {
-        "id": 119,
-        "radical": "米",
-        "other": "",
-        "pinyin": "mǐ",
-        "english": "rice",
-        "vietnamese": "Mễ",
-        "translate": "gạo",
-        "strokeCount": 6
-    },
-    {
-        "id": 120,
-        "radical": "纟",
-        "other": "糸",
-        "pinyin": "sī",
-        "english": "silk",
-        "vietnamese": "Mịch",
-        "translate": "sợi tơ nhỏ",
-        "strokeCount": 3
-    },
-    {
-        "id": 121,
-        "radical": "缶",
-        "other": "",
-        "pinyin": "fǒu",
-        "english": "jar",
-        "vietnamese": "Phẫu",
-        "translate": "đồ sành",
-        "strokeCount": 6
-    },
-    {
-        "id": 122,
-        "radical": "网",
-        "other": "",
-        "pinyin": "wǎng",
-        "english": "net",
-        "vietnamese": "Võng",
-        "translate": "cái lưới",
-        "strokeCount": 6
-    },
-    {
-        "id": 123,
-        "radical": "羊",
-        "other": "",
-        "pinyin": "yáng",
-        "english": "sheep",
-        "vietnamese": "Dương",
-        "translate": "con dê",
-        "strokeCount": 6
-    },
-    {
-        "id": 124,
-        "radical": "羽",
-        "other": "",
-        "pinyin": "yǔ",
-        "english": "feather",
-        "vietnamese": "Vũ",
-        "translate": "lông vũ",
-        "strokeCount": 6
-    },
-    {
-        "id": 125,
-        "radical": "老",
-        "other": "",
-        "pinyin": "lǎo",
-        "english": "old",
-        "vietnamese": "Lão",
-        "translate": "già",
-        "strokeCount": 6
-    },
-    {
-        "id": 126,
-        "radical": "而",
-        "other": "",
-        "pinyin": "ér",
-        "english": "and",
-        "vietnamese": "Nhi",
-        "translate": "mà, và",
-        "strokeCount": 6
-    },
-    {
-        "id": 127,
-        "radical": "耒",
-        "other": "",
-        "pinyin": "lěi",
-        "english": "plow",
-        "vietnamese": "Lỗi",
-        "translate": "cái cày",
-        "strokeCount": 6
-    },
-    {
-        "id": 128,
-        "radical": "耳",
-        "other": "",
-        "pinyin": "ěr",
-        "english": "ear",
-        "vietnamese": "Nhĩ",
-        "translate": "tai (lỗ tai)",
-        "strokeCount": 6
-    },
-    {
-        "id": 129,
-        "radical": "聿",
-        "other": "",
-        "pinyin": "yù",
-        "english": "brush",
-        "vietnamese": "Duật",
-        "translate": "cây bút",
-        "strokeCount": 6
-    },
-    {
-        "id": 130,
-        "radical": "肉",
-        "other": "",
-        "pinyin": "ròu",
-        "english": "meat",
-        "vietnamese": "Nhục",
-        "translate": "thịt",
-        "strokeCount": 6
-    },
-    {
-        "id": 131,
-        "radical": "臣",
-        "other": "",
-        "pinyin": "chén",
-        "english": "minister",
-        "vietnamese": "Thần",
-        "translate": "bầy tôi",
-        "strokeCount": 6
-    },
-    {
-        "id": 132,
-        "radical": "自",
-        "other": "",
-        "pinyin": "zì",
-        "english": "oneself",
-        "vietnamese": "Tự",
-        "translate": "tự bản thân, kể từ",
-        "strokeCount": 6
-    },
-    {
-        "id": 133,
-        "radical": "至",
-        "other": "",
-        "pinyin": "zhì",
-        "english": "arrive",
-        "vietnamese": "Chí",
-        "translate": "đến",
-        "strokeCount": 6
-    },
-    {
-        "id": 134,
-        "radical": "臼",
-        "other": "",
-        "pinyin": "jiù",
-        "english": "mortar",
-        "vietnamese": "Cửu",
-        "translate": "cái cối giã gạo",
-        "strokeCount": 6
-    },
-    {
-        "id": 135,
-        "radical": "舌",
-        "other": "",
-        "pinyin": "shé",
-        "english": "tongue",
-        "vietnamese": "Thiệt",
-        "translate": "cái lưỡi",
-        "strokeCount": 6
-    },
-    {
-        "id": 136,
-        "radical": "舛",
-        "other": "",
-        "pinyin": "chuǎn",
-        "english": "contrary",
-        "vietnamese": "Suyễn",
-        "translate": "sai suyễn, sai lầm",
-        "strokeCount": 6
-    },
-    {
-        "id": 137,
-        "radical": "舟",
-        "other": "",
-        "pinyin": "zhōu",
-        "english": "boat",
-        "vietnamese": "Chu",
-        "translate": "cái thuyền",
-        "strokeCount": 6
-    },
-    {
-        "id": 138,
-        "radical": "艮",
-        "other": "",
-        "pinyin": "gèn",
-        "english": "mountain",
-        "vietnamese": "Cấn",
-        "translate": "dừng, bền cứng",
-        "strokeCount": 6
-    },
-    {
-        "id": 139,
-        "radical": "色",
-        "other": "",
-        "pinyin": "sè",
-        "english": "color",
-        "vietnamese": "Sắc",
-        "translate": "màu, dáng vẻ, nữ sắc",
-        "strokeCount": 6
-    },
-    {
-        "id": 140,
-        "radical": "艹",
-        "other": "艸",
-        "pinyin": "cǎo",
-        "english": "grass",
-        "vietnamese": "Thảo",
-        "translate": "cỏ",
-        "strokeCount": 3
-    },
-    {
-        "id": 141,
-        "radical": "虍",
-        "other": "",
-        "pinyin": "hǔ",
-        "english": "tiger",
-        "vietnamese": "Hổ",
-        "translate": "vằn vện của con hổ",
-        "strokeCount": 6
-    },
-    {
-        "id": 142,
-        "radical": "虫",
-        "other": "",
-        "pinyin": "chóng",
-        "english": "insect",
-        "vietnamese": "Trùng",
-        "translate": "sâu bọ",
-        "strokeCount": 6
-    },
-    {
-        "id": 143,
-        "radical": "血",
-        "other": "",
-        "pinyin": "xuě",
-        "english": "blood",
-        "vietnamese": "Huyết",
-        "translate": "máu",
-        "strokeCount": 6
-    },
-    {
-        "id": 144,
-        "radical": "行",
-        "other": "",
-        "pinyin": "xíng",
-        "english": "walk",
-        "vietnamese": "Hành",
-        "translate": "đi, thi hành, làm được",
-        "strokeCount": 6
-    },
-    {
-        "id": 145,
-        "radical": "衣",
-        "other": "",
-        "pinyin": "yī",
-        "english": "clothes",
-        "vietnamese": "Y",
-        "translate": "áo",
-        "strokeCount": 6
-    },
-    {
-        "id": 146,
-        "radical": "西",
-        "other": "襾",
-        "pinyin": "xī",
-        "english": "west",
-        "vietnamese": "Á",
-        "translate": "che đậy, úp lên",
-        "strokeCount": 6
-    },
-    {
-        "id": 147,
-        "radical": "见",
-        "other": "見",
-        "pinyin": "jiàn",
-        "english": "see",
-        "vietnamese": "Kiến",
-        "translate": "trông thấy",
-        "strokeCount": 4
-    },
-    {
-        "id": 148,
-        "radical": "角",
-        "other": "",
-        "pinyin": "jiǎo",
-        "english": "horn",
-        "vietnamese": "Giác",
-        "translate": "góc, sừng thú",
-        "strokeCount": 7
-    },
-    {
-        "id": 149,
-        "radical": "讠",
-        "other": "言",
-        "pinyin": "yán",
-        "english": "speech",
-        "vietnamese": "Ngôn",
-        "translate": "nói",
-        "strokeCount": 2
-    },
-    {
-        "id": 150,
-        "radical": "谷",
-        "other": "",
-        "pinyin": "gǔ",
-        "english": "valley",
-        "vietnamese": "Cốc",
-        "translate": "khe nước chảy giữa hai núi",
-        "strokeCount": 7
-    },
-    {
-        "id": 151,
-        "radical": "豆",
-        "other": "",
-        "pinyin": "dòu",
-        "english": "bean",
-        "vietnamese": "Đậu",
-        "translate": "hạt đậu, cây đậu",
-        "strokeCount": 7
-    },
-    {
-        "id": 152,
-        "radical": "豕",
-        "other": "",
-        "pinyin": "shǐ",
-        "english": "pig",
-        "vietnamese": "Thỉ",
-        "translate": "con heo, con lợn",
-        "strokeCount": 7
-    },
-    {
-        "id": 153,
-        "radical": "豸",
-        "other": "",
-        "pinyin": "zhì",
-        "english": "badger",
-        "vietnamese": "Trãi",
-        "translate": "loài sâu không chân",
-        "strokeCount": 7
-    },
-    {
-        "id": 154,
-        "radical": "贝",
-        "other": "貝",
-        "pinyin": "bèi",
-        "english": "shell",
-        "vietnamese": "Bối",
-        "translate": "vật báu",
-        "strokeCount": 4
-    },
-    {
-        "id": 155,
-        "radical": "赤",
-        "other": "",
-        "pinyin": "chì",
-        "english": "red",
-        "vietnamese": "Xích",
-        "translate": "màu đỏ",
-        "strokeCount": 7
-    },
-    {
-        "id": 156,
-        "radical": "走",
-        "other": "",
-        "pinyin": "zǒu",
-        "english": "walk",
-        "vietnamese": "Tẩu",
-        "translate": "đi, chạy",
-        "strokeCount": 7
-    },
-    {
-        "id": 157,
-        "radical": "足",
-        "other": "",
-        "pinyin": "zú",
-        "english": "foot",
-        "vietnamese": "Túc",
-        "translate": "chân, đầy đủ",
-        "strokeCount": 7
-    },
-    {
-        "id": 158,
-        "radical": "身",
-        "other": "",
-        "pinyin": "shēn",
-        "english": "body",
-        "vietnamese": "Thân",
-        "translate": "thân thể, thân mình",
-        "strokeCount": 7
-    },
-    {
-        "id": 159,
-        "radical": "车",
-        "other": "車",
-        "pinyin": "chē",
-        "english": "cart",
-        "vietnamese": "Xa",
-        "translate": "chiếc xe",
-        "strokeCount": 4
-    },
-    {
-        "id": 160,
-        "radical": "辛",
-        "other": "",
-        "pinyin": "xīn",
-        "english": "bitter",
-        "vietnamese": "Tân",
-        "translate": "cay, vất vả",
-        "strokeCount": 7
-    },
-    {
-        "id": 161,
-        "radical": "辰",
-        "other": "",
-        "pinyin": "chén",
-        "english": "morning",
-        "vietnamese": "Thần",
-        "translate": "nhật, nguyệt, thìn (12 chi)",
-        "strokeCount": 7
-    },
-    {
-        "id": 162,
-        "radical": "辶",
-        "other": "辵",
-        "pinyin": "chuò",
-        "english": "walk",
-        "vietnamese": "QuaiXước",
-        "translate": "chợt bước đi",
-        "strokeCount": 3
-    },
-    {
-        "id": 163,
-        "radical": "邑",
-        "other": "",
-        "pinyin": "yì",
-        "english": "city",
-        "vietnamese": "Ấp",
-        "translate": "vùng đất cho quan",
-        "strokeCount": 7
-    },
-    {
-        "id": 164,
-        "radical": "酉",
-        "other": "",
-        "pinyin": "yǒu",
-        "english": "wine",
-        "vietnamese": "Dậu",
-        "translate": "một trong 12 địa chi",
-        "strokeCount": 7
-    },
-    {
-        "id": 165,
-        "radical": "釆",
-        "other": "",
-        "pinyin": "biàn",
-        "english": "distinguish",
-        "vietnamese": "Biện",
-        "translate": "phân biệt",
-        "strokeCount": 7
-    },
-    {
-        "id": 166,
-        "radical": "里",
-        "other": "",
-        "pinyin": "lǐ",
-        "english": "village",
-        "vietnamese": "Lý",
-        "translate": "dặm; làng xóm",
-        "strokeCount": 7
-    },
-    {
-        "id": 167,
-        "radical": "钅",
-        "other": "金",
-        "pinyin": "jīn",
-        "english": "metal",
-        "vietnamese": "Kim",
-        "translate": "kim loại; vàng",
-        "strokeCount": 5
-    },
-    {
-        "id": 168,
-        "radical": "长",
-        "other": "長",
-        "pinyin": "cháng",
-        "english": "long",
-        "vietnamese": "Trường",
-        "translate": "dài; lớn (trưởng)",
-        "strokeCount": 4
-    },
-    {
-        "id": 169,
-        "radical": "门",
-        "other": "門",
-        "pinyin": "mén",
-        "english": "gate",
-        "vietnamese": "Môn",
-        "translate": "cửa hai cánh",
-        "strokeCount": 3
-    },
-    {
-        "id": 170,
-        "radical": "阜",
-        "other": "",
-        "pinyin": "fù",
-        "english": "mound",
-        "vietnamese": "Phụ",
-        "translate": "đống đất, gò đất",
-        "strokeCount": 8
-    },
-    {
-        "id": 171,
-        "radical": "隶",
-        "other": "",
-        "pinyin": "lì",
-        "english": "slave",
-        "vietnamese": "Đãi",
-        "translate": "kịp, kịp đến",
-        "strokeCount": 8
-    },
-    {
-        "id": 172,
-        "radical": "隹",
-        "other": "",
-        "pinyin": "zhuī",
-        "english": "short-tailed bird",
-        "vietnamese": "Truy",
-        "translate": "chim đuôi ngắn",
-        "strokeCount": 8
-    },
-    {
-        "id": 173,
-        "radical": "雨",
-        "other": "",
-        "pinyin": "yǔ",
-        "english": "rain",
-        "vietnamese": "Vũ",
-        "translate": "mưa",
-        "strokeCount": 8
-    },
-    {
-        "id": 174,
-        "radical": "青",
-        "other": "",
-        "pinyin": "qīng",
-        "english": "blue",
-        "vietnamese": "Thanh",
-        "translate": "màu xanh",
-        "strokeCount": 8
-    },
-    {
-        "id": 175,
-        "radical": "非",
-        "other": "",
-        "pinyin": "fēi",
-        "english": "wrong",
-        "vietnamese": "Phi",
-        "translate": "không",
-        "strokeCount": 8
-    },
-    {
-        "id": 176,
-        "radical": "面",
-        "other": "",
-        "pinyin": "miàn",
-        "english": "face",
-        "vietnamese": "Diện",
-        "translate": "mặt, bề mặt",
-        "strokeCount": 9
-    },
-    {
-        "id": 177,
-        "radical": "革",
-        "other": "",
-        "pinyin": "gé",
-        "english": "leather",
-        "vietnamese": "Cách",
-        "translate": "da thú; thay đổi",
-        "strokeCount": 9
-    },
-    {
-        "id": 178,
-        "radical": "韦",
-        "other": "韋",
-        "pinyin": "wěi",
-        "english": "soft leather",
-        "vietnamese": "Vi",
-        "translate": "da đã thuộc rồi",
-        "strokeCount": 4
-    },
-    {
-        "id": 179,
-        "radical": "韭",
-        "other": "",
-        "pinyin": "jiǔ",
-        "english": "leek",
-        "vietnamese": "Phỉ",
-        "translate": "rau phỉ (hẹ)",
-        "strokeCount": 9
-    },
-    {
-        "id": 180,
-        "radical": "音",
-        "other": "",
-        "pinyin": "yīn",
-        "english": "sound",
-        "vietnamese": "Âm",
-        "translate": "âm thanh, tiếng",
-        "strokeCount": 9
-    },
-    {
-        "id": 181,
-        "radical": "页",
-        "other": "頁",
-        "pinyin": "yè",
-        "english": "page",
-        "vietnamese": "Hiệt",
-        "translate": "đầu; trang giấy",
-        "strokeCount": 6
-    },
-    {
-        "id": 182,
-        "radical": "风",
-        "other": "風",
-        "pinyin": "fēng",
-        "english": "wind",
-        "vietnamese": "Phong",
-        "translate": "gió",
-        "strokeCount": 4
-    },
-    {
-        "id": 183,
-        "radical": "飞",
-        "other": "飛",
-        "pinyin": "fēi",
-        "english": "fly",
-        "vietnamese": "Phi",
-        "translate": "bay",
-        "strokeCount": 4
-    },
-    {
-        "id": 184,
-        "radical": "饣",
-        "other": "食",
-        "pinyin": "shí",
-        "english": "eat",
-        "vietnamese": "Thực",
-        "translate": "ăn",
-        "strokeCount": 3
-    },
-    {
-        "id": 185,
-        "radical": "首",
-        "other": "",
-        "pinyin": "shǒu",
-        "english": "head",
-        "vietnamese": "Thủ",
-        "translate": "đầu",
-        "strokeCount": 9
-    },
-    {
-        "id": 186,
-        "radical": "香",
-        "other": "",
-        "pinyin": "xiāng",
-        "english": "fragrant",
-        "vietnamese": "Hương",
-        "translate": "mùi hương thơm",
-        "strokeCount": 9
-    },
-    {
-        "id": 187,
-        "radical": "马",
-        "other": "馬",
-        "pinyin": "mǎ",
-        "english": "horse",
-        "vietnamese": "Mã",
-        "translate": "con ngựa",
-        "strokeCount": 3
-    },
-    {
-        "id": 188,
-        "radical": "骨",
-        "other": "骫",
-        "pinyin": "gǔ",
-        "english": "bone",
-        "vietnamese": "Cốt",
-        "translate": "xương",
-        "strokeCount": 9
-    },
-    {
-        "id": 189,
-        "radical": "高",
-        "other": "",
-        "pinyin": "gāo",
-        "english": "high",
-        "vietnamese": "Cao",
-        "translate": "cao",
-        "strokeCount": 10
-    },
-    {
-        "id": 190,
-        "radical": "髟",
-        "other": "",
-        "pinyin": "biāo",
-        "english": "long hair",
-        "vietnamese": "Bưu,Tiêu",
-        "translate": "tóc dài; sam cỏ phủ mái nhà",
-        "strokeCount": 10
-    },
-    {
-        "id": 191,
-        "radical": "鬥",
-        "other": "",
-        "pinyin": "dòu",
-        "english": "fight",
-        "vietnamese": "Đấu",
-        "translate": "chống nhau, chiến đấu",
-        "strokeCount": 10
-    },
-    {
-        "id": 192,
-        "radical": "鬯",
-        "other": "",
-        "pinyin": "chàng",
-        "english": "sacrificial wine",
-        "vietnamese": "Sưởng",
-        "translate": "rượu nếp; bao đựng cung",
-        "strokeCount": 10
-    },
-    {
-        "id": 193,
-        "radical": "鬲",
-        "other": "",
-        "pinyin": "lì",
-        "english": "cauldron",
-        "vietnamese": "Cách",
-        "translate": "tên 1 con sông xưa, cái đỉnh",
-        "strokeCount": 10
-    },
-    {
-        "id": 194,
-        "radical": "鬼",
-        "other": "",
-        "pinyin": "guǐ",
-        "english": "ghost",
-        "vietnamese": "Quỷ",
-        "translate": "con quỷ",
-        "strokeCount": 9
-    },
-    {
-        "id": 195,
-        "radical": "鱼",
-        "other": "魚",
-        "pinyin": "yú",
-        "english": "fish",
-        "vietnamese": "Ngư",
-        "translate": "con cá",
-        "strokeCount": 8
-    },
-    {
-        "id": 196,
-        "radical": "鸟",
-        "other": "鳥",
-        "pinyin": "niǎo",
-        "english": "bird",
-        "vietnamese": "Điểu",
-        "translate": "con chim",
-        "strokeCount": 5
-    },
-    {
-        "id": 197,
-        "radical": "卤",
-        "other": "鹵",
-        "pinyin": "lǔ",
-        "english": "salty",
-        "vietnamese": "Lỗ",
-        "translate": "đất mặn",
-        "strokeCount": 7
-    },
-    {
-        "id": 198,
-        "radical": "鹿",
-        "other": "",
-        "pinyin": "lù",
-        "english": "deer",
-        "vietnamese": "Lộc",
-        "translate": "con hươu",
-        "strokeCount": 11
-    },
-    {
-        "id": 199,
-        "radical": "麦",
-        "other": "麥",
-        "pinyin": "mài",
-        "english": "wheat",
-        "vietnamese": "Mạch",
-        "translate": "lúa mạch",
-        "strokeCount": 7
-    },
-    {
-        "id": 200,
-        "radical": "麻",
-        "other": "",
-        "pinyin": "má",
-        "english": "hemp",
-        "vietnamese": "Ma",
-        "translate": "cây gai",
-        "strokeCount": 11
-    },
-    {
-        "id": 201,
-        "radical": "黄",
-        "other": "黃",
-        "pinyin": "huáng",
-        "english": "yellow",
-        "vietnamese": "Hoàng",
-        "translate": "màu vàng",
-        "strokeCount": 11
-    },
-    {
-        "id": 202,
-        "radical": "黍",
-        "other": "",
-        "pinyin": "shǔ",
-        "english": "millet",
-        "vietnamese": "Thử",
-        "translate": "lúa nếp",
-        "strokeCount": 12
-    },
-    {
-        "id": 203,
-        "radical": "黑",
-        "other": "",
-        "pinyin": "hēi",
-        "english": "black",
-        "vietnamese": "Hắc",
-        "translate": "màu đen",
-        "strokeCount": 12
-    },
-    {
-        "id": 204,
-        "radical": "黹",
-        "other": "",
-        "pinyin": "zhǐ",
-        "english": "embroidery",
-        "vietnamese": "Chỉ",
-        "translate": "may áo, khâu vá",
-        "strokeCount": 12
-    },
-    {
-        "id": 205,
-        "radical": "黾",
-        "other": "黽",
-        "pinyin": "mǐn",
-        "english": "frog",
-        "vietnamese": "Mãnh",
-        "translate": "con ếch; cố gắng",
-        "strokeCount": 8
-    },
-    {
-        "id": 206,
-        "radical": "鼎",
-        "other": "",
-        "pinyin": "dǐng",
-        "english": "tripod",
-        "vietnamese": "Đỉnh",
-        "translate": "cái đỉnh",
-        "strokeCount": 12
-    },
-    {
-        "id": 207,
-        "radical": "鼓",
-        "other": "",
-        "pinyin": "gǔ",
-        "english": "drum",
-        "vietnamese": "Cổ",
-        "translate": "cái trống",
-        "strokeCount": 13
-    },
-    {
-        "id": 208,
-        "radical": "鼠",
-        "other": "",
-        "pinyin": "shǔ",
-        "english": "rat",
-        "vietnamese": "Thử",
-        "translate": "con chuột",
-        "strokeCount": 13
-    },
-    {
-        "id": 209,
-        "radical": "鼻",
-        "other": "",
-        "pinyin": "bí",
-        "english": "nose",
-        "vietnamese": "Tỵ",
-        "translate": "cái mũi",
-        "strokeCount": 14
-    },
-    {
-        "id": 210,
-        "radical": "齐",
-        "other": "齊",
-        "pinyin": "qí",
-        "english": "even",
-        "vietnamese": "Tề",
-        "translate": "ngang bằng",
-        "strokeCount": 6
-    },
-    {
-        "id": 211,
-        "radical": "齿",
-        "other": "齒",
-        "pinyin": "chǐ",
-        "english": "tooth",
-        "vietnamese": "Xỉ",
-        "translate": "răng",
-        "strokeCount": 8
-    },
-    {
-        "id": 212,
-        "radical": "龙",
-        "other": "龍",
-        "pinyin": "lóng",
-        "english": "dragon",
-        "vietnamese": "Long",
-        "translate": "con rồng",
-        "strokeCount": 5
-    },
-    {
-        "id": 213,
-        "radical": "龟",
-        "other": "龜",
-        "pinyin": "guī",
-        "english": "turtle",
-        "vietnamese": "Quy",
-        "translate": "con rùa",
-        "strokeCount": 7
-    },
-    {
-        "id": 214,
-        "radical": "龠",
-        "other": "",
-        "pinyin": "yuè",
-        "english": "flute",
-        "vietnamese": "Dược",
-        "translate": "sáo 3 lỗ",
-        "strokeCount": 17
-    }
-]
+
+{
+    "popular" :  [
+        9, 18, 19, 30, 31, 32, 37, 38, 40,
+        46, 50, 53, 60, 61, 64, 66, 72, 75,
+        85, 86, 93, 94, 96, 102, 104, 109, 112,
+        115, 118, 119, 120, 130, 140, 142, 145,
+        149, 154, 157, 159, 162, 163, 167, 169,
+        170, 173, 181, 184, 187, 195, 196
+    ],
+    "data": 
+    [
+        {
+            "id": 1,
+            "radical": "一",
+            "other": "",
+            "pinyin": "yī",
+            "english": "one",
+            "vietnamese": "Nhất",
+            "translate": "số một",
+            "strokeCount": 1
+        },
+        {
+            "id": 2,
+            "radical": "丨",
+            "other": "",
+            "pinyin": "shù",
+            "english": "line",
+            "vietnamese": "Cổn",
+            "translate": "nét sổ",
+            "strokeCount": 1
+        },
+        {
+            "id": 3,
+            "radical": "丶",
+            "other": "",
+            "pinyin": "diǎn",
+            "english": "dot",
+            "vietnamese": "Chủ",
+            "translate": "điểm, chấm",
+            "strokeCount": 1
+        },
+        {
+            "id": 4,
+            "radical": "丿",
+            "other": "",
+            "pinyin": "piě",
+            "english": "slash",
+            "vietnamese": "Phiệt",
+            "translate": "nét sổ xiên qua trái",
+            "strokeCount": 1
+        },
+        {
+            "id": 5,
+            "radical": "乙",
+            "other": "",
+            "pinyin": "yǐ",
+            "english": "second",
+            "vietnamese": "Ất",
+            "translate": "vị trí thứ 2 trong thiên can",
+            "strokeCount": 1
+        },
+        {
+            "id": 6,
+            "radical": "亅",
+            "other": "",
+            "pinyin": "gōu",
+            "english": "hook",
+            "vietnamese": "Quyết",
+            "translate": "nét sổ có móc",
+            "strokeCount": 1
+        },
+        {
+            "id": 7,
+            "radical": "二",
+            "other": "",
+            "pinyin": "èr",
+            "english": "two",
+            "vietnamese": "Nhị",
+            "translate": "số hai",
+            "strokeCount": 2
+        },
+        {
+            "id": 8,
+            "radical": "亠",
+            "other": "",
+            "pinyin": "tóu",
+            "english": "lid",
+            "vietnamese": "Đầu",
+            "translate": "(Không có nghĩa)",
+            "strokeCount": 2
+        },
+        {
+            "id": 9,
+            "radical": "人",
+            "other": "",
+            "pinyin": "rén",
+            "english": "person",
+            "vietnamese": "Nhân",
+            "translate": "người",
+            "strokeCount": 2
+        },
+        {
+            "id": 10,
+            "radical": "儿",
+            "other": "",
+            "pinyin": "ér",
+            "english": "legs",
+            "vietnamese": "Nhi",
+            "translate": "Trẻ con",
+            "strokeCount": 2
+        },
+        {
+            "id": 11,
+            "radical": "入",
+            "other": "",
+            "pinyin": "rù",
+            "english": "enter",
+            "vietnamese": "Nhập",
+            "translate": "vào",
+            "strokeCount": 2
+        },
+        {
+            "id": 12,
+            "radical": "八",
+            "other": "",
+            "pinyin": "bā",
+            "english": "eight",
+            "vietnamese": "Bát",
+            "translate": "số tám",
+            "strokeCount": 2
+        },
+        {
+            "id": 13,
+            "radical": "冂",
+            "other": "",
+            "pinyin": "jiǒng",
+            "english": "down box",
+            "vietnamese": "Quynh",
+            "translate": "vùng biên giới xa; hoang địa",
+            "strokeCount": 2
+        },
+        {
+            "id": 14,
+            "radical": "冖",
+            "other": "",
+            "pinyin": "mì",
+            "english": "cover",
+            "vietnamese": "Mịch",
+            "translate": "trùm khăn lên",
+            "strokeCount": 2
+        },
+        {
+            "id": 15,
+            "radical": "冫",
+            "other": "",
+            "pinyin": "bīng",
+            "english": "ice",
+            "vietnamese": "Băng",
+            "translate": "nước đá",
+            "strokeCount": 2
+        },
+        {
+            "id": 16,
+            "radical": "几",
+            "other": "",
+            "pinyin": "jī, jǐ",
+            "english": "table",
+            "vietnamese": "Kỷ",
+            "translate": "ghế dựa",
+            "strokeCount": 2
+        },
+        {
+            "id": 17,
+            "radical": "凵",
+            "other": "",
+            "pinyin": "qǔ",
+            "english": "open box",
+            "vietnamese": "Khảm",
+            "translate": "há miệng",
+            "strokeCount": 2
+        },
+        {
+            "id": 18,
+            "radical": "刀",
+            "other": "",
+            "pinyin": "dāo",
+            "english": "knife",
+            "vietnamese": "Đao",
+            "translate": "con dao, cây đao (vũ khí)",
+            "strokeCount": 2
+        },
+        {
+            "id": 19,
+            "radical": "力",
+            "other": "",
+            "pinyin": "lì",
+            "english": "power",
+            "vietnamese": "Lực",
+            "translate": "sức mạnh",
+            "strokeCount": 2
+        },
+        {
+            "id": 20,
+            "radical": "勹",
+            "other": "",
+            "pinyin": "bāo",
+            "english": "wrap",
+            "vietnamese": "Bao",
+            "translate": "bao bọc",
+            "strokeCount": 2
+        },
+        {
+            "id": 21,
+            "radical": "匕",
+            "other": "",
+            "pinyin": "bǐ",
+            "english": "ladle",
+            "vietnamese": "Chủy",
+            "translate": "cái thìa (cái muỗng)",
+            "strokeCount": 2
+        },
+        {
+            "id": 22,
+            "radical": "匚",
+            "other": "",
+            "pinyin": "fāng",
+            "english": "right open box",
+            "vietnamese": "Phương",
+            "translate": "tủ đựng",
+            "strokeCount": 2
+        },
+        {
+            "id": 23,
+            "radical": "匸",
+            "other": "",
+            "pinyin": "xǐ",
+            "english": "hiding enclosure",
+            "vietnamese": "Hệ",
+            "translate": "che đậy, giấu giếm",
+            "strokeCount": 2
+        },
+        {
+            "id": 24,
+            "radical": "十",
+            "other": "",
+            "pinyin": "shí",
+            "english": "ten",
+            "vietnamese": "Thập",
+            "translate": "số mười",
+            "strokeCount": 2
+        },
+        {
+            "id": 25,
+            "radical": "卜",
+            "other": "",
+            "pinyin": "bǔ",
+            "english": "divination",
+            "vietnamese": "Bốc",
+            "translate": "xem bói",
+            "strokeCount": 2
+        },
+        {
+            "id": 26,
+            "radical": "卩",
+            "other": "",
+            "pinyin": "jié",
+            "english": "seal",
+            "vietnamese": "Tiết",
+            "translate": "đốt tre",
+            "strokeCount": 2
+        },
+        {
+            "id": 27,
+            "radical": "厂",
+            "other": "",
+            "pinyin": "hàn",
+            "english": "cliff",
+            "vietnamese": "Hán",
+            "translate": "sườn núi, vách đá",
+            "strokeCount": 2
+        },
+        {
+            "id": 28,
+            "radical": "厶",
+            "other": "",
+            "pinyin": "sī",
+            "english": "private",
+            "vietnamese": "Khư",
+            "translate": "riêng tư",
+            "strokeCount": 2
+        },
+        {
+            "id": 29,
+            "radical": "又",
+            "other": "",
+            "pinyin": "yòu",
+            "english": "again",
+            "vietnamese": "Hựu",
+            "translate": "lại nữa, một lần nữa",
+            "strokeCount": 2
+        },
+        {
+            "id": 30,
+            "radical": "口",
+            "other": "",
+            "pinyin": "kǒu",
+            "english": "mouth",
+            "vietnamese": "Khẩu",
+            "translate": "cái miệng",
+            "strokeCount": 3
+        },
+        {
+            "id": 31,
+            "radical": "囗",
+            "other": "",
+            "pinyin": "wéi",
+            "english": "enclosure",
+            "vietnamese": "Vi",
+            "translate": "vây quanh",
+            "strokeCount": 3
+        },
+        {
+            "id": 32,
+            "radical": "土",
+            "other": "",
+            "pinyin": "tǔ",
+            "english": "earth",
+            "vietnamese": "Thổ",
+            "translate": "đất",
+            "strokeCount": 3
+        },
+        {
+            "id": 33,
+            "radical": "士",
+            "other": "",
+            "pinyin": "shì",
+            "english": "scholar",
+            "vietnamese": "Sĩ",
+            "translate": "kẻ sĩ",
+            "strokeCount": 3
+        },
+        {
+            "id": 34,
+            "radical": "夂",
+            "other": "",
+            "pinyin": "zhī",
+            "english": "go",
+            "vietnamese": "Trĩ",
+            "translate": "đến ở phía sau",
+            "strokeCount": 3
+        },
+        {
+            "id": 35,
+            "radical": "夊",
+            "other": "",
+            "pinyin": "suī",
+            "english": "go slowly",
+            "vietnamese": "Tuy",
+            "translate": "đi chậm",
+            "strokeCount": 3
+        },
+        {
+            "id": 36,
+            "radical": "夕",
+            "other": "",
+            "pinyin": "xī",
+            "english": "night",
+            "vietnamese": "Tịch",
+            "translate": "đêm tối",
+            "strokeCount": 3
+        },
+        {
+            "id": 37,
+            "radical": "大",
+            "other": "",
+            "pinyin": "dà",
+            "english": "big",
+            "vietnamese": "Đại",
+            "translate": "to lớn",
+            "strokeCount": 3
+        },
+        {
+            "id": 38,
+            "radical": "女",
+            "other": "",
+            "pinyin": "nǚ",
+            "english": "woman",
+            "vietnamese": "Nữ",
+            "translate": "nữ giới, con gái, đàn bà",
+            "strokeCount": 3
+        },
+        {
+            "id": 39,
+            "radical": "子",
+            "other": "",
+            "pinyin": "zǐ",
+            "english": "child",
+            "vietnamese": "Tử",
+            "translate": "con",
+            "strokeCount": 3
+        },
+        {
+            "id": 40,
+            "radical": "宀",
+            "other": "",
+            "pinyin": "gài",
+            "english": "roof",
+            "vietnamese": "Miên",
+            "translate": "mái nhà, mái che",
+            "strokeCount": 3
+        },
+        {
+            "id": 41,
+            "radical": "寸",
+            "other": "",
+            "pinyin": "cùn",
+            "english": "inch",
+            "vietnamese": "Thốn",
+            "translate": "đơn vị «tấc» (đo chiều dài)",
+            "strokeCount": 3
+        },
+        {
+            "id": 42,
+            "radical": "小",
+            "other": "",
+            "pinyin": "xiǎo",
+            "english": "small",
+            "vietnamese": "Tiểu",
+            "translate": "nhỏ bé",
+            "strokeCount": 3
+        },
+        {
+            "id": 43,
+            "radical": "尢",
+            "other": "",
+            "pinyin": "yóu",
+            "english": "lame",
+            "vietnamese": "Uông",
+            "translate": "yếu đuối",
+            "strokeCount": 3
+        },
+        {
+            "id": 44,
+            "radical": "尸",
+            "other": "",
+            "pinyin": "shī",
+            "english": "corpse",
+            "vietnamese": "Thi",
+            "translate": "xác chết, thây ma",
+            "strokeCount": 3
+        },
+        {
+            "id": 45,
+            "radical": "屮",
+            "other": "",
+            "pinyin": "chè",
+            "english": "sprout",
+            "vietnamese": "Triệt",
+            "translate": "mầm non, cỏ non mới mọc",
+            "strokeCount": 3
+        },
+        {
+            "id": 46,
+            "radical": "山",
+            "other": "",
+            "pinyin": "shān",
+            "english": "mountain",
+            "vietnamese": "Sơn",
+            "translate": "núi non",
+            "strokeCount": 3
+        },
+        {
+            "id": 47,
+            "radical": "川",
+            "other": "巛",
+            "pinyin": "chuān",
+            "english": "river",
+            "vietnamese": "Xuyên",
+            "translate": "sông ngòi",
+            "strokeCount": 3
+        },
+        {
+            "id": 48,
+            "radical": "工",
+            "other": "",
+            "pinyin": "gōng",
+            "english": "work",
+            "vietnamese": "Công",
+            "translate": "người thợ, công việc",
+            "strokeCount": 3
+        },
+        {
+            "id": 49,
+            "radical": "己",
+            "other": "",
+            "pinyin": "jǐ",
+            "english": "oneself",
+            "vietnamese": "Kỷ",
+            "translate": "bản thân mình",
+            "strokeCount": 3
+        },
+        {
+            "id": 50,
+            "radical": "巾",
+            "other": "",
+            "pinyin": "jīn",
+            "english": "towel",
+            "vietnamese": "Cân",
+            "translate": "cái khăn",
+            "strokeCount": 3
+        },
+        {
+            "id": 51,
+            "radical": "干",
+            "other": "",
+            "pinyin": "gān",
+            "english": "dry",
+            "vietnamese": "Can",
+            "translate": "thiên can, can dự",
+            "strokeCount": 3
+        },
+        {
+            "id": 52,
+            "radical": "幺",
+            "other": "",
+            "pinyin": "yāo",
+            "english": "thread",
+            "vietnamese": "Yêu",
+            "translate": "nhỏ nhắn",
+            "strokeCount": 3
+        },
+        {
+            "id": 53,
+            "radical": "广",
+            "other": "",
+            "pinyin": "guǎng",
+            "english": "shelter",
+            "vietnamese": "Nghiễm",
+            "translate": "mái nhà",
+            "strokeCount": 3
+        },
+        {
+            "id": 54,
+            "radical": "廴",
+            "other": "",
+            "pinyin": "yǐn",
+            "english": "stride",
+            "vietnamese": "Dẫn",
+            "translate": "bước dài",
+            "strokeCount": 3
+        },
+        {
+            "id": 55,
+            "radical": "廾",
+            "other": "",
+            "pinyin": "gǒng",
+            "english": "hands joined",
+            "vietnamese": "Củng",
+            "translate": "chắp tay",
+            "strokeCount": 3
+        },
+        {
+            "id": 56,
+            "radical": "弋",
+            "other": "",
+            "pinyin": "yì",
+            "english": "shoot with a bow",
+            "vietnamese": "Dặc",
+            "translate": "bắn, chiếm lấy",
+            "strokeCount": 3
+        },
+        {
+            "id": 57,
+            "radical": "弓",
+            "other": "",
+            "pinyin": "gōng",
+            "english": "bow",
+            "vietnamese": "Cung",
+            "translate": "cái cung (để bắn tên)",
+            "strokeCount": 3
+        },
+        {
+            "id": 58,
+            "radical": "彐",
+            "other": "",
+            "pinyin": "jì",
+            "english": "snout",
+            "vietnamese": "Kệ",
+            "translate": "đầu con nhím",
+            "strokeCount": 3
+        },
+        {
+            "id": 59,
+            "radical": "彡",
+            "other": "",
+            "pinyin": "shān",
+            "english": "hair",
+            "vietnamese": "Sam",
+            "translate": "lông, tóc dài",
+            "strokeCount": 3
+        },
+        {
+            "id": 60,
+            "radical": "彳",
+            "other": "",
+            "pinyin": "chì",
+            "english": "step",
+            "vietnamese": "Xích",
+            "translate": "bước chân trái",
+            "strokeCount": 3
+        },
+        {
+            "id": 61,
+            "radical": "心",
+            "other": "",
+            "pinyin": "xīn",
+            "english": "heart",
+            "vietnamese": "Tâm",
+            "translate": "quả tim, tâm trí, tấm lòng",
+            "strokeCount": 4
+        },
+        {
+            "id": 62,
+            "radical": "戈",
+            "other": "",
+            "pinyin": "gē",
+            "english": "spear",
+            "vietnamese": "Qua",
+            "translate": "cây qua (một thứ binh khí dài)",
+            "strokeCount": 4
+        },
+        {
+            "id": 63,
+            "radical": "户",
+            "other": "戶",
+            "pinyin": "hù",
+            "english": "door",
+            "vietnamese": "Hộ",
+            "translate": "cửa một cánh",
+            "strokeCount": 4
+        },
+        {
+            "id": 64,
+            "radical": "手",
+            "other": "",
+            "pinyin": "shǒu",
+            "english": "hand",
+            "vietnamese": "Thủ",
+            "translate": "tay",
+            "strokeCount": 4
+        },
+        {
+            "id": 65,
+            "radical": "支",
+            "other": "",
+            "pinyin": "zhī",
+            "english": "branch",
+            "vietnamese": "Chi",
+            "translate": "cành nhánh",
+            "strokeCount": 4
+        },
+        {
+            "id": 66,
+            "radical": "攴",
+            "other": "",
+            "pinyin": "pū",
+            "english": "rap",
+            "vietnamese": "Phộc",
+            "translate": "đánh khẽ",
+            "strokeCount": 4
+        },
+        {
+            "id": 67,
+            "radical": "文",
+            "other": "",
+            "pinyin": "wén",
+            "english": "script",
+            "vietnamese": "Văn",
+            "translate": "văn vẻ, văn chương, vẻ sáng",
+            "strokeCount": 4
+        },
+        {
+            "id": 68,
+            "radical": "斗",
+            "other": "",
+            "pinyin": "dǒu",
+            "english": "dipper",
+            "vietnamese": "Đẩu",
+            "translate": "cái đấu để đong",
+            "strokeCount": 4
+        },
+        {
+            "id": 69,
+            "radical": "斤",
+            "other": "",
+            "pinyin": "jīn",
+            "english": "axe",
+            "vietnamese": "Cẩn",
+            "translate": "cái búa, rìu",
+            "strokeCount": 4
+        },
+        {
+            "id": 70,
+            "radical": "方",
+            "other": "",
+            "pinyin": "fāng",
+            "english": "square",
+            "vietnamese": "Phương",
+            "translate": "vuông",
+            "strokeCount": 4
+        },
+        {
+            "id": 71,
+            "radical": "无",
+            "other": "",
+            "pinyin": "wú",
+            "english": "not",
+            "vietnamese": "Vô",
+            "translate": "không",
+            "strokeCount": 4
+        },
+        {
+            "id": 72,
+            "radical": "日",
+            "other": "",
+            "pinyin": "rì",
+            "english": "sun",
+            "vietnamese": "Nhật",
+            "translate": "ngày, mặt trời",
+            "strokeCount": 4
+        },
+        {
+            "id": 73,
+            "radical": "曰",
+            "other": "",
+            "pinyin": "yuē",
+            "english": "say",
+            "vietnamese": "Viết",
+            "translate": "nói rằng",
+            "strokeCount": 4
+        },
+        {
+            "id": 74,
+            "radical": "月",
+            "other": "",
+            "pinyin": "yuè",
+            "english": "moon",
+            "vietnamese": "Nguyệt",
+            "translate": "tháng, mặt trăng",
+            "strokeCount": 4
+        },
+        {
+            "id": 75,
+            "radical": "木",
+            "other": "",
+            "pinyin": "mù",
+            "english": "tree",
+            "vietnamese": "Mộc",
+            "translate": "gỗ, cây cối",
+            "strokeCount": 4
+        },
+        {
+            "id": 76,
+            "radical": "欠",
+            "other": "",
+            "pinyin": "qiàn",
+            "english": "lack",
+            "vietnamese": "Khiếm",
+            "translate": "khiếm khuyết, thiếu vắng",
+            "strokeCount": 4
+        },
+        {
+            "id": 77,
+            "radical": "止",
+            "other": "",
+            "pinyin": "zhǐ",
+            "english": "stop",
+            "vietnamese": "Chỉ",
+            "translate": "dừng lại",
+            "strokeCount": 4
+        },
+        {
+            "id": 78,
+            "radical": "歹",
+            "other": "",
+            "pinyin": "dǎi",
+            "english": "death",
+            "vietnamese": "Đãi",
+            "translate": "xấu xa, tệ hại",
+            "strokeCount": 4
+        },
+        {
+            "id": 79,
+            "radical": "殳",
+            "other": "",
+            "pinyin": "shū",
+            "english": "weapon",
+            "vietnamese": "Thù",
+            "translate": "binh khí dài, cái gậy",
+            "strokeCount": 4
+        },
+        {
+            "id": 80,
+            "radical": "母",
+            "other": "毋",
+            "pinyin": "mǔ",
+            "english": "mother",
+            "vietnamese": "Vô",
+            "translate": "chớ, đừng",
+            "strokeCount": 4
+        },
+        {
+            "id": 81,
+            "radical": "比",
+            "other": "",
+            "pinyin": "bǐ",
+            "english": "compare",
+            "vietnamese": "Tỷ",
+            "translate": "so sánh",
+            "strokeCount": 4
+        },
+        {
+            "id": 82,
+            "radical": "毛",
+            "other": "",
+            "pinyin": "máo",
+            "english": "fur",
+            "vietnamese": "Mao",
+            "translate": "lông",
+            "strokeCount": 4
+        },
+        {
+            "id": 83,
+            "radical": "氏",
+            "other": "",
+            "pinyin": "shì",
+            "english": "clan",
+            "vietnamese": "Thị",
+            "translate": "họ",
+            "strokeCount": 4
+        },
+        {
+            "id": 84,
+            "radical": "气",
+            "other": "",
+            "pinyin": "qì",
+            "english": "steam",
+            "vietnamese": "Khí",
+            "translate": "hơi nước",
+            "strokeCount": 4
+        },
+        {
+            "id": 85,
+            "radical": "水",
+            "other": "",
+            "pinyin": "shuǐ",
+            "english": "water",
+            "vietnamese": "Thủy",
+            "translate": "nước",
+            "strokeCount": 4
+        },
+        {
+            "id": 86,
+            "radical": "火",
+            "other": "",
+            "pinyin": "huǒ",
+            "english": "fire",
+            "vietnamese": "Hỏa",
+            "translate": "lửa",
+            "strokeCount": 4
+        },
+        {
+            "id": 87,
+            "radical": "爪",
+            "other": "",
+            "pinyin": "zhǎo",
+            "english": "claw",
+            "vietnamese": "Trảo",
+            "translate": "móng vuốt cầm thú",
+            "strokeCount": 4
+        },
+        {
+            "id": 88,
+            "radical": "父",
+            "other": "",
+            "pinyin": "fù",
+            "english": "father",
+            "vietnamese": "Phụ",
+            "translate": "cha",
+            "strokeCount": 4
+        },
+        {
+            "id": 89,
+            "radical": "爻",
+            "other": "",
+            "pinyin": "yáo",
+            "english": "lines on a trigram",
+            "vietnamese": "Hào",
+            "translate": "hào âm, hào dương (Kinh Dịch)",
+            "strokeCount": 4
+        },
+        {
+            "id": 90,
+            "radical": "爿",
+            "other": "",
+            "pinyin": "qiáng",
+            "english": "half of a tree trunk",
+            "vietnamese": "Tường",
+            "translate": "mảnh gỗ, cái giường",
+            "strokeCount": 4
+        },
+        {
+            "id": 91,
+            "radical": "片",
+            "other": "",
+            "pinyin": "piàn",
+            "english": "slice",
+            "vietnamese": "Phiến",
+            "translate": "mảnh, tấm, miếng",
+            "strokeCount": 4
+        },
+        {
+            "id": 92,
+            "radical": "牙",
+            "other": "",
+            "pinyin": "yá",
+            "english": "tooth",
+            "vietnamese": "Nha",
+            "translate": "răng",
+            "strokeCount": 4
+        },
+        {
+            "id": 93,
+            "radical": "牛",
+            "other": "",
+            "pinyin": "niú",
+            "english": "cow",
+            "vietnamese": "Ngưu",
+            "translate": "trâu",
+            "strokeCount": 4
+        },
+        {
+            "id": 94,
+            "radical": "犭",
+            "other": "犬",
+            "pinyin": "quǎn",
+            "english": "dog",
+            "vietnamese": "Khuyển",
+            "translate": "con chó",
+            "strokeCount": 3
+        },
+        {
+            "id": 95,
+            "radical": "玄",
+            "other": "",
+            "pinyin": "xuán",
+            "english": "profound",
+            "vietnamese": "Huyền",
+            "translate": "đen huyền, huyền bí",
+            "strokeCount": 5
+        },
+        {
+            "id": 96,
+            "radical": "玉",
+            "other": "",
+            "pinyin": "yù",
+            "english": "jade",
+            "vietnamese": "Ngọc",
+            "translate": "đá quý, ngọc",
+            "strokeCount": 5
+        },
+        {
+            "id": 97,
+            "radical": "瓜",
+            "other": "",
+            "pinyin": "guā",
+            "english": "melon",
+            "vietnamese": "Qua",
+            "translate": "quả dưa",
+            "strokeCount": 5
+        },
+        {
+            "id": 98,
+            "radical": "瓦",
+            "other": "",
+            "pinyin": "wǎ",
+            "english": "tile",
+            "vietnamese": "Ngõa",
+            "translate": "ngói",
+            "strokeCount": 5
+        },
+        {
+            "id": 99,
+            "radical": "甘",
+            "other": "",
+            "pinyin": "gān",
+            "english": "sweet",
+            "vietnamese": "Cam",
+            "translate": "ngọt",
+            "strokeCount": 5
+        },
+        {
+            "id": 100,
+            "radical": "生",
+            "other": "",
+            "pinyin": "shēng",
+            "english": "life",
+            "vietnamese": "Sinh",
+            "translate": "sinh đẻ, sinh sống",
+            "strokeCount": 5
+        },
+        {
+            "id": 101,
+            "radical": "用",
+            "other": "",
+            "pinyin": "yòng",
+            "english": "use",
+            "vietnamese": "Dụng",
+            "translate": "dùng",
+            "strokeCount": 5
+        },
+        {
+            "id": 102,
+            "radical": "田",
+            "other": "",
+            "pinyin": "tián",
+            "english": "field",
+            "vietnamese": "Điền",
+            "translate": "ruộng",
+            "strokeCount": 5
+        },
+        {
+            "id": 103,
+            "radical": "疋",
+            "other": "",
+            "pinyin": "pǐ",
+            "english": "cloth",
+            "vietnamese": "Thất",
+            "translate": "đv đo chiều dài, tấm",
+            "strokeCount": 5
+        },
+        {
+            "id": 104,
+            "radical": "疒",
+            "other": "",
+            "pinyin": "bìng",
+            "english": "ill",
+            "vietnamese": "Nạch",
+            "translate": "bệnh tật",
+            "strokeCount": 5
+        },
+        {
+            "id": 105,
+            "radical": "癶",
+            "other": "",
+            "pinyin": "bō",
+            "english": "foot steps",
+            "vietnamese": "Bát",
+            "translate": "gạt ngược lại, trở lại",
+            "strokeCount": 5
+        },
+        {
+            "id": 106,
+            "radical": "白",
+            "other": "",
+            "pinyin": "bái",
+            "english": "white",
+            "vietnamese": "Bạch",
+            "translate": "màu trắng",
+            "strokeCount": 5
+        },
+        {
+            "id": 107,
+            "radical": "皮",
+            "other": "",
+            "pinyin": "pí",
+            "english": "skin",
+            "vietnamese": "Bì",
+            "translate": "da",
+            "strokeCount": 5
+        },
+        {
+            "id": 108,
+            "radical": "皿",
+            "other": "",
+            "pinyin": "mǐn",
+            "english": "dish",
+            "vietnamese": "Mãnh",
+            "translate": "bát dĩa",
+            "strokeCount": 5
+        },
+        {
+            "id": 109,
+            "radical": "目",
+            "other": "",
+            "pinyin": "mù",
+            "english": "eye",
+            "vietnamese": "Mục",
+            "translate": "mắt",
+            "strokeCount": 5
+        },
+        {
+            "id": 110,
+            "radical": "矛",
+            "other": "",
+            "pinyin": "máo",
+            "english": "spear",
+            "vietnamese": "Mâu",
+            "translate": "cây giáo để đâm",
+            "strokeCount": 5
+        },
+        {
+            "id": 111,
+            "radical": "矢",
+            "other": "",
+            "pinyin": "shǐ",
+            "english": "arrow",
+            "vietnamese": "Thỉ",
+            "translate": "cây tên, mũi tên",
+            "strokeCount": 5
+        },
+        {
+            "id": 112,
+            "radical": "石",
+            "other": "",
+            "pinyin": "shí",
+            "english": "stone",
+            "vietnamese": "Thạch",
+            "translate": "đá",
+            "strokeCount": 5
+        },
+        {
+            "id": 113,
+            "radical": "示",
+            "other": "",
+            "pinyin": "shì",
+            "english": "spirit",
+            "vietnamese": "Thị",
+            "translate": "chỉ thị; thần đất",
+            "strokeCount": 5
+        },
+        {
+            "id": 114,
+            "radical": "禸",
+            "other": "",
+            "pinyin": "róu",
+            "english": "track",
+            "vietnamese": "Nhựu",
+            "translate": "vết chân, lốt chân",
+            "strokeCount": 4
+        },
+        {
+            "id": 115,
+            "radical": "禾",
+            "other": "",
+            "pinyin": "hé",
+            "english": "grain",
+            "vietnamese": "Hòa",
+            "translate": "lúa",
+            "strokeCount": 5
+        },
+        {
+            "id": 116,
+            "radical": "穴",
+            "other": "",
+            "pinyin": "xuè",
+            "english": "cave",
+            "vietnamese": "Huyệt",
+            "translate": "hang lỗ",
+            "strokeCount": 5
+        },
+        {
+            "id": 117,
+            "radical": "立",
+            "other": "",
+            "pinyin": "lì",
+            "english": "stand",
+            "vietnamese": "Lập",
+            "translate": "đứng, thành lập",
+            "strokeCount": 5
+        },
+        {
+            "id": 118,
+            "radical": "竹",
+            "other": "",
+            "pinyin": "zhú",
+            "english": "bamboo",
+            "vietnamese": "Trúc",
+            "translate": "tre trúc",
+            "strokeCount": 6
+        },
+        {
+            "id": 119,
+            "radical": "米",
+            "other": "",
+            "pinyin": "mǐ",
+            "english": "rice",
+            "vietnamese": "Mễ",
+            "translate": "gạo",
+            "strokeCount": 6
+        },
+        {
+            "id": 120,
+            "radical": "纟",
+            "other": "糸",
+            "pinyin": "sī",
+            "english": "silk",
+            "vietnamese": "Mịch",
+            "translate": "sợi tơ nhỏ",
+            "strokeCount": 3
+        },
+        {
+            "id": 121,
+            "radical": "缶",
+            "other": "",
+            "pinyin": "fǒu",
+            "english": "jar",
+            "vietnamese": "Phẫu",
+            "translate": "đồ sành",
+            "strokeCount": 6
+        },
+        {
+            "id": 122,
+            "radical": "网",
+            "other": "",
+            "pinyin": "wǎng",
+            "english": "net",
+            "vietnamese": "Võng",
+            "translate": "cái lưới",
+            "strokeCount": 6
+        },
+        {
+            "id": 123,
+            "radical": "羊",
+            "other": "",
+            "pinyin": "yáng",
+            "english": "sheep",
+            "vietnamese": "Dương",
+            "translate": "con dê",
+            "strokeCount": 6
+        },
+        {
+            "id": 124,
+            "radical": "羽",
+            "other": "",
+            "pinyin": "yǔ",
+            "english": "feather",
+            "vietnamese": "Vũ",
+            "translate": "lông vũ",
+            "strokeCount": 6
+        },
+        {
+            "id": 125,
+            "radical": "老",
+            "other": "",
+            "pinyin": "lǎo",
+            "english": "old",
+            "vietnamese": "Lão",
+            "translate": "già",
+            "strokeCount": 6
+        },
+        {
+            "id": 126,
+            "radical": "而",
+            "other": "",
+            "pinyin": "ér",
+            "english": "and",
+            "vietnamese": "Nhi",
+            "translate": "mà, và",
+            "strokeCount": 6
+        },
+        {
+            "id": 127,
+            "radical": "耒",
+            "other": "",
+            "pinyin": "lěi",
+            "english": "plow",
+            "vietnamese": "Lỗi",
+            "translate": "cái cày",
+            "strokeCount": 6
+        },
+        {
+            "id": 128,
+            "radical": "耳",
+            "other": "",
+            "pinyin": "ěr",
+            "english": "ear",
+            "vietnamese": "Nhĩ",
+            "translate": "tai (lỗ tai)",
+            "strokeCount": 6
+        },
+        {
+            "id": 129,
+            "radical": "聿",
+            "other": "",
+            "pinyin": "yù",
+            "english": "brush",
+            "vietnamese": "Duật",
+            "translate": "cây bút",
+            "strokeCount": 6
+        },
+        {
+            "id": 130,
+            "radical": "肉",
+            "other": "",
+            "pinyin": "ròu",
+            "english": "meat",
+            "vietnamese": "Nhục",
+            "translate": "thịt",
+            "strokeCount": 6
+        },
+        {
+            "id": 131,
+            "radical": "臣",
+            "other": "",
+            "pinyin": "chén",
+            "english": "minister",
+            "vietnamese": "Thần",
+            "translate": "bầy tôi",
+            "strokeCount": 6
+        },
+        {
+            "id": 132,
+            "radical": "自",
+            "other": "",
+            "pinyin": "zì",
+            "english": "oneself",
+            "vietnamese": "Tự",
+            "translate": "tự bản thân, kể từ",
+            "strokeCount": 6
+        },
+        {
+            "id": 133,
+            "radical": "至",
+            "other": "",
+            "pinyin": "zhì",
+            "english": "arrive",
+            "vietnamese": "Chí",
+            "translate": "đến",
+            "strokeCount": 6
+        },
+        {
+            "id": 134,
+            "radical": "臼",
+            "other": "",
+            "pinyin": "jiù",
+            "english": "mortar",
+            "vietnamese": "Cửu",
+            "translate": "cái cối giã gạo",
+            "strokeCount": 6
+        },
+        {
+            "id": 135,
+            "radical": "舌",
+            "other": "",
+            "pinyin": "shé",
+            "english": "tongue",
+            "vietnamese": "Thiệt",
+            "translate": "cái lưỡi",
+            "strokeCount": 6
+        },
+        {
+            "id": 136,
+            "radical": "舛",
+            "other": "",
+            "pinyin": "chuǎn",
+            "english": "contrary",
+            "vietnamese": "Suyễn",
+            "translate": "sai suyễn, sai lầm",
+            "strokeCount": 6
+        },
+        {
+            "id": 137,
+            "radical": "舟",
+            "other": "",
+            "pinyin": "zhōu",
+            "english": "boat",
+            "vietnamese": "Chu",
+            "translate": "cái thuyền",
+            "strokeCount": 6
+        },
+        {
+            "id": 138,
+            "radical": "艮",
+            "other": "",
+            "pinyin": "gèn",
+            "english": "mountain",
+            "vietnamese": "Cấn",
+            "translate": "dừng, bền cứng",
+            "strokeCount": 6
+        },
+        {
+            "id": 139,
+            "radical": "色",
+            "other": "",
+            "pinyin": "sè",
+            "english": "color",
+            "vietnamese": "Sắc",
+            "translate": "màu, dáng vẻ, nữ sắc",
+            "strokeCount": 6
+        },
+        {
+            "id": 140,
+            "radical": "艹",
+            "other": "艸",
+            "pinyin": "cǎo",
+            "english": "grass",
+            "vietnamese": "Thảo",
+            "translate": "cỏ",
+            "strokeCount": 3
+        },
+        {
+            "id": 141,
+            "radical": "虍",
+            "other": "",
+            "pinyin": "hǔ",
+            "english": "tiger",
+            "vietnamese": "Hổ",
+            "translate": "vằn vện của con hổ",
+            "strokeCount": 6
+        },
+        {
+            "id": 142,
+            "radical": "虫",
+            "other": "",
+            "pinyin": "chóng",
+            "english": "insect",
+            "vietnamese": "Trùng",
+            "translate": "sâu bọ",
+            "strokeCount": 6
+        },
+        {
+            "id": 143,
+            "radical": "血",
+            "other": "",
+            "pinyin": "xuě",
+            "english": "blood",
+            "vietnamese": "Huyết",
+            "translate": "máu",
+            "strokeCount": 6
+        },
+        {
+            "id": 144,
+            "radical": "行",
+            "other": "",
+            "pinyin": "xíng",
+            "english": "walk",
+            "vietnamese": "Hành",
+            "translate": "đi, thi hành, làm được",
+            "strokeCount": 6
+        },
+        {
+            "id": 145,
+            "radical": "衣",
+            "other": "",
+            "pinyin": "yī",
+            "english": "clothes",
+            "vietnamese": "Y",
+            "translate": "áo",
+            "strokeCount": 6
+        },
+        {
+            "id": 146,
+            "radical": "西",
+            "other": "襾",
+            "pinyin": "xī",
+            "english": "west",
+            "vietnamese": "Á",
+            "translate": "che đậy, úp lên",
+            "strokeCount": 6
+        },
+        {
+            "id": 147,
+            "radical": "见",
+            "other": "見",
+            "pinyin": "jiàn",
+            "english": "see",
+            "vietnamese": "Kiến",
+            "translate": "trông thấy",
+            "strokeCount": 4
+        },
+        {
+            "id": 148,
+            "radical": "角",
+            "other": "",
+            "pinyin": "jiǎo",
+            "english": "horn",
+            "vietnamese": "Giác",
+            "translate": "góc, sừng thú",
+            "strokeCount": 7
+        },
+        {
+            "id": 149,
+            "radical": "讠",
+            "other": "言",
+            "pinyin": "yán",
+            "english": "speech",
+            "vietnamese": "Ngôn",
+            "translate": "nói",
+            "strokeCount": 2
+        },
+        {
+            "id": 150,
+            "radical": "谷",
+            "other": "",
+            "pinyin": "gǔ",
+            "english": "valley",
+            "vietnamese": "Cốc",
+            "translate": "khe nước chảy giữa hai núi",
+            "strokeCount": 7
+        },
+        {
+            "id": 151,
+            "radical": "豆",
+            "other": "",
+            "pinyin": "dòu",
+            "english": "bean",
+            "vietnamese": "Đậu",
+            "translate": "hạt đậu, cây đậu",
+            "strokeCount": 7
+        },
+        {
+            "id": 152,
+            "radical": "豕",
+            "other": "",
+            "pinyin": "shǐ",
+            "english": "pig",
+            "vietnamese": "Thỉ",
+            "translate": "con heo, con lợn",
+            "strokeCount": 7
+        },
+        {
+            "id": 153,
+            "radical": "豸",
+            "other": "",
+            "pinyin": "zhì",
+            "english": "badger",
+            "vietnamese": "Trãi",
+            "translate": "loài sâu không chân",
+            "strokeCount": 7
+        },
+        {
+            "id": 154,
+            "radical": "贝",
+            "other": "貝",
+            "pinyin": "bèi",
+            "english": "shell",
+            "vietnamese": "Bối",
+            "translate": "vật báu",
+            "strokeCount": 4
+        },
+        {
+            "id": 155,
+            "radical": "赤",
+            "other": "",
+            "pinyin": "chì",
+            "english": "red",
+            "vietnamese": "Xích",
+            "translate": "màu đỏ",
+            "strokeCount": 7
+        },
+        {
+            "id": 156,
+            "radical": "走",
+            "other": "",
+            "pinyin": "zǒu",
+            "english": "walk",
+            "vietnamese": "Tẩu",
+            "translate": "đi, chạy",
+            "strokeCount": 7
+        },
+        {
+            "id": 157,
+            "radical": "足",
+            "other": "",
+            "pinyin": "zú",
+            "english": "foot",
+            "vietnamese": "Túc",
+            "translate": "chân, đầy đủ",
+            "strokeCount": 7
+        },
+        {
+            "id": 158,
+            "radical": "身",
+            "other": "",
+            "pinyin": "shēn",
+            "english": "body",
+            "vietnamese": "Thân",
+            "translate": "thân thể, thân mình",
+            "strokeCount": 7
+        },
+        {
+            "id": 159,
+            "radical": "车",
+            "other": "車",
+            "pinyin": "chē",
+            "english": "cart",
+            "vietnamese": "Xa",
+            "translate": "chiếc xe",
+            "strokeCount": 4
+        },
+        {
+            "id": 160,
+            "radical": "辛",
+            "other": "",
+            "pinyin": "xīn",
+            "english": "bitter",
+            "vietnamese": "Tân",
+            "translate": "cay, vất vả",
+            "strokeCount": 7
+        },
+        {
+            "id": 161,
+            "radical": "辰",
+            "other": "",
+            "pinyin": "chén",
+            "english": "morning",
+            "vietnamese": "Thần",
+            "translate": "nhật, nguyệt, thìn (12 chi)",
+            "strokeCount": 7
+        },
+        {
+            "id": 162,
+            "radical": "辶",
+            "other": "辵",
+            "pinyin": "chuò",
+            "english": "walk",
+            "vietnamese": "QuaiXước",
+            "translate": "chợt bước đi",
+            "strokeCount": 3
+        },
+        {
+            "id": 163,
+            "radical": "邑",
+            "other": "",
+            "pinyin": "yì",
+            "english": "city",
+            "vietnamese": "Ấp",
+            "translate": "vùng đất cho quan",
+            "strokeCount": 7
+        },
+        {
+            "id": 164,
+            "radical": "酉",
+            "other": "",
+            "pinyin": "yǒu",
+            "english": "wine",
+            "vietnamese": "Dậu",
+            "translate": "một trong 12 địa chi",
+            "strokeCount": 7
+        },
+        {
+            "id": 165,
+            "radical": "釆",
+            "other": "",
+            "pinyin": "biàn",
+            "english": "distinguish",
+            "vietnamese": "Biện",
+            "translate": "phân biệt",
+            "strokeCount": 7
+        },
+        {
+            "id": 166,
+            "radical": "里",
+            "other": "",
+            "pinyin": "lǐ",
+            "english": "village",
+            "vietnamese": "Lý",
+            "translate": "dặm; làng xóm",
+            "strokeCount": 7
+        },
+        {
+            "id": 167,
+            "radical": "钅",
+            "other": "金",
+            "pinyin": "jīn",
+            "english": "metal",
+            "vietnamese": "Kim",
+            "translate": "kim loại; vàng",
+            "strokeCount": 5
+        },
+        {
+            "id": 168,
+            "radical": "长",
+            "other": "長",
+            "pinyin": "cháng",
+            "english": "long",
+            "vietnamese": "Trường",
+            "translate": "dài; lớn (trưởng)",
+            "strokeCount": 4
+        },
+        {
+            "id": 169,
+            "radical": "门",
+            "other": "門",
+            "pinyin": "mén",
+            "english": "gate",
+            "vietnamese": "Môn",
+            "translate": "cửa hai cánh",
+            "strokeCount": 3
+        },
+        {
+            "id": 170,
+            "radical": "阜",
+            "other": "",
+            "pinyin": "fù",
+            "english": "mound",
+            "vietnamese": "Phụ",
+            "translate": "đống đất, gò đất",
+            "strokeCount": 8
+        },
+        {
+            "id": 171,
+            "radical": "隶",
+            "other": "",
+            "pinyin": "lì",
+            "english": "slave",
+            "vietnamese": "Đãi",
+            "translate": "kịp, kịp đến",
+            "strokeCount": 8
+        },
+        {
+            "id": 172,
+            "radical": "隹",
+            "other": "",
+            "pinyin": "zhuī",
+            "english": "short-tailed bird",
+            "vietnamese": "Truy",
+            "translate": "chim đuôi ngắn",
+            "strokeCount": 8
+        },
+        {
+            "id": 173,
+            "radical": "雨",
+            "other": "",
+            "pinyin": "yǔ",
+            "english": "rain",
+            "vietnamese": "Vũ",
+            "translate": "mưa",
+            "strokeCount": 8
+        },
+        {
+            "id": 174,
+            "radical": "青",
+            "other": "",
+            "pinyin": "qīng",
+            "english": "blue",
+            "vietnamese": "Thanh",
+            "translate": "màu xanh",
+            "strokeCount": 8
+        },
+        {
+            "id": 175,
+            "radical": "非",
+            "other": "",
+            "pinyin": "fēi",
+            "english": "wrong",
+            "vietnamese": "Phi",
+            "translate": "không",
+            "strokeCount": 8
+        },
+        {
+            "id": 176,
+            "radical": "面",
+            "other": "",
+            "pinyin": "miàn",
+            "english": "face",
+            "vietnamese": "Diện",
+            "translate": "mặt, bề mặt",
+            "strokeCount": 9
+        },
+        {
+            "id": 177,
+            "radical": "革",
+            "other": "",
+            "pinyin": "gé",
+            "english": "leather",
+            "vietnamese": "Cách",
+            "translate": "da thú; thay đổi",
+            "strokeCount": 9
+        },
+        {
+            "id": 178,
+            "radical": "韦",
+            "other": "韋",
+            "pinyin": "wěi",
+            "english": "soft leather",
+            "vietnamese": "Vi",
+            "translate": "da đã thuộc rồi",
+            "strokeCount": 4
+        },
+        {
+            "id": 179,
+            "radical": "韭",
+            "other": "",
+            "pinyin": "jiǔ",
+            "english": "leek",
+            "vietnamese": "Phỉ",
+            "translate": "rau phỉ (hẹ)",
+            "strokeCount": 9
+        },
+        {
+            "id": 180,
+            "radical": "音",
+            "other": "",
+            "pinyin": "yīn",
+            "english": "sound",
+            "vietnamese": "Âm",
+            "translate": "âm thanh, tiếng",
+            "strokeCount": 9
+        },
+        {
+            "id": 181,
+            "radical": "页",
+            "other": "頁",
+            "pinyin": "yè",
+            "english": "page",
+            "vietnamese": "Hiệt",
+            "translate": "đầu; trang giấy",
+            "strokeCount": 6
+        },
+        {
+            "id": 182,
+            "radical": "风",
+            "other": "風",
+            "pinyin": "fēng",
+            "english": "wind",
+            "vietnamese": "Phong",
+            "translate": "gió",
+            "strokeCount": 4
+        },
+        {
+            "id": 183,
+            "radical": "飞",
+            "other": "飛",
+            "pinyin": "fēi",
+            "english": "fly",
+            "vietnamese": "Phi",
+            "translate": "bay",
+            "strokeCount": 4
+        },
+        {
+            "id": 184,
+            "radical": "饣",
+            "other": "食",
+            "pinyin": "shí",
+            "english": "eat",
+            "vietnamese": "Thực",
+            "translate": "ăn",
+            "strokeCount": 3
+        },
+        {
+            "id": 185,
+            "radical": "首",
+            "other": "",
+            "pinyin": "shǒu",
+            "english": "head",
+            "vietnamese": "Thủ",
+            "translate": "đầu",
+            "strokeCount": 9
+        },
+        {
+            "id": 186,
+            "radical": "香",
+            "other": "",
+            "pinyin": "xiāng",
+            "english": "fragrant",
+            "vietnamese": "Hương",
+            "translate": "mùi hương thơm",
+            "strokeCount": 9
+        },
+        {
+            "id": 187,
+            "radical": "马",
+            "other": "馬",
+            "pinyin": "mǎ",
+            "english": "horse",
+            "vietnamese": "Mã",
+            "translate": "con ngựa",
+            "strokeCount": 3
+        },
+        {
+            "id": 188,
+            "radical": "骨",
+            "other": "骫",
+            "pinyin": "gǔ",
+            "english": "bone",
+            "vietnamese": "Cốt",
+            "translate": "xương",
+            "strokeCount": 9
+        },
+        {
+            "id": 189,
+            "radical": "高",
+            "other": "",
+            "pinyin": "gāo",
+            "english": "high",
+            "vietnamese": "Cao",
+            "translate": "cao",
+            "strokeCount": 10
+        },
+        {
+            "id": 190,
+            "radical": "髟",
+            "other": "",
+            "pinyin": "biāo",
+            "english": "long hair",
+            "vietnamese": "Bưu,Tiêu",
+            "translate": "tóc dài; sam cỏ phủ mái nhà",
+            "strokeCount": 10
+        },
+        {
+            "id": 191,
+            "radical": "鬥",
+            "other": "",
+            "pinyin": "dòu",
+            "english": "fight",
+            "vietnamese": "Đấu",
+            "translate": "chống nhau, chiến đấu",
+            "strokeCount": 10
+        },
+        {
+            "id": 192,
+            "radical": "鬯",
+            "other": "",
+            "pinyin": "chàng",
+            "english": "sacrificial wine",
+            "vietnamese": "Sưởng",
+            "translate": "rượu nếp; bao đựng cung",
+            "strokeCount": 10
+        },
+        {
+            "id": 193,
+            "radical": "鬲",
+            "other": "",
+            "pinyin": "lì",
+            "english": "cauldron",
+            "vietnamese": "Cách",
+            "translate": "tên 1 con sông xưa, cái đỉnh",
+            "strokeCount": 10
+        },
+        {
+            "id": 194,
+            "radical": "鬼",
+            "other": "",
+            "pinyin": "guǐ",
+            "english": "ghost",
+            "vietnamese": "Quỷ",
+            "translate": "con quỷ",
+            "strokeCount": 9
+        },
+        {
+            "id": 195,
+            "radical": "鱼",
+            "other": "魚",
+            "pinyin": "yú",
+            "english": "fish",
+            "vietnamese": "Ngư",
+            "translate": "con cá",
+            "strokeCount": 8
+        },
+        {
+            "id": 196,
+            "radical": "鸟",
+            "other": "鳥",
+            "pinyin": "niǎo",
+            "english": "bird",
+            "vietnamese": "Điểu",
+            "translate": "con chim",
+            "strokeCount": 5
+        },
+        {
+            "id": 197,
+            "radical": "卤",
+            "other": "鹵",
+            "pinyin": "lǔ",
+            "english": "salty",
+            "vietnamese": "Lỗ",
+            "translate": "đất mặn",
+            "strokeCount": 7
+        },
+        {
+            "id": 198,
+            "radical": "鹿",
+            "other": "",
+            "pinyin": "lù",
+            "english": "deer",
+            "vietnamese": "Lộc",
+            "translate": "con hươu",
+            "strokeCount": 11
+        },
+        {
+            "id": 199,
+            "radical": "麦",
+            "other": "麥",
+            "pinyin": "mài",
+            "english": "wheat",
+            "vietnamese": "Mạch",
+            "translate": "lúa mạch",
+            "strokeCount": 7
+        },
+        {
+            "id": 200,
+            "radical": "麻",
+            "other": "",
+            "pinyin": "má",
+            "english": "hemp",
+            "vietnamese": "Ma",
+            "translate": "cây gai",
+            "strokeCount": 11
+        },
+        {
+            "id": 201,
+            "radical": "黄",
+            "other": "黃",
+            "pinyin": "huáng",
+            "english": "yellow",
+            "vietnamese": "Hoàng",
+            "translate": "màu vàng",
+            "strokeCount": 11
+        },
+        {
+            "id": 202,
+            "radical": "黍",
+            "other": "",
+            "pinyin": "shǔ",
+            "english": "millet",
+            "vietnamese": "Thử",
+            "translate": "lúa nếp",
+            "strokeCount": 12
+        },
+        {
+            "id": 203,
+            "radical": "黑",
+            "other": "",
+            "pinyin": "hēi",
+            "english": "black",
+            "vietnamese": "Hắc",
+            "translate": "màu đen",
+            "strokeCount": 12
+        },
+        {
+            "id": 204,
+            "radical": "黹",
+            "other": "",
+            "pinyin": "zhǐ",
+            "english": "embroidery",
+            "vietnamese": "Chỉ",
+            "translate": "may áo, khâu vá",
+            "strokeCount": 12
+        },
+        {
+            "id": 205,
+            "radical": "黾",
+            "other": "黽",
+            "pinyin": "mǐn",
+            "english": "frog",
+            "vietnamese": "Mãnh",
+            "translate": "con ếch; cố gắng",
+            "strokeCount": 8
+        },
+        {
+            "id": 206,
+            "radical": "鼎",
+            "other": "",
+            "pinyin": "dǐng",
+            "english": "tripod",
+            "vietnamese": "Đỉnh",
+            "translate": "cái đỉnh",
+            "strokeCount": 12
+        },
+        {
+            "id": 207,
+            "radical": "鼓",
+            "other": "",
+            "pinyin": "gǔ",
+            "english": "drum",
+            "vietnamese": "Cổ",
+            "translate": "cái trống",
+            "strokeCount": 13
+        },
+        {
+            "id": 208,
+            "radical": "鼠",
+            "other": "",
+            "pinyin": "shǔ",
+            "english": "rat",
+            "vietnamese": "Thử",
+            "translate": "con chuột",
+            "strokeCount": 13
+        },
+        {
+            "id": 209,
+            "radical": "鼻",
+            "other": "",
+            "pinyin": "bí",
+            "english": "nose",
+            "vietnamese": "Tỵ",
+            "translate": "cái mũi",
+            "strokeCount": 14
+        },
+        {
+            "id": 210,
+            "radical": "齐",
+            "other": "齊",
+            "pinyin": "qí",
+            "english": "even",
+            "vietnamese": "Tề",
+            "translate": "ngang bằng",
+            "strokeCount": 6
+        },
+        {
+            "id": 211,
+            "radical": "齿",
+            "other": "齒",
+            "pinyin": "chǐ",
+            "english": "tooth",
+            "vietnamese": "Xỉ",
+            "translate": "răng",
+            "strokeCount": 8
+        },
+        {
+            "id": 212,
+            "radical": "龙",
+            "other": "龍",
+            "pinyin": "lóng",
+            "english": "dragon",
+            "vietnamese": "Long",
+            "translate": "con rồng",
+            "strokeCount": 5
+        },
+        {
+            "id": 213,
+            "radical": "龟",
+            "other": "龜",
+            "pinyin": "guī",
+            "english": "turtle",
+            "vietnamese": "Quy",
+            "translate": "con rùa",
+            "strokeCount": 7
+        },
+        {
+            "id": 214,
+            "radical": "龠",
+            "other": "",
+            "pinyin": "yuè",
+            "english": "flute",
+            "vietnamese": "Dược",
+            "translate": "sáo 3 lỗ",
+            "strokeCount": 17
+        }
+    ]
+}

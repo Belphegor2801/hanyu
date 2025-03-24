@@ -3,12 +3,17 @@ import commonFn from '@/commons/commonFunction';
 
 const routes = [
     {
-        path: '/pinyin',
+        path: '/hanyu',
+        name: "main",
+        component: () => import('@/views/pinyin/PinyinView.vue'),
+    },
+    {
+        path: '/hanyu/pinyin',
         name: "pinyin",
         component: () => import('@/views/pinyin/PinyinView.vue'),
     },
     {
-        path: '/radicals',
+        path: '/hanyu/radicals',
         name: "radicals",
         component: () => import('@/views/radicals/RadicalsView.vue'),
     }

@@ -44,6 +44,7 @@ export default {
     const menuItems = ref([
       { id: 1, name: "Phiên âm", icon: "fas fa-folder", path: "/hanyu/pinyin" },
       { id: 2, name: "Bộ thủ", icon: "fas fa-align-justify", path: "/hanyu/radicals" },
+      { id: 3, name: "Ôn tập", icon: "fas fa-align-justify", path: "/hanyu/revision" },
     ]);
 
     const activeTab = ref(menuItems.value[0]); // Khởi động với tab đầu tiên

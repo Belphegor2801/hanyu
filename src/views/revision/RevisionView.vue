@@ -1,0 +1,368 @@
+<template>
+  <div class="quiz-container">
+    <div v-if="!isEnd" class="quiz-content">
+      <div class="question-section">
+        <div class="quiz-status">
+          <div>
+            Question {{ currentQuestionIndex + 1 }} of {{ totalQuestions }}
+          </div>
+          <div class="results">
+            <div class="green-rec"></div>
+            <p>{{ formatNumber(correctAnswers) }}</p>
+            <div class="red-rec"></div>
+            <p>{{ formatNumber(incorrectAnswers) }}</p>
+          </div>
+        </div>
+        <div></div>
+        <div class="question-text">
+          <p>{{ currentQuestion.question }}</p>
+        </div>
+        <div v-if="currentQuestion.answerType == 1 || currentQuestion.answerType == 2" class="answer-buttons">
+          <button
+            v-for="(answer, index) in currentQuestion.answers"
+            :key="index"
+            @click="selectAnswer(answer)"
+            :class="[{'ml-8': index % 2 == 1}]"
+            class="answer-button--type-1"
+          >
+            {{ answer }}
+          </button>
+        </div>
+        <div v-else class="answer-buttons">
+          <button
+            v-for="(answer, index) in currentQuestion.answers"
+            :key="index"
+            @click="selectAnswer(answer)"
+            class="answer-button--type-2"
+          >
+            {{ answer }}
+          </button>
+        </div>
+      </div>
+
+      <div class="previous-word">
+        <h3>Kết quả câu trước</h3>
+        <div class="word-view">
+          <div class="word-char" v-if="previousWord">
+            {{ previousWord["word"] }}
+          </div>
+        </div>
+        <div class="info-view" v-if="previousWord">
+          <div class="info-title"></div>
+          <table>
+            <tbody>
+              <tr>
+                <td class="info-key">Phiên âm</td>
+                <td class="info-value">{{ previousWord["pinyin"] }}</td>
+              </tr>
+              <tr>
+                <td class="info-key">Hán Việt</td>
+                <td class="info-value">
+                  {{ previousWord["sino-vietnamese"] }}
+                </td>
+              </tr>
+              <tr>
+                <td class="info-key">Dịch nghĩa</td>
+                <td class="info-value">
+                  {{ previousWord["vietnamese"] }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div v-else class="end-content">
+      <h3>Kết quả bạn đạt được:</h3>
+      <h1 class="results">
+        {{ formatNumber(correctAnswers) }}/{{ formatNumber(totalQuestions) }}
+      </h1>
+      <button class="reset-button" @click="resetgame">Làm lại</button>
+    </div>
+    <hanzi-lookup ></hanzi-lookup>
+  </div>
+</template>
+
+<script>
+import data from "@/data/vocabs.json";
+import HanziLookup from '../../components/base/HanziLookup.vue';
+export default {
+  data() {
+    return {
+      currentQuestionIndex: 0,
+      correctAnswers: 0,
+      incorrectAnswers: 0,
+      previousWord: {},
+      questions: [{}],
+      isEnd: false,
+      type: {
+        1: "word",
+        2: "pinyin",
+        3: "vietnamese",
+      },
+    };
+  },
+  computed: {
+    currentQuestion() {
+      return this.questions[this.currentQuestionIndex];
+    },
+    totalQuestions() {
+      return this.questions.length;
+    },
+  },
+  mounted() {
+    this.initializeQuiz();
+  },
+  methods: {
+    pickRandomNum(num) {
+      return Math.floor(Math.random() * num) + 1;
+    },
+    pickRandomNExcluding(list, exclude, n) {
+      const filteredList = list.filter((item) => item !== exclude);
+
+      const shuffled = filteredList.sort(() => 0.5 - Math.random());
+
+      return shuffled.slice(0, n);
+    },
+    formatNumber(num) {
+      return num < 10 ? `0${num}` : `${num}`;
+    },
+    shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1)); // Chọn chỉ số ngẫu nhiên
+        // Hoán đổi phần tử
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    },
+
+    initializeQuiz() {
+      this.questions = [];
+      var questionsLength = data.length;
+      for (let i = 0; i < 33; i++) {
+        var questionType = this.pickRandomNum(3);
+        var answerType = this.pickRandomNum(3);
+        while (answerType === questionType) {
+          answerType = this.pickRandomNum(3);
+        }
+        var word = data[this.pickRandomNum(questionsLength) - 1];
+        var question = word[this.type[questionType]];
+        var correct = word[this.type[answerType]];
+        var answers = this.pickRandomNExcluding(
+          data.map((x) => x[this.type[answerType]]),
+          correct,
+          3
+        );
+        answers.push(correct);
+        this.questions.push({
+          word: word,
+          question: question,
+          answers: this.shuffleArray(answers.slice()),
+          correct: correct,
+          answerType: answerType,
+        });
+      }
+    },
+    selectAnswer(answer) {
+      if (this.isEnd) return;
+      if (answer === this.currentQuestion.correct) {
+        this.correctAnswers++;
+      } else {
+        this.incorrectAnswers++;
+      }
+      this.previousWord = this.currentQuestion.word;
+
+      if (this.currentQuestionIndex + 1 < this.totalQuestions) {
+        this.currentQuestionIndex++;
+      } else {
+        this.isEnd = true;
+      }
+    },
+    resetgame() {
+      this.isEnd = false;
+      this.correctAnswers = 0;
+      this.incorrectAnswers = 0;
+      this.currentQuestionIndex = 0;
+      this.initializeQuiz();
+      this.currentQuestion = this.questions[this.currentQuestionIndex];
+      this.previousWord = {};
+    },
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.quiz-container {
+  padding: 20px;
+  max-width: 800px; /* Increased width for better layout */
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #bdb6b6;
+}
+
+.quiz-content {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between question and previous answers */
+}
+
+.end-content {
+  display: flex;
+  align-items: left;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: 307px;
+
+  .results {
+    font-size: 88px;
+  }
+
+  .reset-button {
+    width: 100px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #6bbe6b;
+    color: #fff;
+    height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+  }
+
+  .reset-button:hover {
+    background-color: #fff;
+    color: #6bbe6b;
+    border: 1px solid #6bbe6b;
+  }
+}
+
+.question-section {
+  flex: 1; /* Take available space */
+  margin-right: 20px; /* Space between question and answers */
+
+  .quiz-status {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .results {
+    display: flex;
+    gap: 10px;
+    float: right;
+
+    .green-rec {
+      width: 20px;
+      height: 20px;
+      background-color: #0f0;
+    }
+
+    .red-rec {
+      width: 20px;
+      height: 20px;
+      background-color: #f00;
+    }
+  }
+
+  .question-text {
+    font-size: 32px;
+    font-weight: 520;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    margin: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.answer-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap */
+}
+
+.ml-8 {
+  margin-left: 2% !important;
+}
+
+.answer-button--type-1 {
+  flex: 0 0 49%; /* Each button takes 48% of the row, adjust as needed */
+  margin: 0%; /* Small margin for spacing */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  height: 84px;
+  margin-top: 4px;
+}
+
+.answer-button--type-2 {
+  flex: 0 0 100%; /* Each button takes 48% of the row, adjust as needed */
+  margin: 0%; /* Small margin for spacing */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 4px;
+}
+
+.answer-button--type-1,
+.answer-button--type-2 {
+  background-color: #45a049;
+}
+
+.previous-word {
+  flex-shrink: 0; // Prevent shrinking when the grid-view expands
+  width: 360px; // Set a fixed width for the tab-view
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+
+  .word-view {
+    margin-top: 8px;
+    width: 340px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    .word-char {
+      font-size: 88px;
+    }
+
+    .word-pinyin {
+      font-size: 26px;
+    }
+  }
+
+  .info-view {
+    width: 340px;
+    margin-top: 10px;
+
+    .info-key {
+      width: 100px;
+      height: 36px;
+      background-color: #f0f0f0;
+      text-align: left;
+      padding: 8px;
+    }
+
+    .info-value {
+      width: 240px;
+      height: 36px;
+      background-color: #f0f0f0;
+      text-align: left;
+      padding: 8px;
+    }
+  }
+}
+</style>

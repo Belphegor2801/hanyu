@@ -1,0 +1,26 @@
+[
+    {
+        "word": "你好",
+        "pinyin": "nǐ hǎo",
+        "sino-vietnamese": "nhĩ hảo",
+        "vietnamese": "Xin chào"
+    },
+    {
+        "word": "谢谢",
+        "pinyin": "xiè xie",
+        "sino-vietnamese": "tạ tạ",
+        "vietnamese": "Cảm ơn"
+    },
+    {
+        "word": "再见",
+        "pinyin": "zài jiàn",
+        "sino-vietnamese": "tái kiến",
+        "vietnamese": "Tạm biệt"
+    },
+    {
+        "word": "对不起",
+        "pinyin": "duì bù qǐ",
+        "sino-vietnamese": "đối bất khởi",
+        "vietnamese": "Xin lỗi"
+    }
+]

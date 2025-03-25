@@ -16,6 +16,11 @@ const routes = [
         path: '/hanyu/radicals',
         name: "radicals",
         component: () => import('@/views/radicals/RadicalsView.vue'),
+    },
+    {
+        path: '/hanyu/revision',
+        name: "revision",
+        component: () => import('@/views/revision/RevisionView.vue'),
     }
 ]
 

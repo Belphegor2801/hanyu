@@ -63,6 +63,7 @@
         </div>
       </div>
     </div>
+    <hanzi-lookup> </hanzi-lookup>
   </div>
 </template>
 
@@ -74,7 +75,7 @@ import data from "@/data/radicals.json";
 export default {
   name: "Radicals",
   components: {
-    HanziLookup,
+    HanziLookup
   },
   setup() {
     const radicals = data["data"];

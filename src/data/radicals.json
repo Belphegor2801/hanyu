@@ -1948,37 +1948,37 @@
             "english": "ghost",
             "vietnamese": "Quỷ",
             "translate": "con quỷ",
-            "strokeCount": 9
+            "strokeCount": 10
         },
         {
             "id": 195,
-            "radical": "鱼",
-            "other": "魚",
+            "radical": "魚",
+            "other": "鱼",
             "pinyin": "yú",
             "english": "fish",
             "vietnamese": "Ngư",
             "translate": "con cá",
-            "strokeCount": 8
+            "strokeCount": 10
         },
         {
             "id": 196,
-            "radical": "鸟",
-            "other": "鳥",
+            "radical": "鳥",
+            "other": "鸟",
             "pinyin": "niǎo",
             "english": "bird",
             "vietnamese": "Điểu",
             "translate": "con chim",
-            "strokeCount": 5
+            "strokeCount": 11
         },
         {
             "id": 197,
-            "radical": "卤",
-            "other": "鹵",
+            "radical": "鹵",
+            "other": "卤",
             "pinyin": "lǔ",
             "english": "salty",
             "vietnamese": "Lỗ",
             "translate": "đất mặn",
-            "strokeCount": 7
+            "strokeCount": 11
         },
         {
             "id": 198,
@@ -1992,13 +1992,13 @@
         },
         {
             "id": 199,
-            "radical": "麦",
-            "other": "麥",
+            "radical": "麥",
+            "other": "麦",
             "pinyin": "mài",
             "english": "wheat",
             "vietnamese": "Mạch",
             "translate": "lúa mạch",
-            "strokeCount": 7
+            "strokeCount": 11
         },
         {
             "id": 200,
@@ -2052,13 +2052,13 @@
         },
         {
             "id": 205,
-            "radical": "黾",
-            "other": "黽",
+            "radical": "黽",
+            "other": "黾",
             "pinyin": "mǐn",
             "english": "frog",
             "vietnamese": "Mãnh",
             "translate": "con ếch; cố gắng",
-            "strokeCount": 8
+            "strokeCount": 12
         },
         {
             "id": 206,
@@ -2112,8 +2112,8 @@
         },
         {
             "id": 211,
-            "radical": "齿",
-            "other": "齒",
+            "radical": "齒",
+            "other": "齿",
             "pinyin": "chǐ",
             "english": "tooth",
             "vietnamese": "Xỉ",
@@ -2122,8 +2122,8 @@
         },
         {
             "id": 212,
-            "radical": "龙",
-            "other": "龍",
+            "radical": "龍",
+            "other": "龙",
             "pinyin": "lóng",
             "english": "dragon",
             "vietnamese": "Long",
@@ -2132,8 +2132,8 @@
         },
         {
             "id": 213,
-            "radical": "龟",
-            "other": "龜",
+            "radical": "龜",
+            "other": "龟",
             "pinyin": "guī",
             "english": "turtle",
             "vietnamese": "Quy",

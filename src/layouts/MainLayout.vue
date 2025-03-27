@@ -260,13 +260,14 @@ body {
   }
 
   .sidebar {
-    position: sticky;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 99999;
   }
 
   .main-content {
+    margin-top: 56px;
     max-height: calc(100vh - 56px) !important;
   }
 }

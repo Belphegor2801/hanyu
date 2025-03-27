@@ -272,7 +272,7 @@ body {
   .sidebar {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 100vh;
     z-index: 99999;
   }
 
@@ -288,8 +288,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5); /* Màu đen mờ */
     z-index: 11111111; /* Đặt lên trên các phần tử khác */
   }

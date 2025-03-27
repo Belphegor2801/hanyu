@@ -302,8 +302,8 @@ body {
     height: 50px;
     animation: spin 1s linear infinite;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
   }
 
   @keyframes spin {

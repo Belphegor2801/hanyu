@@ -159,9 +159,11 @@ export default {
 
         // Lấy danh sách đáp án có thể có
         var dataAnswer = data.map((x) => x[this.type[answerType]]);
-        var dataAnswerFilter = dataAnswer.filter(x => x.length == correctLegth);
+        var dataAnswerFilter = dataAnswer.filter(
+          (x) => x.length == correctLegth
+        );
         var answers = this.pickRandomNExcluding(
-          answerType == 3? dataAnswer: dataAnswerFilter,
+          answerType == 3 ? dataAnswer : dataAnswerFilter,
           correct,
           3
         );
@@ -395,6 +397,13 @@ export default {
   .previous-word {
     margin-top: 12px;
     width: 100%; /* Full width for smaller screens */
+    font-size: 12px !important;
+
+    .info-view {
+      .info-key {
+        min-width: 88px !important;
+      }
+    }
   }
 }
 </style>

@@ -282,7 +282,7 @@ export default {
 
     .grid-view {
       .table-container {
-        height: calc(60vh) !important;
+        height: calc(65vh) !important;
         overflow: auto;
       }
     }
@@ -294,12 +294,12 @@ export default {
       width: 100% !important;
       border-radius: 4px;
       transition: width 0.3s;
-      min-height: calc(40vh - 56px - 88px);
-      max-height: calc(40vh - 56px - 88px);
+      min-height: calc(35vh - 56px - 24px - 10px);
+      max-height: calc(35vh - 56px - 24px - 10px);
       gap: 12px;
 
       .radical-view {
-        width: 40% !important;
+        max-width: 40% !important;
         height: inherit !important;
         background-color: #f0f0f0;
         border-radius: 4px;
@@ -313,11 +313,10 @@ export default {
 
       .info-view {
         margin-top: 0px !important;
-        width: 100%;
         height: inherit !important;
 
         .info-key {
-          min-width: 120px;
+          min-width: 100px;
           height: 28px !important;
           background-color: #f0f0f0;
           text-align: left;

@@ -39,7 +39,7 @@
 
 
 <script>
-import { ref, getCurrentInstance, computed } from "vue";
+import { ref, getCurrentInstance, onMounted, computed } from "vue";
 import "@fortawesome/fontawesome-free/css/all.css";
 import router from "@/router";
 
@@ -48,6 +48,7 @@ export default {
   setup() {
     const { proxy } = getCurrentInstance();
     const isCollapsed = ref(true);
+    const isInPhone = ref(window.innerWidth < 768);
     const menuItems = ref([
       { id: 1, name: "Phiên âm", icon: "fas fa-folder", path: "/hanyu/pinyin" },
       {
@@ -78,9 +79,13 @@ export default {
       }
     };
 
-    const isInPhone = computed(() => {
-      return window.innerWidth < 768;
-    });
+    const updateIsInPhone = () => {
+      isInPhone.value = window.innerWidth < 768;
+    }
+
+    onMounted(() => {
+       window.addEventListener("resize", updateIsInPhone);
+    });;
 
     return {
       isInPhone,
@@ -209,6 +214,7 @@ body {
   background-color: #fff;
   overflow: hidden;
   /* Prevent overflow */
+  max-height: calc(100vh - 12px) !important;
 }
 
 .header {
@@ -254,18 +260,14 @@ body {
   }
 
   .sidebar {
-    position: absolute;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 99999;
   }
 
   .main-content {
-    margin-top: 56px;
     max-height: calc(100vh - 56px) !important;
-  }
-
-  .content {
-    max-height: calc(100vh - 56px - 56px) !important;
   }
 }
 </style>

@@ -183,6 +183,7 @@ export default {
     flex-grow: 1; // Allow grid-view to expand
     min-width: 0; // Prevent overflow issues
     border: none;
+    height: calc(100vh - 56px - 12px - 12px) !important;
 
     .toolbar {
       display: flex;
@@ -218,7 +219,7 @@ export default {
     }
 
     .table-container {
-      height: calc(100% - 120px);
+      height: calc(100%);
       overflow: auto;
       border: 1px solid #ddd;
     }
@@ -296,7 +297,7 @@ export default {
 
   .tab-view {
     flex-shrink: 0; // Prevent shrinking when the grid-view expands
-    width: 320px; // Set a fixed width for the tab-view
+    width: 340px; // Set a fixed width for the tab-view
     background-color: #aeb1ae;
     padding: 10px;
     transition: width 0.3s;
@@ -338,8 +339,7 @@ export default {
     position: relative;
     flex-direction: column;
     .grid-view.collapsed {
-      min-height: calc(100vh - 138px - 36px);
-      max-height: calc(100vh - 138px - 38px);
+      max-height: calc(100vh - 80px);
       position: relative;
       .table-container {
         overflow: auto;
@@ -348,8 +348,8 @@ export default {
 
     .grid-view {
       position: relative;
+      max-height: 65vh;
       .table-container {
-        height: calc(50%) !important;
         overflow: auto;
       }
     }
@@ -361,6 +361,7 @@ export default {
       padding: 10px;
       transition: width 0.3s;
       border-radius: 4px;
+      height: calc(30vh - 24px - 12px);
 
       &.collapsed {
         width: 0px; // Adjust width when collapsed
@@ -371,7 +372,7 @@ export default {
       .main-text-view {
         margin-top: 0;
         width: 100%; // Use full width of the tab-view
-        height: calc(50% - 210px);
+        height: 100%;
       }
     }
   }

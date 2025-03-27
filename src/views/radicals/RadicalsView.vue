@@ -40,32 +40,30 @@
         </div>
         <div class="info-view" v-if="currentActiveCell">
           <div class="info-title"></div>
-          <table>
-            <tbody>
-              <tr>
-                <td class="info-key">Phiên âm</td>
-                <td class="info-value">{{ currentActiveCell["pinyin"] }}</td>
-              </tr>
-              <tr>
-                <td class="info-key">Số nét</td>
-                <td class="info-value">
-                  {{ currentActiveCell["strokeCount"] }}
-                </td>
-              </tr>
-              <tr>
-                <td class="info-key">Tên bộ thủ</td>
-                <td class="info-value">
-                  {{ currentActiveCell["vietnamese"] }}
-                </td>
-              </tr>
-              <tr>
-                <td class="info-key meaning-row">Ý nghĩa</td>
-                <td class="info-value meaning-row">
-                  {{ currentActiveCell["translate"] }}
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div>
+            <div class="info-row">
+              <div class="info-key">Phiên âm</div>
+              <div class="info-value">{{ currentActiveCell["pinyin"] }}</div>
+            </div>
+            <div class="info-row">
+              <div class="info-key">Số nét</div>
+              <div class="info-value">
+                {{ currentActiveCell["strokeCount"] }}
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-key">Tên bộ thủ</div>
+              <div class="info-value">
+                {{ currentActiveCell["vietnamese"] }}
+              </div>
+            </div>
+            <div class="info-row meaning-row">
+              <div class="info-key">Ý nghĩa</div>
+              <div class="info-value">
+                {{ currentActiveCell["translate"] }}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -253,23 +251,27 @@ export default {
       }
 
       .info-view {
-        width: 340px;
         margin-top: 10px;
-
-        .info-key {
-          width: 100px;
-          height: 36px;
-          background-color: #f0f0f0;
-          text-align: left;
-          padding: 8px;
-        }
-
-        .info-value {
-          width: 240px;
-          height: 36px;
-          background-color: #f0f0f0;
-          text-align: left;
-          padding: 8px;
+        .info-row {
+          display: flex;
+          flex-wrap: wrap;
+          .info-key {
+            width: 100px;
+            height: 36px;
+            background-color: #f0f0f0;
+            text-align: left;
+            padding: 8px;
+            margin-top: 1px;
+          }
+          .info-value {
+            flex-grow: 1;
+            height: 36px;
+            background-color: #f0f0f0;
+            text-align: left;
+            padding: 8px;
+            margin-top: 1px;
+            margin-left: 1px;
+          }
         }
       }
     }
@@ -296,13 +298,13 @@ export default {
       transition: width 0.3s;
       min-height: calc(35vh - 56px - 24px - 10px);
       max-height: calc(35vh - 56px - 24px - 10px);
-      gap: 12px;
+      gap: 4px;
 
       .radical-view {
-        max-width: 40% !important;
+        max-width: 33% !important;
         height: inherit !important;
         background-color: #f0f0f0;
-        border-radius: 4px;
+        border-radius: 0px !important;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -312,27 +314,40 @@ export default {
       }
 
       .info-view {
-        margin-top: 0px !important;
-        height: inherit !important;
-
-        .info-key {
-          min-width: 100px;
-          height: 28px !important;
-          background-color: #f0f0f0;
-          text-align: left;
-          padding: 4px 8px !important;
+        margin-top: -1px !important;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .info-row {
+          display: flex;
+          flex-wrap: wrap;
+          .info-key {
+            width: 100px;
+            height: 36px;
+            background-color: #f0f0f0;
+            text-align: left;
+            padding: 8px;
+            margin-top: 1px;
+          }
+          .info-value {
+            flex-grow: 1;
+            height: 36px;
+            background-color: #f0f0f0;
+            text-align: left;
+            padding: 8px;
+            margin-top: 1px;
+            margin-left: 1px;
+          }
         }
 
-        .info-value {
-          width: 100%;
-          height: 28px !important;
-          background-color: #f0f0f0;
-          text-align: left;
-          padding: 4px 8px !important;
-        }
+        .info-row.meaning-row {
+          .info-key {
+            height: calc(35vh - 100px - 10px - 37px * 3) !important;
+          }
 
-        .meaning-row {
-          height: 100% !important;
+          .info-value {
+            height: calc(35vh - 100px - 10px - 37px * 3) !important;
+          }
         }
       }
     }

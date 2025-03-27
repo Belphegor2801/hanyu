@@ -17,12 +17,17 @@
         <div class="question-text">
           <p>{{ currentQuestion.question }}</p>
         </div>
-        <div v-if="currentQuestion.answerType == 1 || currentQuestion.answerType == 2" class="answer-buttons">
+        <div
+          v-if="
+            currentQuestion.answerType == 1 || currentQuestion.answerType == 2
+          "
+          class="answer-buttons"
+        >
           <button
             v-for="(answer, index) in currentQuestion.answers"
             :key="index"
             @click="selectAnswer(answer)"
-            :class="[{'ml-8': index % 2 == 1}]"
+            :class="[{ 'ml-8': index % 2 == 1 }]"
             class="answer-button--type-1"
           >
             {{ answer }}
@@ -42,33 +47,35 @@
 
       <div class="previous-word">
         <h3>Kết quả câu trước</h3>
-        <div class="word-view">
-          <div class="word-char" v-if="previousWord">
-            {{ previousWord["word"] }}
+        <div class="grid-view">
+          <div class="word-view">
+            <div class="word-char" v-if="previousWord">
+              {{ previousWord["word"] }}
+            </div>
           </div>
-        </div>
-        <div class="info-view" v-if="previousWord">
-          <div class="info-title"></div>
-          <table>
-            <tbody>
-              <tr>
-                <td class="info-key">Phiên âm</td>
-                <td class="info-value">{{ previousWord["pinyin"] }}</td>
-              </tr>
-              <tr>
-                <td class="info-key">Hán Việt</td>
-                <td class="info-value">
-                  {{ previousWord["sino-vietnamese"] }}
-                </td>
-              </tr>
-              <tr>
-                <td class="info-key">Dịch nghĩa</td>
-                <td class="info-value">
-                  {{ previousWord["vietnamese"] }}
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="info-view" v-if="previousWord">
+            <div class="info-title"></div>
+            <table>
+              <tbody>
+                <tr>
+                  <td class="info-key">Phiên âm</td>
+                  <td class="info-value">{{ previousWord["pinyin"] }}</td>
+                </tr>
+                <tr>
+                  <td class="info-key">Hán Việt</td>
+                  <td class="info-value">
+                    {{ previousWord["sino-vietnamese"] }}
+                  </td>
+                </tr>
+                <tr>
+                  <td class="info-key">Dịch nghĩa</td>
+                  <td class="info-value">
+                    {{ previousWord["vietnamese"] }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -79,13 +86,13 @@
       </h1>
       <button class="reset-button" @click="resetgame">Làm lại</button>
     </div>
-    <hanzi-lookup ></hanzi-lookup>
+    <hanzi-lookup></hanzi-lookup>
   </div>
 </template>
 
 <script>
 import data from "@/data/vocabs.json";
-import HanziLookup from '../../components/base/HanziLookup.vue';
+import HanziLookup from "../../components/base/HanziLookup.vue";
 export default {
   data() {
     return {
@@ -148,8 +155,13 @@ export default {
         var word = data[this.pickRandomNum(questionsLength) - 1];
         var question = word[this.type[questionType]];
         var correct = word[this.type[answerType]];
+        var correctLegth = correct.length;
+
+        // Lấy danh sách đáp án có thể có
+        var dataAnswer = data.map((x) => x[this.type[answerType]]);
+        var dataAnswerFilter = dataAnswer.filter(x => x.length == correctLegth);
         var answers = this.pickRandomNExcluding(
-          data.map((x) => x[this.type[answerType]]),
+          answerType == 3? dataAnswer: dataAnswerFilter,
           correct,
           3
         );
@@ -267,7 +279,7 @@ export default {
   }
 
   .question-text {
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 520;
     width: 100%;
     height: 100px;
@@ -299,6 +311,7 @@ export default {
   cursor: pointer;
   height: 84px;
   margin-top: 4px;
+  font-size: 24px;
 }
 
 .answer-button--type-2 {
@@ -321,14 +334,13 @@ export default {
 
 .previous-word {
   flex-shrink: 0; // Prevent shrinking when the grid-view expands
-  width: 360px; // Set a fixed width for the tab-view
   background-color: #ffffff;
   padding: 10px;
   border-radius: 4px;
+  min-width: 300px;
 
   .word-view {
     margin-top: 8px;
-    width: 340px;
     height: 120px;
     display: flex;
     align-items: center;
@@ -345,11 +357,11 @@ export default {
   }
 
   .info-view {
-    width: 340px;
     margin-top: 10px;
+    width: 100%;
 
     .info-key {
-      width: 100px;
+      min-width: 140px;
       height: 36px;
       background-color: #f0f0f0;
       text-align: left;
@@ -357,12 +369,32 @@ export default {
     }
 
     .info-value {
-      width: 240px;
+      width: 100%;
       height: 36px;
       background-color: #f0f0f0;
       text-align: left;
       padding: 8px;
     }
+  }
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 738px) {
+  .quiz-content {
+    flex-direction: column; /* Switch to vertical layout */
+  }
+
+  .question-section {
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .question-text {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .previous-word {
+    margin-top: 12px;
+    width: 100%; /* Full width for smaller screens */
   }
 }
 </style>

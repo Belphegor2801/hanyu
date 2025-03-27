@@ -1,23 +1,28 @@
 <template>
   <div id="app">
     <div class="main">
-      <aside :class="['sidebar', { collapsed: isCollapsed }]">
+      <div :class="['sidebar', { collapsed: isCollapsed }]">
         <div class="sidebar-header">
-          <h2 v-if="!isCollapsed">Hanyu</h2>
+          <h2 class="sidebar-title">Hanyu</h2>
           <div @click="toggleSidebar" class="toggle-button">
             <i class="fas fa-align-justify scale-1_1"></i>
             <!-- Biểu tượng Font Awesome -->
           </div>
         </div>
         <ul class="menu-items">
-          <li v-for="item in menuItems" :key="item.id" class="menu-item" :class="{ active: activeTab.id === item.id }"
-            @click="changeActiveTab(item)">
+          <li
+            v-for="item in menuItems"
+            :key="item.id"
+            class="menu-item"
+            :class="{ active: activeTab.id === item.id }"
+            @click="changeActiveTab(item)"
+          >
             <i class="menu-icon fas" :class="item.icon"></i>
             <!-- Thay đổi biểu tượng cho mỗi item nếu cần -->
             <span class="menu-text" v-if="!isCollapsed">{{ item.name }}</span>
           </li>
         </ul>
-      </aside>
+      </div>
       <main class="main-content">
         <header class="header">
           <h2>{{ activeTab.name }}</h2>
@@ -40,11 +45,21 @@ export default {
   name: "App",
   setup() {
     const { proxy } = getCurrentInstance();
-    const isCollapsed = ref(false);
+    const isCollapsed = ref(true);
     const menuItems = ref([
       { id: 1, name: "Phiên âm", icon: "fas fa-folder", path: "/hanyu/pinyin" },
-      { id: 2, name: "Bộ thủ", icon: "fas fa-align-justify", path: "/hanyu/radicals" },
-      { id: 3, name: "Ôn tập", icon: "fas fa-align-justify", path: "/hanyu/revision" },
+      {
+        id: 2,
+        name: "Bộ thủ",
+        icon: "fas fa-align-justify",
+        path: "/hanyu/radicals",
+      },
+      {
+        id: 3,
+        name: "Ôn tập",
+        icon: "fas fa-align-justify",
+        path: "/hanyu/revision",
+      },
     ]);
 
     const activeTab = ref(menuItems.value[0]); // Khởi động với tab đầu tiên
@@ -56,6 +71,10 @@ export default {
     const changeActiveTab = (tab) => {
       activeTab.value = tab;
       router.push({ path: tab.path });
+      const width = window.innerWidth;
+      if (width < 768) {
+        isCollapsed.value = true;
+      }
     };
 
     return {
@@ -125,6 +144,10 @@ body {
 
 .sidebar.collapsed .sidebar-header {
   padding: 13px;
+}
+
+.sidebar.collapsed .sidebar-title {
+  display: none;
 }
 
 .menu-items {
@@ -199,6 +222,43 @@ body {
   padding: 12px;
   background-color: #fff;
   overflow-y: auto;
-  /* Enable vertical scrolling if necessary */
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .sidebar.collapsed {
+    width: 100%;
+    height: 56px;
+  }
+
+  .sidebar.collapsed .sidebar-title {
+    display: flex;
+    position: relative;
+  }
+
+  .sidebar.collapsed .menu-items {
+    display: none;
+  }
+
+  .sidebar {
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+  }
+
+  .main-content {
+    margin-top: 56px;
+    max-height: calc(100vh - 56px) !important;
+  }
+
+  .content {
+    max-height: calc(100vh - 56px - 56px) !important;
+  }
 }
 </style>

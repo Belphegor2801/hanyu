@@ -1,15 +1,15 @@
 <template>
   <div class="radicals-view">
-    <button class="play-button">Quizz</button>
+    <!-- <button class="play-button">Quizz</button> -->
 
-    <div class="intro">
+    <!-- <div class="intro">
       <strong>Bộ thủ tiếng Trung (部首)</strong> là một bộ phận để cấu tạo nên
       chữ Hán. Một chữ Hán sẽ được cấu tạo từ một hay nhiều bộ Thủ ghép lại với
       nhau. Từ bộ thủ có thể đoán được sơ lược ý nghĩa của từ, vì vậy việc học
       bộ thủ rất quan trọng.
-    </div>
+    </div> -->
 
-    <h2 class="grid-title">Bảng danh sách bộ thủ</h2>
+    <!-- <h2 class="grid-title">Bảng danh sách bộ thủ</h2> -->
 
     <div class="main-view">
       <div class="grid-view">
@@ -48,22 +48,25 @@
               </tr>
               <tr>
                 <td class="info-key">Số nét</td>
-                <td class="info-value">{{ currentActiveCell["strokeCount"] }}</td>
+                <td class="info-value">
+                  {{ currentActiveCell["strokeCount"] }}
+                </td>
               </tr>
               <tr>
                 <td class="info-key">Tên bộ thủ</td>
-                <td class="info-value">{{ currentActiveCell["vietnamese"] }}</td>
+                <td class="info-value">
+                  {{ currentActiveCell["vietnamese"] }}
+                </td>
               </tr>
               <tr>
-                <td class="info-key">Ý nghĩa</td>
-                <td class="info-value">{{ currentActiveCell["translate"] }}</td>
+                <td class="info-key meaning-row">Ý nghĩa</td>
+                <td class="info-value meaning-row">{{ currentActiveCell["translate"] }}</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
     </div>
-    <hanzi-lookup> </hanzi-lookup>
   </div>
 </template>
 
@@ -75,7 +78,7 @@ import data from "@/data/radicals.json";
 export default {
   name: "Radicals",
   components: {
-    HanziLookup
+    HanziLookup,
   },
   setup() {
     const radicals = data["data"];
@@ -139,7 +142,6 @@ export default {
   }
 
   .grid-title {
-    margin-top: 20px;
     margin-bottom: 8px;
     text-align: left;
     font-size: 24px;
@@ -266,6 +268,68 @@ export default {
           background-color: #f0f0f0;
           text-align: left;
           padding: 8px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main-view {
+    flex-direction: column;
+
+    .grid-view {
+      .table-container {
+        height: calc(60vh) !important;
+        overflow: auto;
+      }
+    }
+    .tab-view {
+      flex-shrink: 0;
+      background-color: #aeb1ae;
+      padding: 10px;
+      display: flex;
+      width: 100% !important;
+      border-radius: 4px;
+      transition: width 0.3s;
+      min-height: calc(40vh - 56px - 88px);
+      max-height: calc(40vh - 56px - 88px);
+      gap: 12px;
+
+      .radical-view {
+        width: 40% !important;
+        height: inherit !important;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .radical-char {
+          font-size: 99px !important;
+        }
+      }
+
+      .info-view {
+        margin-top: 0px !important;
+        width: 100%;
+        height: inherit !important;
+
+        .info-key {
+          min-width: 120px;
+          background-color: #f0f0f0;
+          text-align: left;
+          padding: 8px;
+        }
+
+        .info-value {
+          width: 100%;
+          background-color: #f0f0f0;
+          text-align: left;
+          padding: 8px;
+        }
+
+        .meaning-row {
+          height: 100% !important;
         }
       }
     }

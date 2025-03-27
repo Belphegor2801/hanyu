@@ -18,7 +18,7 @@
             <tbody class="body">
               <tr v-for="key in Object.keys(gridData)" :key="key">
                 <td class="sticky">
-                  <div class="row-title">{{ `Bộ ${key} nét` }}</div>
+                  <div class="row-title">{{ key }}</div>
                 </td>
                 <td
                   v-for="(cell, colIndex) in gridData[key]"
@@ -60,7 +60,9 @@
               </tr>
               <tr>
                 <td class="info-key meaning-row">Ý nghĩa</td>
-                <td class="info-value meaning-row">{{ currentActiveCell["translate"] }}</td>
+                <td class="info-value meaning-row">
+                  {{ currentActiveCell["translate"] }}
+                </td>
               </tr>
             </tbody>
           </table>
@@ -173,7 +175,7 @@ export default {
       }
 
       .row-title {
-        width: 100px;
+        width: 42px;
       }
 
       th,
@@ -316,16 +318,18 @@ export default {
 
         .info-key {
           min-width: 120px;
+          height: 28px !important;
           background-color: #f0f0f0;
           text-align: left;
-          padding: 8px;
+          padding: 4px 8px !important;
         }
 
         .info-value {
           width: 100%;
+          height: 28px !important;
           background-color: #f0f0f0;
           text-align: left;
-          padding: 8px;
+          padding: 4px 8px !important;
         }
 
         .meaning-row {

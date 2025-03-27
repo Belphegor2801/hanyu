@@ -173,6 +173,7 @@ export default {
 
 <style lang="scss">
 .pinyin {
+  position: relative;
   display: flex;
   gap: 8px;
 
@@ -217,7 +218,7 @@ export default {
     }
 
     .table-container {
-      height: calc(100vh - 120px);
+      height: calc(100% - 120px);
       overflow: auto;
       border: 1px solid #ddd;
     }
@@ -334,18 +335,21 @@ export default {
 
 @media (max-width: 768px) {
   .pinyin {
+    position: relative;
     flex-direction: column;
     .grid-view.collapsed {
+      min-height: calc(100vh - 138px - 36px);
+      max-height: calc(100vh - 138px - 38px);
+      position: relative;
       .table-container {
-        min-height: calc(100vh - 138px - 38px);
-        max-height: calc(100vh - 138px - 38px);
         overflow: auto;
       }
     }
 
     .grid-view {
+      position: relative;
       .table-container {
-        height: calc(50vh) !important;
+        height: calc(50%) !important;
         overflow: auto;
       }
     }
@@ -367,7 +371,7 @@ export default {
       .main-text-view {
         margin-top: 0;
         width: 100%; // Use full width of the tab-view
-        height: calc(50vh - 210px);
+        height: calc(50% - 210px);
       }
     }
   }

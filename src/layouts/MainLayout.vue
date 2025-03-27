@@ -3,7 +3,9 @@
     <div class="main">
       <div :class="['sidebar', { collapsed: isCollapsed }]">
         <div class="sidebar-header">
-          <h2 class="sidebar-title">Hanyu</h2>
+          <h2 class="sidebar-title">
+            {{ isInPhone ? activeTab.name : "Hanyu" }}
+          </h2>
           <div @click="toggleSidebar" class="toggle-button">
             <i class="fas fa-align-justify scale-1_1"></i>
             <!-- Biểu tượng Font Awesome -->
@@ -24,7 +26,7 @@
         </ul>
       </div>
       <main class="main-content">
-        <header class="header">
+        <header class="header" v-if="!isInPhone">
           <h2>{{ activeTab.name }}</h2>
         </header>
         <div class="content">
@@ -37,7 +39,7 @@
 
 
 <script>
-import { ref, getCurrentInstance } from "vue";
+import { ref, getCurrentInstance, computed } from "vue";
 import "@fortawesome/fontawesome-free/css/all.css";
 import router from "@/router";
 
@@ -71,13 +73,17 @@ export default {
     const changeActiveTab = (tab) => {
       activeTab.value = tab;
       router.push({ path: tab.path });
-      const width = window.innerWidth;
-      if (width < 768) {
+      if (isInPhone.value) {
         isCollapsed.value = true;
       }
     };
 
+    const isInPhone = computed(() => {
+      return window.innerWidth < 768;
+    });
+
     return {
+      isInPhone,
       isCollapsed,
       menuItems,
       activeTab,
@@ -218,6 +224,7 @@ body {
 }
 
 .content {
+  position: relative;
   flex: 1;
   padding: 12px;
   background-color: #fff;

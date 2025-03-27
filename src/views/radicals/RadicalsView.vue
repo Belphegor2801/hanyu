@@ -322,16 +322,19 @@ export default {
           display: flex;
           flex-wrap: wrap;
           .info-key {
-            width: 100px;
-            height: 36px;
+            width: 80px !important;
+            height: 27px !important;
             background-color: #f0f0f0;
+            font-size: 12px !important;
             text-align: left;
             padding: 8px;
             margin-top: 1px;
           }
           .info-value {
+            max-width: calc(100% - 82px);
             flex-grow: 1;
-            height: 36px;
+            height: 27px !important;
+            font-size: 12px !important;
             background-color: #f0f0f0;
             text-align: left;
             padding: 8px;
@@ -342,11 +345,11 @@ export default {
 
         .info-row.meaning-row {
           .info-key {
-            height: calc(35vh - 100px - 10px - 37px * 3) !important;
+            height: calc(35vh - 100px - 10px - 28px * 3) !important;
           }
 
           .info-value {
-            height: calc(35vh - 100px - 10px - 37px * 3) !important;
+            height: calc(35vh - 100px - 10px - 28px * 3) !important;
           }
         }
       }

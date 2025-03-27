@@ -50,17 +50,17 @@ export default {
     const isCollapsed = ref(true);
     const isInPhone = ref(window.innerWidth < 768);
     const menuItems = ref([
-      { id: 1, name: "Phiên âm", icon: "fas fa-folder", path: "/hanyu/pinyin" },
+      { id: 1, name: "Phiên âm", icon: "fas fa-headphones", path: "/hanyu/pinyin" },
       {
         id: 2,
         name: "Bộ thủ",
-        icon: "fas fa-align-justify",
+        icon: "fas fa-folder",
         path: "/hanyu/radicals",
       },
       {
         id: 3,
         name: "Ôn tập",
-        icon: "fas fa-align-justify",
+        icon: "fas fa-cube",
         path: "/hanyu/revision",
       },
     ]);

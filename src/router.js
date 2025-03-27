@@ -30,12 +30,15 @@ const router = createRouter({
 });
 
 
-// router.beforeEach((to, from, next) => {
-//     commonFn.mask();
-// });
+router.beforeEach((to, from, next) => {
+    console.log('Navigating to:', to.name);
+    // Perform any checks here
+    next()
+    commonFn.mask();
+});
 
-// router.afterEach(() => {
-//     commonFn.unmask();
-// });
+router.afterEach(() => {
+    commonFn.unmask();
+});
 
 export default router;

@@ -34,6 +34,11 @@
         </div>
       </main>
     </div>
+
+    <div id="h-loader" class="h-loader">
+      <div class="overlay"></div>
+      <div class="loader"></div>
+    </div>
   </div>
 </template>
 
@@ -50,7 +55,12 @@ export default {
     const isCollapsed = ref(true);
     const isInPhone = ref(window.innerWidth < 768);
     const menuItems = ref([
-      { id: 1, name: "Phiên âm", icon: "fas fa-headphones", path: "/hanyu/pinyin" },
+      {
+        id: 1,
+        name: "Phiên âm",
+        icon: "fas fa-headphones",
+        path: "/hanyu/pinyin",
+      },
       {
         id: 2,
         name: "Bộ thủ",
@@ -81,11 +91,11 @@ export default {
 
     const updateIsInPhone = () => {
       isInPhone.value = window.innerWidth < 768;
-    }
+    };
 
     onMounted(() => {
-       window.addEventListener("resize", updateIsInPhone);
-    });;
+      window.addEventListener("resize", updateIsInPhone);
+    });
 
     return {
       isInPhone,
@@ -99,7 +109,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 * {
   margin: 0;
   padding: 0;
@@ -269,6 +279,40 @@ body {
   .main-content {
     margin-top: 56px;
     max-height: calc(100vh - 56px) !important;
+  }
+}
+
+.h-loader {
+  display: none;
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen mờ */
+    z-index: 11111111; /* Đặt lên trên các phần tử khác */
+  }
+
+  .loader {
+    border: 8px solid rgba(255, 255, 255, 0.1);
+    border-left-color: #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 </style>

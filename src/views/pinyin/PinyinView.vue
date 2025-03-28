@@ -373,6 +373,19 @@ export default {
         margin-top: 0;
         width: 100%; // Use full width of the tab-view
         height: 100%;
+
+        .text {
+          margin-top: -8px;
+          font-size: 52px !important;
+          height: 50px !important;
+          cursor: pointer;
+        }
+
+        .sub-text {
+          margin-top: 30px !important;
+          height: 13px;
+          font-size: 16px !important;
+        }
       }
     }
   }

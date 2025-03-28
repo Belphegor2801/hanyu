@@ -1,11 +1,13 @@
 <template>
-  <div class="content" :style="{ width: width + 'px'}">
+  <div class="content" :style="{ width: width + 'px' }">
     <div class="drawingBoard loading">
       <span v-if="loading">Loading...</span>
     </div>
     <div class="charPicker mmahLookupChars">
       <span v-for="match in mmahMatches" :key="match.character">
-        <button class="charButton" @click="submit(match.character)">{{ match.character }}</button>
+        <button class="charButton" @click="submit(match.character)">
+          {{ match.character }}
+        </button>
       </span>
     </div>
     <div class="commands">
@@ -46,7 +48,7 @@ export default {
   },
   mounted() {
     // Init Data
-    var mmahData= JSON.parse(JSON.stringify(mmah));
+    var mmahData = JSON.parse(JSON.stringify(mmah));
     this.hanziLookupInit("mmah", mmahData, this.fileLoaded);
   },
   methods: {
@@ -131,7 +133,7 @@ export default {
     submit(char) {
       this.clearCanvas();
       this.$emit("update:modelValue", char);
-    }
+    },
   },
 };
 </script>
@@ -176,9 +178,20 @@ export default {
   font-size: 24px;
 }
 
+@media (max-width: 768px) {
+  .charPicker {
+    height: 48px;
+  }
+  .charButton {
+    width: 30px !important;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
 .charButton:hover {
   cursor: pointer;
-  background-color: #42B883;
+  background-color: #42b883;
   border-radius: 2px;
   color: #fff;
   border: none;
@@ -210,4 +223,6 @@ export default {
   background-color: #a6c7b8;
   cursor: pointer;
 }
+
+
 </style>

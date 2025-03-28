@@ -154,6 +154,10 @@ export default {
     border: none;
     border-radius: 4px;
 }
+
+.submit-button:hover {
+    background-color: #fff;
+}
 .writing-board {
   position: absolute;
 }

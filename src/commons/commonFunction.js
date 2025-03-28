@@ -6,7 +6,6 @@ class CommonFunction {
 
     mask() {
         const el = this.getMainLoading();
-        console.log(el)
         if (el) {
             el.style.display = 'flex';
         }

@@ -17,31 +17,36 @@
         <div class="question-text">
           <p>{{ currentQuestion.question }}</p>
         </div>
-        <div
-          v-if="
-            currentQuestion.answerType == 1 || currentQuestion.answerType == 2
-          "
-          class="answer-buttons"
-        >
-          <button
-            v-for="(answer, index) in currentQuestion.answers"
-            :key="index"
-            @click="selectAnswer(answer)"
-            :class="[{ 'ml-8': index % 2 == 1 }]"
-            class="answer-button--type-1"
+        <div v-if="currentQuestion.inputType == 2">
+          <div
+            v-if="
+              currentQuestion.answerType == 1 || currentQuestion.answerType == 2
+            "
+            class="answer-buttons"
           >
-            {{ answer }}
-          </button>
+            <button
+              v-for="(answer, index) in currentQuestion.answers"
+              :key="index"
+              @click="selectAnswer(answer)"
+              :class="[{ 'ml-8': index % 2 == 1 }]"
+              class="answer-button--type-1"
+            >
+              {{ answer }}
+            </button>
+          </div>
+          <div v-else class="answer-buttons">
+            <button
+              v-for="(answer, index) in currentQuestion.answers"
+              :key="index"
+              @click="selectAnswer(answer)"
+              class="answer-button--type-2"
+            >
+              {{ answer }}
+            </button>
+          </div>
         </div>
-        <div v-else class="answer-buttons">
-          <button
-            v-for="(answer, index) in currentQuestion.answers"
-            :key="index"
-            @click="selectAnswer(answer)"
-            class="answer-button--type-2"
-          >
-            {{ answer }}
-          </button>
+        <div v-else-if="currentQuestion.inputType == 1">
+          <HHanziInput v-model="inputValue" />
         </div>
       </div>
 
@@ -86,14 +91,16 @@
       </h1>
       <button class="reset-button" @click="resetgame">Làm lại</button>
     </div>
-    <hanzi-lookup></hanzi-lookup>
   </div>
 </template>
 
 <script>
 import data from "@/data/vocabs.json";
-import HanziLookup from "../../components/base/HanziLookup.vue";
+import HHanziInput from "@/components/base/HHanziInput.vue";
 export default {
+  components: {
+    HHanziInput,
+  },
   data() {
     return {
       currentQuestionIndex: 0,
@@ -107,6 +114,11 @@ export default {
         2: "pinyin",
         3: "vietnamese",
       },
+      inputType: {
+        1: "writen",
+        2: "selected",
+      },
+      inputValue: "",
     };
   },
   computed: {
@@ -119,6 +131,26 @@ export default {
   },
   mounted() {
     this.initializeQuiz();
+  },
+  watch: {
+    inputValue(newValue) {
+      if (newValue == '') return;
+      if (this.isEnd) return;
+      if (newValue === this.currentQuestion.correct) {
+        this.correctAnswers++;
+      } else {
+        this.incorrectAnswers++;
+      }
+      this.previousWord = this.currentQuestion.word;
+
+      if (this.currentQuestionIndex + 1 < this.totalQuestions) {
+        this.currentQuestionIndex++;
+      } else {
+        this.isEnd = true;
+      }
+
+      this.inputValue = '';
+    },
   },
   methods: {
     pickRandomNum(num) {
@@ -148,19 +180,40 @@ export default {
       var questionsLength = data.length;
       for (let i = 0; i < 33; i++) {
         var questionType = this.pickRandomNum(3);
-        var answerType = this.pickRandomNum(3);
+        var answerType = 1;
+        var inputType = 1;
+        if (questionType == 1) {
+          inputType = 2;
+        }
+        else {
+          inputType = this.pickRandomNum(2);
+        }
+
+        if (inputType == 1) {
+          answerType = 1;
+        } else {
+          answerType = this.pickRandomNum(3);
+        }
+
         while (answerType === questionType) {
           answerType = this.pickRandomNum(3);
         }
         var word = data[this.pickRandomNum(questionsLength) - 1];
         var question = word[this.type[questionType]];
         var correct = word[this.type[answerType]];
+
         var correctLegth = correct.length;
+
+        if (answerType == 2) {
+          correctLegth = correct.split(" ").length;
+        }
 
         // Lấy danh sách đáp án có thể có
         var dataAnswer = data.map((x) => x[this.type[answerType]]);
-        var dataAnswerFilter = dataAnswer.filter(
-          (x) => x.length == correctLegth
+        var dataAnswerFilter = dataAnswer.filter((x) =>
+          answerType == 2
+            ? x.split(" ").length == correctLegth
+            : x.length == correctLegth
         );
         var answers = this.pickRandomNExcluding(
           answerType == 3 ? dataAnswer : dataAnswerFilter,
@@ -174,6 +227,7 @@ export default {
           answers: this.shuffleArray(answers.slice()),
           correct: correct,
           answerType: answerType,
+          inputType: inputType,
         });
       }
     },

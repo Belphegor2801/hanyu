@@ -24,13 +24,12 @@ import mmah from "@/composables/hanziLookup/mmah.json";
 
 export default {
   props: {
+    modelValue: {
+      default: null,
+    },
     boardSize: {
       type: Number,
       default: 400,
-    },
-    jsonFilePath: {
-      type: String,
-      required: true,
     },
   },
   data() {
@@ -125,6 +124,14 @@ export default {
         this.mmahMatches = matches;
       });
     },
+    /**
+     * Lookup
+     * NXHinh 28.03.2025
+     */
+    submit(char) {
+      this.clearCanvas();
+      this.$emit("update:modelValue", char);
+    }
   },
 };
 </script>

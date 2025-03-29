@@ -130,7 +130,7 @@ export default {
       const filename = `${_i}${grid.value.rows[currentActiveChar.value.r]}${
         selectedTab.value["mapping"]
       }.mp3`;
-      return `public/assets/audio/${filename}?raw=true`; // Use require for static paths
+      return `assets/audio/${filename}?raw=true`; // Use require for static paths
     });
 
     const audio = new Audio();

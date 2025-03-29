@@ -46,7 +46,7 @@
           </div>
         </div>
         <div v-else-if="currentQuestion.inputType == 1">
-          <HHanziInput v-model="inputValue" :height="66" :fontSize="32" :placeholder="'Nhập Hán tự'"/>
+          <HHanziInput v-model="inputValue" :height="66" :fontSize="32" :placeholder="'Hán tự'"/>
         </div>
       </div>
 

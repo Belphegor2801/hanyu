@@ -111,6 +111,7 @@ export default {
       this.drawingBoard.clearCanvas();
       this.drawingBoard.redraw();
       this.lookup();
+      this.mmahMatches = []
     },
     /**
      * Lookup

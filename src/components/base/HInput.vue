@@ -167,6 +167,10 @@ export default {
   border: 1px solid rgb(209, 31, 31) !important;
 }
 
+input::placeholder {
+  font-style: italic;
+}
+
 .ic-right {
   display: flex;
   background: #fff;

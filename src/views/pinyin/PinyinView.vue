@@ -134,8 +134,10 @@ export default {
       return `src/assets/audio/${filename}`; // Use require for static paths
     });
 
+    const audio = new Audio();
     const onPlayPinyinAudio = () => {
-      const audio = new Audio(audioSrc.value); // Create a new Audio object with the path
+      audio.src = audioSrc.value; 
+      audio.load();
       try {
         audio.currentTime = 0; // Reset to the start
         audio.play();

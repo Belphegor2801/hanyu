@@ -25,7 +25,7 @@ const routes = [
 ]
 
 const router = createRouter({
-    history: createWebHistory('https://github.com/Belphegor2801/hanyu'),
+    history: createWebHistory(),
     routes,
 });
 

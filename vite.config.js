@@ -5,7 +5,7 @@ import path from 'path';
 // https://vite.dev/config/
 export default defineConfig(({ command, mode }) => {
   // Determine the base path based on the environment
-  const base = mode === 'production' ? 'https://github.com/Belphegor2801/hanyu' : '/';
+  const base = mode === 'production' ? 'https://belphegor2801.github.io' : '/';
 
   return {
     plugins: [vue()],

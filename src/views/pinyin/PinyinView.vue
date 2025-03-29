@@ -131,7 +131,7 @@ export default {
       const filename = `${_i}${grid.value.rows[currentActiveChar.value.r]}${
         selectedTab.value["mapping"]
       }.mp3`;
-      return `src/assets/audio/${filename}`; // Use require for static paths
+      return `src/assets/audio/${filename}?raw=true`; // Use require for static paths
     });
 
     const audio = new Audio();

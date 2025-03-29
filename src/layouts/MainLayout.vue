@@ -47,11 +47,13 @@
 import { ref, getCurrentInstance, onMounted, computed } from "vue";
 import "@fortawesome/fontawesome-free/css/all.css";
 import router from "@/router";
+import { useRoute } from "vue-router"; // Import useRoute
 
 export default {
   name: "App",
   setup() {
     const { proxy } = getCurrentInstance();
+    const route = useRoute();
     const isCollapsed = ref(true);
     const isInPhone = ref(window.innerWidth < 768);
     const menuItems = ref([
@@ -75,7 +77,9 @@ export default {
       },
     ]);
 
-    const activeTab = ref(menuItems.value[0]); // Khởi động với tab đầu tiên
+    const activeTab = computed(() => {
+      return menuItems.value.find(item => item.path === route.path) || menuItems.value[0];
+    });
 
     const toggleSidebar = () => {
       isCollapsed.value = !isCollapsed.value;
@@ -95,6 +99,7 @@ export default {
 
     onMounted(() => {
       window.addEventListener("resize", updateIsInPhone);
+      // Lấy route -> activeTab
     });
 
     return {

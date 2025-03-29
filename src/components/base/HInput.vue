@@ -1,23 +1,32 @@
 <template>
-  <div class="h-input"   :style="{ width: width !== 0 ? width + 'px' : '100%' }">
+  <div class="h-input" :style="{ width: width !== 0 ? width + 'px' : '100%' }">
     <label v-if="label">{{ label }}</label>
     <input
       ref="input"
       type="text"
       class="h-input-item"
-      :class="[{'has-right-icon': rightIcon}]"
+      :class="[{ 'has-right-icon': rightIcon, 'input-error': isError }]"
       v-model="inputValue"
       @input="onInput"
       :placeholder="placeholder"
       :disabled="disabled"
       :maxlength="maxLength"
+      :style="{ height: height + 'px', 'font-size': fontSize + 'px' }"
     />
 
     <div v-if="rightIcon" class="ic-right">
       <div
-        :class="['icon24 icon', rightIcon, isClickRightIcon ? 'pointer' : '']"
+        :class="['rightIcon', isClickRightIcon ? 'pointer' : '', {'input-error': isError}]"
         @click="onClickRightIcon"
-      ></div>
+        :style="{
+          height: height - 2 + 'px !important',
+          width: height - 2 + 'px',
+          'font-size': `${height < 40 ? 14 : 32}px`,
+        }"
+        v-tooltip="'Click me for more info!'"
+      >
+        <div :class="rightIcon"></div>
+      </div>
     </div>
     <span v-if="error" class="error">{{ error }}</span>
   </div>
@@ -35,6 +44,14 @@ export default {
     width: {
       type: Number,
       default: 0,
+    },
+    height: {
+      type: Number,
+      default: 26,
+    },
+    fontSize: {
+      type: Number,
+      default: 14,
     },
     label: {
       type: String,
@@ -63,10 +80,11 @@ export default {
     tooltipRigthIcon: {
       type: String,
       default: "",
-    }
+    },
   },
   setup(props, { emit }) {
     const inputValue = ref(props.modelValue); // Create a reactive reference for the input value
+    const isError = ref(false);
     const error = ref("");
 
     // Watch for changes in modelValue prop to update inputValue
@@ -79,8 +97,10 @@ export default {
 
     const onInput = () => {
       if (inputValue.value.trim() === "") {
+        isError.value = true;
         error.value = ""; // Example error message
       } else {
+        isError.value = false;
         error.value = "";
       }
       emit("update:modelValue", inputValue.value); // Emit the updated value
@@ -94,6 +114,7 @@ export default {
 
     return {
       inputValue,
+      isError,
       error,
       onInput,
       onClickRightIcon,
@@ -116,7 +137,6 @@ export default {
   }
 
   .h-input-item {
-    height: 26px;
     width: 100%;
     border-radius: 3px;
     border: 1px solid #7c7a7a;
@@ -143,6 +163,10 @@ export default {
   }
 }
 
+.input-error {
+  border: 1px solid rgb(209, 31, 31) !important;
+}
+
 .ic-right {
   display: flex;
   background: #fff;
@@ -155,10 +179,10 @@ export default {
   right: 0;
 }
 
-.icon24 {
-  width: 24px !important;
-  height: 24px !important;
-  position: relative;
+.rightIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fa {

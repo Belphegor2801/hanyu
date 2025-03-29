@@ -3,21 +3,22 @@
     <div class="input-container">
       <h-input
         :width="width"
+        :height="height"
+        :fontSize="fontSize"
         :label="label"
         :placeholder="placeholder"
         :maxLength="maxLength"
         :disabled="disabled"
         rightIcon="fa fa-regular fa-pen-to-square"
+        class="input-item"
         :isClickRightIcon="true"
         @clickRightIcon="onClickRightIcon"
         v-model="inputValue"
       />
-      <button class='submit-button' @click="submit">
-        <i class="icon24 fa fa-right-to-bracket" />
+      <button class="submit-button" @click="submit" v-tooltip="'Submit'">
+        <i class="icon24 fa fa-right-to-bracket" :style="{'font-size': `34px`, width: height + 'px'}" />
       </button>
     </div>
-
-    
 
     <teleport to="body">
       <div class="writing-board" ref="hHanziLookupComponent">
@@ -46,6 +47,14 @@ export default {
     width: {
       type: Number,
       default: 0,
+    },
+    height: {
+      type: Number,
+      default: 26,
+    },
+    fontSize: {
+      type: Number,
+      default: 14,
     },
     label: {
       type: String,
@@ -121,9 +130,9 @@ export default {
     });
 
     const submit = () => {
-        emit("update:modelValue", inputValue.value);
-        inputValue.value = '';
-    }
+      emit("update:modelValue", inputValue.value);
+      inputValue.value = "";
+    };
 
     return {
       hanziCharSubmit,
@@ -134,29 +143,28 @@ export default {
       onInput,
       onClickRightIcon,
       showWritingBoard,
-      submit
+      submit,
     };
   },
 };
 </script>
 
 <style scoped>
-
 .input-container {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
 }
 
 .submit-button {
-    width: 28px;
-    margin-left: 2px;
-    cursor: pointer;
-    background-color: rgba(74, 182, 74, 0.658);
-    border: none;
-    border-radius: 4px;
+  cursor: pointer;
+  background-color: rgba(74, 182, 74, 0.658);
+  border: none;
+  border-radius: 4px;
 }
 
 .submit-button:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
 .writing-board {
   position: absolute;

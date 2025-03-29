@@ -72,6 +72,7 @@
 <script>
 import { ref, computed, onMounted, watch } from "vue";
 import data from "@/data/pinyin.json";
+import peng1 from "@/assets/audio/peng1.mp3";
 
 export default {
   setup() {
@@ -130,7 +131,7 @@ export default {
       const filename = `${_i}${grid.value.rows[currentActiveChar.value.r]}${
         selectedTab.value["mapping"]
       }.mp3`;
-      return `./src/assets/audio/${filename}`; // Use require for static paths
+      return `/src/assets/audio/${filename}`; // Use require for static paths
     });
 
     const onPlayPinyinAudio = () => {

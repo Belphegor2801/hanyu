@@ -21,6 +21,11 @@ const routes = [
         path: '/hanyu/revision',
         name: "revision",
         component: () => import('@/views/revision/RevisionView.vue'),
+    },
+    {
+        path: '/hanyu/tools',
+        name: "tool",
+        component: () => import('@/views/tools/ToolsView.vue'),
     }
 ]
 

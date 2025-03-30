@@ -75,6 +75,12 @@ export default {
         icon: "fas fa-cube",
         path: "/hanyu/revision",
       },
+      {
+        id: 4,
+        name: "Công cụ",
+        icon: "fas fa-th",
+        path: "/hanyu/tools",
+      },
     ]);
 
     const activeTab = computed(() => {

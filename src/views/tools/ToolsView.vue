@@ -10,7 +10,15 @@
     <div class="results" v-if="sortedTexts.length > 0">
       <h2>Kết quả:</h2>
 
-      <div v-for="(text, index) in sortedTexts" :key="index">{{ text }}</div>
+      <div class="result-container">
+        <div
+          class="result-item"
+          v-for="(text, index) in sortedTexts"
+          :key="index"
+        >
+          {{ text }}
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -44,8 +52,8 @@ textarea {
 }
 
 textarea:focus {
-    outline: none !important;
-    border: 1px solid rgba(16, 173, 79, 1);
+  outline: none !important;
+  border: 1px solid rgba(16, 173, 79, 1);
 }
 
 button {
@@ -72,5 +80,24 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+
+.result-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* Responsive columns */
+  gap: 10px; /* Space between grid items */
+  width: 100%; /* Full width of the container */
+  margin: auto; /* Center the grid */
+  padding: 10px; /* Padding around the grid */
+}
+.result-item {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px; /* Rounded corners */
 }
 </style>

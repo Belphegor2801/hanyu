@@ -22,14 +22,15 @@
       </select>
     </div>
     <div class="controls flex-center">
-      <button class="w-160" @click="printResults">Sắp xếp</button>
+      <button class="arrange-button w-160" @click="printResults">Sắp xếp</button>
     </div>
 
     <div class="results" v-if="results.length > 0">
       <div class="result-container">
-        <div class="result-item" v-for="(text, index) in results" :key="index">
-          {{ text }}
-        </div>
+        <button class="result-item" v-for="(item, index) in results" :key="index">
+          <p v-html="item.pinyin"></p>
+          <div class="tooltip">{{ item.vietnamese }}</div>
+        </button>
       </div>
     </div>
   </div>
@@ -74,7 +75,7 @@ export default {
       const store = useMainStore();
       if (this.isAllMode) {
         var jsonData = await commonFn.importJSONFiles(store.numOfLessons);
-        this.results = jsonData.map((x) => x["pinyin"]).sort(() => Math.random() - 0.5);
+        this.results = jsonData.map((x) => x).sort(() => Math.random() - 0.5);
       } else {
         var lesson = this.lessons.find((x) => x.name === this.selectedLesson);
         if (lesson != null) {
@@ -82,7 +83,7 @@ export default {
             store.numOfLessons,
             lesson["id"]
           );
-          this.results = jsonData.map((x) => x["pinyin"]).sort(() => Math.random() - 0.5);
+          this.results = jsonData.map((x) => x).sort(() => Math.random() - 0.5);
         }
       }
     },
@@ -122,7 +123,7 @@ select {
   width: 160px;
 }
 
-button {
+.arrange-button {
   padding: 10px 15px;
   cursor: pointer;
   background-color: #4caf50;
@@ -131,7 +132,7 @@ button {
   border-radius: 4px;
 }
 
-button:hover {
+.arrange-button:hover {
   background-color: #fff;
   color: #4caf50;
   border: 1px solid #4caf50;
@@ -151,11 +152,35 @@ button:hover {
 }
 
 .result-item {
+  position: relative;
   background-color: #fcfcfc;
   border: 1px solid #111;
   color: rgb(0, 0, 0);
   padding: 10px;
   text-align: center;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the item */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.result-item:hover .tooltip, .result-item:focus .tooltip, .result-item:active .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 </style>

@@ -8,7 +8,6 @@
           </h2>
           <div @click="toggleSidebar" class="toggle-button">
             <i class="fas fa-align-justify scale-1_1"></i>
-            <!-- Biểu tượng Font Awesome -->
           </div>
         </div>
         <ul class="menu-items">
@@ -20,7 +19,6 @@
             @click="changeActiveTab(item)"
           >
             <i class="menu-icon fas" :class="item.icon"></i>
-            <!-- Thay đổi biểu tượng cho mỗi item nếu cần -->
             <span class="menu-text" v-if="!isCollapsed">{{ item.name }}</span>
           </li>
         </ul>
@@ -30,7 +28,7 @@
           <h2>{{ activeTab.name }}</h2>
         </header>
         <div class="content">
-          <router-view></router-view>
+          <component :is="activeTab.component"></component>
         </div>
       </main>
     </div>
@@ -46,46 +44,46 @@
 <script>
 import { ref, getCurrentInstance, onMounted, computed } from "vue";
 import "@fortawesome/fontawesome-free/css/all.css";
-import router from "@/router";
-import { useRoute } from "vue-router"; // Import useRoute
+import PinyinView from "@/views/pinyin/PinyinView.vue"; 
+import RadicalsView from "@/views/radicals/RadicalsView.vue";
+import RevisionView from "@/views/revision/RevisionView.vue";
+import ToolsView from "@/views/tools/ToolsView.vue";
 
 export default {
   name: "App",
   setup() {
     const { proxy } = getCurrentInstance();
-    const route = useRoute();
     const isCollapsed = ref(true);
     const isInPhone = ref(window.innerWidth < 768);
+    
     const menuItems = ref([
       {
         id: 1,
         name: "Phiên âm",
         icon: "fas fa-headphones",
-        path: "/hanyu/pinyin",
+        component: PinyinView,
       },
       {
         id: 2,
         name: "Bộ thủ",
         icon: "fas fa-folder",
-        path: "/hanyu/radicals",
+        component: RadicalsView,
       },
       {
         id: 3,
         name: "Ôn tập",
         icon: "fas fa-cube",
-        path: "/hanyu/revision",
+        component: RevisionView,
       },
       {
         id: 4,
         name: "Công cụ",
         icon: "fas fa-th",
-        path: "/hanyu/tools",
+        component: ToolsView,
       },
     ]);
 
-    const activeTab = computed(() => {
-      return menuItems.value.find(item => item.path === route.path) || menuItems.value[0];
-    });
+    const activeTab = ref(menuItems.value[0]);
 
     const toggleSidebar = () => {
       isCollapsed.value = !isCollapsed.value;
@@ -93,7 +91,6 @@ export default {
 
     const changeActiveTab = (tab) => {
       activeTab.value = tab;
-      router.push({ path: tab.path });
       if (isInPhone.value) {
         isCollapsed.value = true;
       }
@@ -105,7 +102,6 @@ export default {
 
     onMounted(() => {
       window.addEventListener("resize", updateIsInPhone);
-      // Lấy route -> activeTab
     });
 
     return {

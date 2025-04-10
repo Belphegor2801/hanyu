@@ -9,7 +9,6 @@
       <select
         class="pointer"
         v-model="selectedLesson"
-        :disabled="isAllMode"
         v-if="selectedMode == 'single'"
       >
         <option
@@ -67,13 +66,10 @@ export default {
         name: `Bài ${i}`,
       });
     }
+    this.selectedLesson = "Bài 1";
   },
   methods: {
-    onModeChange() {
-      if (this.isAllMode) {
-        this.selectedLesson = ""; // Reset lesson selection if mode changes to all
-      }
-    },
+    onModeChange() {},
     async printResults() {
       const store = useMainStore();
       if (this.isAllMode) {

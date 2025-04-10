@@ -133,6 +133,7 @@ export default {
     },
   },
   async mounted() {
+    const store = useMainStore();
     this.data = await commonFn.importJSONFiles(store.numOfLessons);
     this.initializeQuiz();
   },

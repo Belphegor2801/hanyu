@@ -26,7 +26,7 @@ class CommonFunction {
         var data = [];
         if (lesson == '') {
             for (let i = 1; i <= numOfLessons; i++) {
-                fileName = `../data/vocabs/b${i}.json`;
+                fileName = `@/data/vocabs/b${i}.json`;
                 try {
                     data = await import(`${fileName}`);
                     jsonData = [...jsonData, ...data.default] // Gán dữ liệu vào đối tượng

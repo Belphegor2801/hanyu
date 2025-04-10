@@ -1,3 +1,14 @@
+import b1 from '@/data/vocabs/b1.json';
+import b2 from '@/data/vocabs/b2.json';
+import b3 from '@/data/vocabs/b3.json';
+import b4 from '@/data/vocabs/b4.json';
+
+const vocabsData = {
+    b1: b1,
+    b2: b2,
+    b3: b3,
+    b4: b4
+}
 
 class CommonFunction {
     getMainLoading() {
@@ -26,26 +37,22 @@ class CommonFunction {
         var data = [];
         if (lesson == '') {
             for (let i = 1; i <= numOfLessons; i++) {
-                fileName = `@/data/vocabs/b${i}.json`;
                 try {
-                    data = await import(`${fileName}`);
-                    jsonData = [...jsonData, ...data.default] // Gán dữ liệu vào đối tượng
+                    data = vocabsData[`b${i}`];
+                    jsonData = [...jsonData, ...data] 
                 } catch (error) {
                     console.error(`Error loading ${fileName}:`, error);
                 }
             }
         }
         else {
-            fileName = `../data/vocabs/b${lesson}.json`;
             try {
-                data = await import(`${fileName}`);
-                jsonData = [...jsonData, ...data.default] // Gán dữ liệu vào đối tượng
+                data = vocabsData[`b${lesson}`];
+                jsonData = [...jsonData, ...data] 
             } catch (error) {
                 console.error(`Error loading ${fileName}:`, error);
             }
         }
-
-
         return jsonData;
     }
 }

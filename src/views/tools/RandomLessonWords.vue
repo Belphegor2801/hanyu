@@ -43,7 +43,7 @@ import { useMainStore } from "@/stores/mainStore.js";
 export default {
   data() {
     return {
-      selectedMode: "single",
+      selectedMode: "all",
       selectedLesson: "",
       lessons: [],
       results: [],

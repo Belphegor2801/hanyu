@@ -2,12 +2,20 @@ import b1 from '@/data/vocabs/b1.json';
 import b2 from '@/data/vocabs/b2.json';
 import b3 from '@/data/vocabs/b3.json';
 import b4 from '@/data/vocabs/b4.json';
+import b5 from '@/data/vocabs/b5.json';
+import b6 from '@/data/vocabs/b6.json';
+import b7 from '@/data/vocabs/b7.json';
+import b8 from '@/data/vocabs/b8.json';
 
 const vocabsData = {
     b1: b1,
     b2: b2,
     b3: b3,
-    b4: b4
+    b4: b4,
+    b5: b5,
+    b6: b6,
+    b7: b7,
+    b8: b8,
 }
 
 class CommonFunction {

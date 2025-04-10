@@ -4,7 +4,7 @@
       <div :class="['sidebar', { collapsed: isCollapsed }]">
         <div class="sidebar-header">
           <h2 class="sidebar-title">
-            {{ isInPhone ? activeTab.name : "Hanyu" }}
+            {{ isMobile ? activeTab.name : "Hanyu" }}
           </h2>
           <div @click="toggleSidebar" class="toggle-button">
             <i class="fas fa-align-justify scale-1_1"></i>
@@ -24,7 +24,7 @@
         </ul>
       </div>
       <main class="main-content">
-        <header class="header" v-if="!isInPhone">
+        <header class="header" v-if="!isMobile">
           <h2>{{ activeTab.name }}</h2>
         </header>
         <div class="content">
@@ -42,7 +42,7 @@
 
 
 <script>
-import { ref, getCurrentInstance, onMounted, computed } from "vue";
+import { ref, getCurrentInstance, onMounted, onBeforeUnmount, computed } from "vue";
 import "@fortawesome/fontawesome-free/css/all.css";
 import PinyinView from "@/views/pinyin/PinyinView.vue"; 
 import RadicalsView from "@/views/radicals/RadicalsView.vue";
@@ -54,7 +54,7 @@ export default {
   setup() {
     const { proxy } = getCurrentInstance();
     const isCollapsed = ref(true);
-    const isInPhone = ref(window.innerWidth < 768);
+    const isMobile = ref(window.innerWidth < 768);
     
     const menuItems = ref([
       {
@@ -91,21 +91,25 @@ export default {
 
     const changeActiveTab = (tab) => {
       activeTab.value = tab;
-      if (isInPhone.value) {
+      if (isMobile.value) {
         isCollapsed.value = true;
       }
     };
 
-    const updateIsInPhone = () => {
-      isInPhone.value = window.innerWidth < 768;
+    const updateisMobile = () => {
+      isMobile.value = window.innerWidth < 768;
     };
 
     onMounted(() => {
-      window.addEventListener("resize", updateIsInPhone);
+      window.addEventListener("resize", updateisMobile);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener("resize", updateisMobile);
     });
 
     return {
-      isInPhone,
+      isMobile,
       isCollapsed,
       menuItems,
       activeTab,

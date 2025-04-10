@@ -1,103 +1,83 @@
 <template>
   <div>
-    <h1>Sắp xếp ngẫu nhiên</h1>
-    <textarea
-      v-model="inputText"
-      placeholder="Nhập văn bản ở đây..."
-    ></textarea>
-    <button @click="sortRandomly">Sắp xếp</button>
-
-    <div class="results" v-if="sortedTexts.length > 0">
-      <h2>Kết quả:</h2>
-
-      <div class="result-container">
-        <div
-          class="result-item"
-          v-for="(text, index) in sortedTexts"
-          :key="index"
-        >
-          {{ text }}
-        </div>
+    <div class="tabs" v-if="!isMobile">
+      <div
+        v-for="tab in tabs"
+        :key="tab.name"
+        :class="['tab', { active: activeTab.name === tab.name }]"
+        @click="activeTab = tab"
+      >
+        {{ tab.label }}
       </div>
+    </div>
+    <select v-else v-model="activeTab" @change="onTabChange">
+      <option v-for="tab in tabs" :key="tab.name" :value="tab">
+        {{ tab.label }}
+      </option>
+    </select>
+
+    <div class="tab-content">
+      <component :is="activeTab.component"></component>
     </div>
   </div>
 </template>
-  
-  <script>
+
+<script>
+import { ref, onMounted, onBeforeUnmount } from "vue";
+import ShuffleTool from "./ShuffleTool.vue";
+
 export default {
-  data() {
-    return {
-      inputText: "",
-      sortedTexts: [],
+  setup() {
+    const tabs = [
+      { name: "tool1", label: "Sắp xếp ngẫu nhiên", component: ShuffleTool },
+      { name: "tool2", label: "Tool 2", component: "" },
+    ];
+
+    const activeTab = ref(tabs[0]);
+    const isMobile = ref(false);
+
+    const checkScreenSize = () => {
+      isMobile.value = window.innerWidth < 768; // Kích thước màn hình nhỏ hơn 768px
     };
-  },
-  methods: {
-    sortRandomly() {
-      this.sortedTexts = this.inputText
-        .split("\n")
-        .sort(() => Math.random() - 0.5);
-    },
+
+    onMounted(() => {
+      checkScreenSize();
+      window.addEventListener("resize", checkScreenSize);
+    });
+
+    onBeforeUnmount(() => {
+      window.removeEventListener("resize", checkScreenSize);
+    });
+
+    const onTabChange = (event) => {
+      activeTab.value;
+    };
+
+    return { tabs, activeTab, isMobile, onTabChange };
   },
 };
 </script>
-  
-  <style lang="scss" scoped>
-textarea {
-  width: 100%;
-  height: 200px;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 10px;
-  border-radius: 2px;
-}
 
-textarea:focus {
-  outline: none !important;
-  border: 1px solid rgba(16, 173, 79, 1);
-}
-
-button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  cursor: pointer;
-  background-color: rgba(16, 173, 79, 1);
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-}
-
-button:hover {
-  margin-top: 10px;
-  padding: 10px 20px;
-  cursor: pointer;
-  background-color: #fff;
-  border: 1px solid rgba(16, 173, 79, 1);
-  color: rgba(16, 173, 79, 1);
-}
-
-.results {
-  margin-top: 24px;
+<style>
+.tabs {
   display: flex;
-  flex-direction: column;
   gap: 6px;
+  border-bottom: 1px solid #bbb7b7;
 }
-
-.result-container {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(100px, 1fr)
-  ); /* Responsive columns */
-  gap: 10px; /* Space between grid items */
-  width: 100%; /* Full width of the container */
-  margin: auto; /* Center the grid */
-  padding: 10px; /* Padding around the grid */
+.tab {
+  padding: 10px;
+  cursor: pointer;
 }
-.result-item {
-  background-color: #4caf50;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px; /* Rounded corners */
+.tab.active {
+  font-weight: bold;
+  border-bottom: 2px solid #49af73;
+}
+.tab-content {
+  margin-top: 20px;
+}
+select {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 16px;
 }
 </style>

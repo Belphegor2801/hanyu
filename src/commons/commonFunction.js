@@ -20,17 +20,31 @@ class CommonFunction {
     }
 
 
-    async importJSONFiles(numOfLessons = 0, filename = '') {
+    async importJSONFiles(numOfLessons = 0, lesson = '') {
         var jsonData = [];
-        for (let i = 1; i <= numOfLessons; i++) {
-            const fileName = `../data/vocabs/b${i}.json`;
+        var fileName = '';
+        var data = [];
+        if (lesson == '') {
+            for (let i = 1; i <= numOfLessons; i++) {
+                fileName = `../data/vocabs/b${i}.json`;
+                try {
+                    data = await import(`${fileName}`);
+                    jsonData = [...jsonData, ...data.default] // Gán dữ liệu vào đối tượng
+                } catch (error) {
+                    console.error(`Error loading ${fileName}:`, error);
+                }
+            }
+        }
+        else {
+            fileName = `../data/vocabs/b${lesson}.json`;
             try {
-                const data = await import(`${fileName}`);
+                data = await import(`${fileName}`);
                 jsonData = [...jsonData, ...data.default] // Gán dữ liệu vào đối tượng
             } catch (error) {
                 console.error(`Error loading ${fileName}:`, error);
             }
         }
+
 
         return jsonData;
     }

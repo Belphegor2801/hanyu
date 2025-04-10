@@ -25,12 +25,17 @@
 <script>
 import { ref, onMounted, onBeforeUnmount } from "vue";
 import ShuffleTool from "./ShuffleTool.vue";
+import RandomLessonWords from "./RandomLessonWords.vue";
 
 export default {
   setup() {
     const tabs = [
-      { name: "tool1", label: "Sắp xếp ngẫu nhiên", component: ShuffleTool },
-      { name: "tool2", label: "Tool 2", component: "" },
+      {
+        name: "tool1",
+        label: "Từ ngữ ngẫu nhiên theo bài học",
+        component: RandomLessonWords,
+      },
+      { name: "tool2", label: "Sắp xếp ngẫu nhiên", component: ShuffleTool },
     ];
 
     const activeTab = ref(tabs[0]);
@@ -59,6 +64,15 @@ export default {
 </script>
 
 <style>
+select {
+  margin-top: 0px !important;
+  padding-right: 10px;
+  -webkit-appearance: button !important;
+  -moz-appearance: button !important;
+  appearance: button !important;
+  cursor: pointer;
+}
+
 .tabs {
   display: flex;
   gap: 6px;

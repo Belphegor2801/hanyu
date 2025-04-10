@@ -95,14 +95,17 @@
 </template>
 
 <script>
-import data from "@/data/vocabs.json";
 import HHanziInput from "@/components/base/HHanziInput.vue";
+import commonFn from '@/commons/commonFunction';
+import {useMainStore} from '@/stores/mainStore.js';
+
 export default {
   components: {
     HHanziInput,
   },
   data() {
     return {
+      data: [],
       currentQuestionIndex: 0,
       correctAnswers: 0,
       incorrectAnswers: 0,
@@ -129,7 +132,8 @@ export default {
       return this.questions.length;
     },
   },
-  mounted() {
+  async mounted() {
+    this.data = await commonFn.importJSONFiles(store.numOfLessons);
     this.initializeQuiz();
   },
   watch: {
@@ -176,8 +180,9 @@ export default {
     },
 
     initializeQuiz() {
+      const store = useMainStore();
       this.questions = [];
-      var questionsLength = data.length;
+      var questionsLength = this.data.length;
       for (let i = 0; i < 33; i++) {
         var questionType = this.pickRandomNum(3);
         var answerType = 1;
@@ -198,7 +203,7 @@ export default {
         while (answerType === questionType) {
           answerType = this.pickRandomNum(3);
         }
-        var word = data[this.pickRandomNum(questionsLength) - 1];
+        var word = this.data[this.pickRandomNum(questionsLength) - 1];
         var question = word[this.type[questionType]];
         var correct = word[this.type[answerType]];
 
@@ -209,7 +214,7 @@ export default {
         }
 
         // Lấy danh sách đáp án có thể có
-        var dataAnswer = data.map((x) => x[this.type[answerType]]);
+        var dataAnswer = this.data.map((x) => x[this.type[answerType]]);
         var dataAnswerFilter = dataAnswer.filter((x) =>
           answerType == 2
             ? x.split(" ").length == correctLegth

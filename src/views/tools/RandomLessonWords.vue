@@ -36,6 +36,7 @@
           :key="index"
           @mouseover="showTooltip($event, item)"
           @mouseleave="hideTooltip"
+          @dblclick="showTooltip($event, item, 'word')"
         >
           <p v-html="item.pinyin"></p>
         </button>
@@ -106,8 +107,12 @@ export default {
         }
       }
     },
-    showTooltip(event, item) {
-      this.tooltipContent = item.vietnamese;
+    showTooltip(event, item, type = "vietnamese") {
+      if (type == "vietnamese") {
+        this.tooltipContent = item.vietnamese;
+      } else {
+        this.tooltipContent = item.word;
+      }
       this.tooltipVisible = true;
 
       const itemRect = event.currentTarget.getBoundingClientRect();

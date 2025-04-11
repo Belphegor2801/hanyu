@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="">
     <div class="tabs" v-if="!isMobile">
       <div
         v-for="tab in tabs"
@@ -10,7 +10,7 @@
         {{ tab.label }}
       </div>
     </div>
-    <select v-else v-model="activeTab" @change="onTabChange">
+    <select class="controls" v-else v-model="activeTab" @change="onTabChange">
       <option v-for="tab in tabs" :key="tab.name" :value="tab">
         {{ tab.label }}
       </option>
@@ -87,11 +87,18 @@ select {
   border-bottom: 2px solid #49af73;
 }
 .tab-content {
-  margin-top: 20px;
+  margin-top: 12px;
 }
 select {
   margin-top: 10px;
   padding: 5px;
   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 </style>

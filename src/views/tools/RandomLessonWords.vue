@@ -217,4 +217,12 @@ select {
   visibility: visible;
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .controls {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 </style>

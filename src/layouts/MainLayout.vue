@@ -46,6 +46,7 @@ import { ref, getCurrentInstance, onMounted, onBeforeUnmount, computed } from "v
 import "@fortawesome/fontawesome-free/css/all.css";
 import PinyinView from "@/views/pinyin/PinyinView.vue"; 
 import RadicalsView from "@/views/radicals/RadicalsView.vue";
+import VocabsView from "@/views/vocabs/VocabsView.vue";
 import RevisionView from "@/views/revision/RevisionView.vue";
 import ToolsView from "@/views/tools/ToolsView.vue";
 
@@ -71,12 +72,18 @@ export default {
       },
       {
         id: 3,
+        name: "Từ vựng",
+        icon: "fas fa-book",
+        component: VocabsView,
+      },
+      {
+        id: 4,
         name: "Ôn tập",
         icon: "fas fa-cube",
         component: RevisionView,
       },
       {
-        id: 4,
+        id: 5,
         name: "Công cụ",
         icon: "fas fa-th",
         component: ToolsView,

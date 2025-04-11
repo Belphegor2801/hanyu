@@ -140,6 +140,10 @@ select {
 
 .results {
   margin-top: 20px;
+  max-height: calc(100vh - 300px); /* Set a max height for the results */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  padding: 10px; /* Optional: Add padding */
 }
 
 .result-container {
@@ -147,8 +151,6 @@ select {
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 10px;
   width: 100%;
-  margin: auto;
-  padding: 10px;
 }
 
 .result-item {

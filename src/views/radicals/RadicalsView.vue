@@ -198,7 +198,7 @@ export default {
 
       td.sticky {
         position: sticky;
-        left: 0;
+        left: -1px;
         background-color: #fff;
         z-index: 5;
       }

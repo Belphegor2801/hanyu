@@ -246,13 +246,13 @@ export default {
     th {
       background-color: #5aa777;
       position: sticky;
-      top: 0;
+      top: -1px;
       z-index: 10;
     }
 
     td.sticky {
       position: sticky;
-      left: 0;
+      left: -1px;
       background-color: #fff;
       z-index: 5;
     }

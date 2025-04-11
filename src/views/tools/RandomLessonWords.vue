@@ -1,17 +1,9 @@
 <template>
   <div class="container">
     <div class="controls">
-      <select class="pointer" v-model="selectedMode" @change="onModeChange">
+      <select class="pointer" v-model="selectedLesson">
         <option class="pointer" value="all">Tất cả các bài</option>
-        <option class="pointer" value="single">Từng bài</option>
-      </select>
-
-      <select
-        class="pointer"
-        v-model="selectedLesson"
-        v-if="selectedMode == 'single'"
-      >
-        <option
+         <option
           class="pointer"
           v-for="lesson in lessons"
           :key="lesson.id"
@@ -20,8 +12,7 @@
           {{ lesson.name }}
         </option>
       </select>
-    </div>
-    <div class="controls flex-center">
+
       <button class="arrange-button w-160" @click="printResults">
         Sắp xếp
       </button>
@@ -44,7 +35,8 @@
     </div>
     <teleport to="body">
       <div v-if="tooltipVisible" class="tooltip" :style="tooltipStyle">
-        {{ tooltipContent }}
+        <p class='vietnamese-tooltip' v-if="isVietnameseTooltip">{{ tooltipContent }}</p>
+        <p class='hanyu-tooltip' v-else>{{ tooltipContent }}</p>
       </div>
     </teleport>
   </div>
@@ -57,8 +49,7 @@ import { useMainStore } from "@/stores/mainStore.js";
 export default {
   data() {
     return {
-      selectedMode: "all",
-      selectedLesson: "",
+      selectedLesson: "all",
       lessons: [],
       results: [],
       tooltipVisible: false,
@@ -67,6 +58,7 @@ export default {
         left: "0px",
         top: "0px",
       },
+      isVietnameseTooltip: true,
     };
   },
   computed: {
@@ -90,10 +82,9 @@ export default {
     this.selectedLesson = "Bài 1";
   },
   methods: {
-    onModeChange() {},
     async printResults() {
       const store = useMainStore();
-      if (this.isAllMode) {
+      if (this.selectedLesson == "all") {
         var jsonData = await commonFn.importJSONFiles(store.numOfLessons);
         this.results = jsonData.map((x) => x).sort(() => Math.random() - 0.5);
       } else {
@@ -109,8 +100,10 @@ export default {
     },
     showTooltip(event, item, type = "vietnamese") {
       if (type == "vietnamese") {
+        this.isVietnameseTooltip = true;
         this.tooltipContent = item.vietnamese;
       } else {
+        this.isVietnameseTooltip = false;
         this.tooltipContent = item.word;
       }
       this.tooltipVisible = true;
@@ -118,7 +111,7 @@ export default {
       const itemRect = event.currentTarget.getBoundingClientRect();
       this.tooltipStyle = {
         left: `${itemRect.left + itemRect.width / 2 - 60 + window.scrollX}px`, // Adjust for scrolling
-        top: `${itemRect.top + window.scrollY - 30}px`, // Position above the item
+        top: `${itemRect.top + window.scrollY - 22}px`, // Position above the item
       };
     },
     hideTooltip() {
@@ -136,10 +129,13 @@ export default {
 .controls {
   display: flex;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
 }
 
 select {
+  min-width: 200px;
+  height: 40px;
   margin-top: 0px !important;
   -webkit-appearance: button !important;
   -moz-appearance: button !important;
@@ -177,8 +173,8 @@ select {
 
 .results {
   border-radius: 4px;
-  margin-top: 20px;
-  max-height: calc(100vh - 300px); /* Set a max height for the results */
+  margin-top: 10px;
+  max-height: calc(100vh - 194px); /* Set a max height for the results */
   overflow-y: auto; /* Enable vertical scrolling */
   border: 1px solid #ccc; /* Optional: Add a border for better visibility */
   padding: 10px; /* Optional: Add padding */
@@ -209,11 +205,19 @@ select {
   text-align: center;
   border-radius: 4px;
   width: 120px;
-  padding: 5px;
   z-index: 1000;
   visibility: visible; /* Always visible when shown */
   opacity: 1; /* Always fully opaque when shown */
   transition: opacity 0.3s;
+}
+
+.vietnamese-tooltip {
+  padding: 6px;
+}
+
+.hanyu-tooltip {
+  font-size: 20px;
+  padding: 2px;
 }
 
 .result-item:hover .tooltip,
@@ -227,7 +231,7 @@ select {
   .controls {
     max-width: 100%;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 </style>

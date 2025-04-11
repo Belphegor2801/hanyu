@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="controls">
-      <select class="pointer" v-model="selectedLesson" @change="fetchData">
+      <select class="lesson-selecter pointer" v-model="selectedLesson" @change="fetchData">
         <option value="all">Tất cả các bài</option>
         <option v-for="lesson in lessons" :key="lesson.id" :value="lesson.name">
           {{ lesson.name }}
@@ -118,8 +118,31 @@ export default {
 }
 
 .controls {
-  max-width: 160px;
   margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+select {
+  padding: 0px !important;
+}
+
+.lesson-selecter {
+  width: 200px !important;
+  height: 40px !important;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.search-input:focus {
+  outline: none;
+  border: 1px solid #4caf50;
 }
 
 .pointer {
@@ -133,7 +156,7 @@ export default {
 }
 
 .table-scroll {
-  max-height: calc(100vh - 200px);
+  max-height: calc(100vh - 140px);
   overflow-y: auto; /* Cho phép cuộn dọc */
 }
 
@@ -142,10 +165,16 @@ table {
   border-collapse: collapse;
 }
 
-th,
-td {
+th {
   border: 1px solid #ddd;
   padding: 8px;
+  text-align: left;
+  width: 25%;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 4px;
   text-align: left;
   width: 25%;
 }
@@ -202,16 +231,5 @@ tr:hover {
   }
 }
 
-.search-input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-}
 
-.search-input:focus {
-  outline: none;
-  border: 1px solid #4caf50;
-}
 </style>

@@ -65,6 +65,7 @@ export default {
 
 <style>
 select {
+  height: 40px;
   margin-top: 0px !important;
   padding-right: 10px;
   -webkit-appearance: button !important;

@@ -95,6 +95,7 @@ export default {
 
 .table-container {
   margin-top: 20px;
+  border-radius: 1px;
 }
 
 .table-scroll {
@@ -157,5 +158,13 @@ tr:hover {
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
   border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 </style>

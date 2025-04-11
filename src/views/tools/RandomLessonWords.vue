@@ -2,8 +2,8 @@
   <div class="container">
     <div class="controls">
       <select class="pointer" v-model="selectedMode" @change="onModeChange">
-        <option class="pointer" value="single">Từng bài</option>
         <option class="pointer" value="all">Tất cả các bài</option>
+        <option class="pointer" value="single">Từng bài</option>
       </select>
 
       <select
@@ -22,17 +22,30 @@
       </select>
     </div>
     <div class="controls flex-center">
-      <button class="arrange-button w-160" @click="printResults">Sắp xếp</button>
+      <button class="arrange-button w-160" @click="printResults">
+        Sắp xếp
+      </button>
     </div>
 
     <div class="results" v-if="results.length > 0">
       <div class="result-container">
-        <button class="result-item" v-for="(item, index) in results" :key="index">
+        <button
+          class="result-item"
+          :id="item['word']"
+          v-for="(item, index) in results"
+          :key="index"
+          @mouseover="showTooltip($event, item)"
+          @mouseleave="hideTooltip"
+        >
           <p v-html="item.pinyin"></p>
-          <div class="tooltip">{{ item.vietnamese }}</div>
         </button>
       </div>
     </div>
+    <teleport to="body">
+      <div v-if="tooltipVisible" class="tooltip" :style="tooltipStyle">
+        {{ tooltipContent }}
+      </div>
+    </teleport>
   </div>
 </template>
 
@@ -47,6 +60,12 @@ export default {
       selectedLesson: "",
       lessons: [],
       results: [],
+      tooltipVisible: false,
+      tooltipContent: "",
+      tooltipStyle: {
+        left: "0px",
+        top: "0px",
+      },
     };
   },
   computed: {
@@ -86,6 +105,19 @@ export default {
           this.results = jsonData.map((x) => x).sort(() => Math.random() - 0.5);
         }
       }
+    },
+    showTooltip(event, item) {
+      this.tooltipContent = item.vietnamese;
+      this.tooltipVisible = true;
+
+      const itemRect = event.currentTarget.getBoundingClientRect();
+      this.tooltipStyle = {
+        left: `${itemRect.left + itemRect.width / 2 - 60 + window.scrollX}px`, // Adjust for scrolling
+        top: `${itemRect.top + window.scrollY - 30}px`, // Position above the item
+      };
+    },
+    hideTooltip() {
+      this.tooltipVisible = false;
     },
   },
 };
@@ -139,6 +171,7 @@ select {
 }
 
 .results {
+  border-radius: 4px;
   margin-top: 20px;
   max-height: calc(100vh - 300px); /* Set a max height for the results */
   overflow-y: auto; /* Enable vertical scrolling */
@@ -165,23 +198,22 @@ select {
 }
 
 .tooltip {
-  visibility: hidden;
-  width: 120px;
+  position: fixed; /* Use fixed positioning */
   background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
   text-align: center;
   border-radius: 4px;
+  width: 120px;
   padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%; /* Position above the item */
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
+  z-index: 1000;
+  visibility: visible; /* Always visible when shown */
+  opacity: 1; /* Always fully opaque when shown */
   transition: opacity 0.3s;
 }
 
-.result-item:hover .tooltip, .result-item:focus .tooltip, .result-item:active .tooltip {
+.result-item:hover .tooltip,
+.result-item:focus .tooltip,
+.result-item:active .tooltip {
   visibility: visible;
   opacity: 1;
 }

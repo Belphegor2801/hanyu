@@ -6,7 +6,7 @@ import b5 from '@/data/vocabs/b5.json';
 import b6 from '@/data/vocabs/b6.json';
 import b7 from '@/data/vocabs/b7.json';
 import b8 from '@/data/vocabs/b8.json';
-import b8 from '@/data/vocabs/b9.json';
+import b9 from '@/data/vocabs/b9.json';
 
 const vocabsData = {
     b1: b1,

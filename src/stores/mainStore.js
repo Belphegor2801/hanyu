@@ -3,7 +3,7 @@ import { defineStore } from 'pinia';
 
 export const useMainStore = defineStore('main', {
   state: () => ({
-    numOfLessons: 8
+    numOfLessons: 9
   }),
   actions: {
     setGlobalVariable(value) {
